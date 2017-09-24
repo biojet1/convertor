@@ -157,6 +157,8 @@ def doGroup(root, parent=None):
 		else:
 			ids[id.lower()] = name
 		doCheckNo(root)
+	elif root.tagName == "sub":
+		return doSub(root)
 	else:
 		assert(parent is None)
 	cur = root.firstChild

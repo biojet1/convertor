@@ -1,0 +1,104 @@
+<sub id="bytes" name="Bit, Byte" no="E882">
+	<unit factor="1" name="Byte" no="F5EA">
+		8 bits
+		<same equals="0.001953125" no="FD65"/>
+		<same equals="8" no="9E77"/>
+	</unit>
+	<unit factor="1152921504606846976" name="Exabyte" no="FD37" symbol="EB">
+		1024 Petabytes
+		<same equals="1024" no="9027"/>
+	</unit>
+	<unit factor="1125899906842624" name="Petabyte" no="9027" symbol="PB">
+		1024 Terabytes
+		<same equals="1024" no="FFEA"/>
+	</unit>
+	<unit factor="1099511627776" name="Terabyte" no="FFEA" symbol="TB">
+		1024 Gigabytes
+		<same equals="1024" no="B5FA"/>
+	</unit>
+	<unit factor="1073741824" name="Gigabyte" no="B5FA" symbol="GB">
+		1024 Megabytes
+		<same equals="1024" no="EFD8"/>
+	</unit>
+	<unit factor="1048576" name="Megabyte" no="EFD8" symbol="MB">
+		1024 Kilobytes
+		<same equals="1024" no="F85D"/>
+	</unit>
+	<unit factor="1024" name="Kilobyte" no="F85D" symbol="kB">
+		1024 bytes
+		<same equals="1024" no="F5EA"/>
+	</unit>
+	<unit factor="125000000" name="Gigabit" no="CFD7">
+		1 billion bits
+		<same equals="1000" no="D7A7"/>
+	</unit>
+	<unit factor="125000" name="Megabit" no="D7A7">
+		1 million bits
+		<same equals="1000" no="DD23"/>
+	</unit>
+	<unit factor="125" name="Kilobit" no="DD23">
+		1000 bits
+		<same equals="1000" no="9E77"/>
+	</unit>
+	<unit factor="0.125" name="Bit" no="9E77">
+		8 bit = 1 byte
+		<same equals="0.000244140625" no="FD65"/>
+	</unit>
+	<unit factor="2048" name="CD/DVD sector" no="B6A6">
+		2048 bytes
+		<same equals="4" no="FD65"/>
+		<same equals="2" no="F85D"/>
+	</unit>
+	<unit factor="512" name="Harddisk sector" no="FD65">
+		512 bytes
+		<same equals="0.5" no="F85D"/>
+	</unit>
+	<unit factor="681574400" name="CD-R 74 min" no="E8A3"/>
+	<unit factor="736960512" name="CD-R 80 min" no="CAFF"/>
+	<unit factor="4700372992" name="DVD+R" no="A0F3">
+		DVD+R SL (4.378GiB)
+		<same equals="2295104" no="B6A6"/>
+	</unit>
+	<unit factor="4707319808" name="DVD-R" no="9581">
+		DVD-R SL (4.384GiB)
+		<same equals="2298496" no="B6A6"/>
+	</unit>
+	<unit factor="8547991552" name="DVD+R Dual layer" no="E1F8">
+		DVD+R DL (7.961GiB)
+		<same equals="4173824" no="B6A6"/>
+	</unit>
+	<unit factor="8543666176" name="DVD-R Dual layer" no="9BEF">
+		DVD-R DL (7.957GiB)
+		<same equals="4171712" no="B6A6"/>
+	</unit>
+	<unit factor="25025314816" name="Blueray" no="DC64">
+		BD SL (23.31GiB)
+		<same equals="12219392" no="B6A6"/>
+	</unit>
+	<unit factor="50050629632" name="Blueray Dual layer" no="DD8C">
+		BD DL (46.61GiB)
+		<same equals="24438784" no="B6A6"/>
+	</unit>
+	<unit factor="7791181824" name="Blueray Mini" no="F66E">
+		BD Mini SL (7.26GiB)
+		<same equals="3804288" no="B6A6"/>
+	</unit>
+	<unit factor="15582363648" name="Blueray Mini Dual layer" no="CB66">
+		BD Mini DL (14.51GiB)
+		<same equals="30434304" no="FD65"/>
+		<same equals="7608576" no="B6A6"/>
+	</unit>
+	
+	<!--
+			['Disk', 'Sectors', 'Bytes', 'Gb', 'GiB', 'MiB', 'KiB'],
+			['DVD-R SL', '2,298,496', '4,707,319,808', '4.71', '4.384', '4489.250', '4,596,992'],
+			['DVD+R SL', '2,295,104', '4,700,372,992', '4.70', '4.378', '4482.625', '4,590,208'],
+			['DVD-R DL', '4,171,712', '8,543,666,176', '8.54', '7.957', '8147.875', '8,343,424'],
+			['DVD+R DL', '4,173,824', '8,547,991,552', '8.55', '7.961', '8152.000', '8,347,648'],
+			['BD SL', '12,219,392', '25,025,314,816', '25.03', '23.31', '23866.000', '24,438,784'],
+			['BD DL', '24,438,784', '50,050,629,632', '50.05', '46.613', '47732.000', '48,877,568'],
+			['BD Mini SL', '3,804,288', '7,791,181,824', '7.79', '7.26', '7430.25', '7,608,576'],
+			['BD Mini DL', '7,608,576', '15,582,363,648', '15.58', '14.51', '14860.5', '15,217,152'],
+	-->
+
+</sub>

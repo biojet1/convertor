@@ -71,6 +71,9 @@ def doSub(cur):
 			if x.previousSibling:
 				if x.data.strip():
 					raise RuntimeError("unexpected TEXT_NODE %r" % x.data.strip())
+			else:
+				x = x.data.strip()
+				desc = re.sub(r'\s+', ' ', x)
 		elif t in (x.COMMENT_NODE, ):
 			pass
 		else:
@@ -85,6 +88,8 @@ def doGroup(root, parent=None):
 			raise RuntimeError("No name")
 		if not id:
 			raise RuntimeError("No id")
+	elif root.tagName == "sub":
+		return doSub(root)
 	else:
 		assert(parent is None)
 	cur = root.firstChild

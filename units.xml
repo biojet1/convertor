@@ -12,7 +12,7 @@
 		<unit factor="1.0E-06" name="micron" no="AFAE" symbol="&#181;">
 			The micron was defined as one 1 000 000th of one meter in 1879.
 			Presently replaced with micro meter and excluded from the regal units
-			<same equals="1000000" no="C35D"/>
+			<same equals="1" no="C35D" value="1000000"/>
 		</unit>
 		<unit factor="1.0E-09" name="nanometer" no="989B" symbol="nm"/>
 		<unit factor="1.0E-10" name="&#229;ngstr&#246;m" no="9DC9" symbol="&#197;">
@@ -61,34 +61,6 @@
 		<unit factor="3.03030303030303E-02" name="chun [sun]" no="D21A"/>
 		<unit factor="3.03030303030303E-03" name="fun [bu]" no="8A97"/>
 		<unit factor="3.03030303030303E-04" name="li [rin]" no="8020"/>
-	</sub>
-	<sub id="mass" name="Mass" no="B5DA">
-		<unit factor="1" name="kilogram" no="EC09" symbol="kg">The kilogram is the unit of mass, equal to the mass of the international prototype of the kilogram, which is an alloy column made of 90% platinum and 10% iridium, 39 millimeters in diameter and height, preserved in the suburbs of Paris (3rd CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1901)</unit>
-		<unit factor="1.0E+06" name="kiloton (metric)" no="93E7"/>
-		<unit factor="1.0E+03" name="ton (metric)" no="9D09" symbol="t"/>
-		<unit factor="9.80665E+00" name="kilogram-force second squared per meter" no="E225" symbol="kgf&#183;s&#178;/m"/>
-		<unit factor="1.0E-03" name="gram" no="A872" symbol="g"/>
-		<unit factor="2.0E-04" name="carat (metric)" no="BD59" symbol="car, ct">Used to weigh gems or noble metals. Standardized as 0.2 gram in 1907</unit>
-		<unit factor="1.0E-06" name="milligram" no="A270" symbol="mg"/>
-		<unit factor="1.0E-12" name="nanogram" no="CBAB" symbol="ng"/>
-		<unit factor="1.0E-09" name="gamma" no="F488"/>
-		<unit factor="1.6605402E-27" name="atomic mass unit" no="9FDD" symbol="u">A unit to measure mass of elementary particles, atoms and molecules. 1 u is equal to 1/12 of the mass of an atom of the nuclide 12C</unit>
-		<unit factor="1.0160469088E+03" name="ton, long" no="FFB4">2240 lb</unit>
-		<unit factor="9.0718474E+02" name="ton, short" no="D1DF">2000 lb</unit>
-		<unit factor="5.080234544E+01" name="hundredweight, long" no="8AE8">112 lb</unit>
-		<unit factor="4.5359237E+01" name="hundredweight, short" no="9225">100 lb</unit>
-		<unit factor="1.45939029372064E+01" name="slug" no="CF14">lbf&#183;s&#178;/ft</unit>
-		<unit factor="1.45939029372064E+01" name="pound-force square second per foot" no="D592" symbol="lbf&#183;s&#178;/ft"/>
-		<unit factor="4.5359237E-01" name="pound (avoirdupois)" no="F54A" symbol="lb"/>
-		<unit factor="3.732417216E-01" name="pound (troy or apothecary)" no="AF55" symbol="lb"/>
-		<unit factor="2.916667E-02" name="ton, assay" no="D03C" symbol="AT"/>
-		<unit factor="2.8349523125E-02" name="ounce (avoirdupois)" no="D4BB" symbol="oz">1/16 lb</unit>
-		<unit factor="3.11034768E-02" name="ounce (troy or apothecary)" no="F022" symbol="oz"/>
-		<unit factor="1.55517384E-03" name="pennyweight (dwt)" no="8DE3">1/20 oz (troy)</unit>
-		<unit factor="6.479891E-05" name="grain" no="9696" symbol="gr">1/7000 lb</unit>
-		<unit factor="3.75E+00" name="guen [kan]" no="87E9"/>
-		<unit factor="6.0E-01" name="jin [kin]" no="B142"/>
-		<unit factor="3.75E-03" name="reng [mon-me]" no="BA5B"/>
 	</sub>
 	<sub id="area" name="Area" no="8BFF">
 		<unit factor="1" name="square meter" no="FCFF" symbol="m&#178;"/>
@@ -422,18 +394,6 @@
 		<unit factor="2.51995761111111E-01" name="ton (short) per hour" no="FA70"/>
 		<unit factor="7.55987283333333E-03" name="pound per minute" no="B1A5" symbol="lb/min"/>
 		<unit factor="1.25997880555556E-04" name="pound per hour" no="9C1A" symbol="lb/h"/>
-	</sub>
-	<sub id="temperature" name="Temperature" no="95A9" priority="2">
-		<unit factor="1" name="kelvin" no="ED9E" symbol="K">
-		Named for Lord William Thomson Kelvin, an English physicist.
-		The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the thermodynamic temperature of the triple point of water (13th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1967).;Body Temp. (Normal);309.65;Body Temp. (High);311.15;Boiling temp. of water;373.15;Freezing Temp. of water;273.15;Room temp.;298.15;Tempura oil temp.;453.15;Red wine temp.;282.15;Hot 'sake' temp.;318.15</unit>
-		<unit factor="1" name="deg Celsius" no="8FCB" symbol="&#186;C" y="273.15">
-			Named for the Swedish scientist A. Celsius in 1742.
-			Defined as one hundredth of temperature difference between the freezing and boiling points of pure water
-		</unit>
-		<unit factor="5.55555555555555556E-01" name="deg Fahrenheit" no="AE85" symbol="&#186;F" y="255.372222222222222"/>
-		<unit factor="5.55555555555555556E-01" name="deg Rankine" no="80F8" symbol="&#186;R"/>
-		<unit factor="1.25" name="deg R&#233;aumur" no="861C" symbol="&#186;r" y="273.15">Named for the French scientist Ren&#233;-Antoine Ferchault de R&#233;aumur (1683-1757). The interval between the freezing and boiling temperatures of water equals to 80 &#176;r instead of 100 &#176;C</unit>
 	</sub>
 	<sub id="angle" name="Angle" no="E0F3" priority="3">
 		<unit factor="1" name="second" no="ACE4" symbol="&quot;"/>
@@ -844,61 +804,6 @@
 		<unit factor="1.0E-02" name="rad, rd" no="D68E"/>
 	</sub>
 
-		<sub id="bytes" name="Bit, Byte" no="E882">
-			<unit factor="1" name="Byte" no="F5EA">
-				<same equals="0.001953125" no="FD65"/>
-				<same equals="8" no="9E77"/>
-			</unit>
-			<unit factor="1152921504606846976" name="Exabyte" no="FD37" symbol="EB">
-				<same equals="1024" no="9027"/>
-			</unit>
-			<unit factor="1125899906842624" name="Petabyte" no="9027" symbol="PB">
-				<same equals="1024" no="FFEA"/>
-			</unit>
-			<unit factor="1099511627776" name="Terabyte" no="FFEA" symbol="TB">
-				<same equals="1024" no="B5FA"/>
-			</unit>
-			<unit factor="1073741824" name="Gigabyte" no="B5FA" symbol="GB">
-				<same equals="1024" no="EFD8"/>
-			</unit>
-			<unit factor="1048576" name="Megabyte" no="EFD8" symbol="MB">
-				<same equals="1024" no="F85D"/>
-			</unit>
-			<unit factor="1024" name="Kilobyte" no="F85D" symbol="kB">
-				<same equals="1024" no="F5EA"/>
-			</unit>
-			<unit factor="125000000" name="Gigabit" no="CFD7">
-				<same equals="1000" no="D7A7"/>
-			</unit>
-			<unit factor="125000" name="Megabit" no="D7A7">
-				<same equals="1000" no="DD23"/>
-			</unit>
-			<unit factor="125" name="Kilobit" no="DD23">
-				<same equals="1000" no="9E77"/>
-			</unit>
-			<unit factor="0.125" name="Bit" no="9E77">
-				<same equals="0.000244140625" no="FD65"/>
-			</unit>
-			<unit factor="2048" name="CD/DVD sector" no="B6A6">
-				<same equals="4" no="FD65"/>
-				<same equals="2" no="F85D"/>
-			</unit>
-			<unit factor="512" name="Harddisk sector" no="FD65">
-				<same equals="0.5" no="F85D"/>
-			</unit>
-			<unit factor="681574400" name="CD-R 74 min" no="E8A3"/>
-			<unit factor="736960512" name="CD-R 80 min" no="CAFF"/>
-			<unit factor="4700372992" name="DVD+R" no="A0F3"/>
-			<unit factor="4707319808" name="DVD-R" no="9581"/>
-			<unit factor="8547991552" name="DVD+R Dual layer" no="E1F8"/>
-			<unit factor="8543666176" name="DVD-R Dual layer" no="9BEF"/>
-			<unit factor="25025314816" name="Blueray" no="DC64"/>
-			<unit factor="50050629632" name="Blueray Dual layer" no="DD8C"/>
-			<unit factor="7791181824" name="Blueray Mini" no="F66E"/>
-			<unit factor="15582363648" name="Blueray Mini Dual layer" no="CB66">
-				<same equals="30434304" no="FD65"/>
-			</unit>
-		</sub>
 		<sub id="graphics" name="Graphics Units" no="AE7A">
 			<unit factor="1" name="twip" no="8ED9">
 				1/1440 inch
