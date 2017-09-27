@@ -1,92 +1,5 @@
 <?xml version="1.0" encoding="ASCII" standalone="yes"?>
 <units>
-	<sub id="length" name="Length" no="D302" priority="1">
-		<unit factor="1" name="meter" no="C35D" symbol="m">The meter is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second (17th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1983)</unit>
-		<unit factor="3.08567758128E+16" name="parsec" no="EB29" symbol="pc">1 AU divided by tan(1&quot;)</unit>
-		<unit factor="9.46073047258080E+15" name="light year" no="CEFD" symbol="l.y.">Based on 1 day = 86 400 seconds, and 1 Julian century = 36 525 days. Refer to The Astronomical Almanac for the Year 1995, U.S. Government Printing Office, Washington, DC, 1994</unit>
-		<unit factor="1.49597870691E+11" name="astronomical unit" no="FA21" symbol="AU">Approximately, the mean distance between the earth and the sun</unit>
-		<unit factor="1.0E+03" name="kilometer" no="92FE" symbol="km"/>
-		<unit factor="1.0E-02" name="centimeter" no="D5A0" symbol="cm"/>
-		<unit factor="1.0E-03" name="millimeter" no="95A4" symbol="mm"/>
-		<unit factor="1.0E-06" name="micrometer" no="90F7" symbol="&#181;m"/>
-		<unit factor="1.0E-06" name="micron" no="AFAE" symbol="&#181;">
-			The micron was defined as one 1 000 000th of one meter in 1879.
-			Presently replaced with micro meter and excluded from the regal units
-			<same equals="1" no="C35D" value="1000000"/>
-		</unit>
-		<unit factor="1.0E-09" name="nanometer" no="989B" symbol="nm"/>
-		<unit factor="1.0E-10" name="&#229;ngstr&#246;m" no="9DC9" symbol="&#197;">
-		A metric unit of length used to specify wavelengths of electromagnetic radiation</unit>
-		<unit factor="1.00208E-13" name="X unit" no="B03C">
-		A unit of measurement used to specify wavelength of X-ray</unit>
-		<unit factor="1.0E-15" name="femtometer" no="E34E" symbol="fm"/>
-		<unit factor="1.0E-15" name="fermi" no="CCB6"/>
-		<unit factor="1.0E-15" name="yukawa" no="A433"/>
-		<unit factor="5.556E+03" name="league (International nautical)" no="BFF2">3 times international nautical mile</unit>
-		<unit factor="5.559552E+03" name="league (UK nautical)" no="9E6D">3 times nautical mile (UK)</unit>
-		<unit factor="4.828032E+03" name="league (US)" no="8FD3">3 mi</unit>
-		<unit factor="1.853184E+03" name="nautical mile (UK)" no="DABE" symbol="n mile (UK)">6080 ft</unit>
-		<unit factor="1.852E+03" name="international nautical mile" no="E74F" symbol="n mile">A unit of length used in navigation which is equivalent to the distance spanned by one second of arc in latitude. Adopted by the First International Extraordinary Hydrographic Conference, Monaco, 1929</unit>
-		<unit factor="1.609344E+03" name="mile" no="9EA2" symbol="mi">5280 ft</unit>
-		<unit factor="1.60934721869444E+03" name="mile (based on US survey foot)" no="D529" symbol="mi">5280 times US survey foot</unit>
-		<unit factor="9.144E+02" name="kiloyard" no="9DB8" symbol="kyd">3000 ft</unit>
-		<unit factor="2.01168402336805E+02" name="furlong (based on US survey foot)" no="D5F0">660 times US survey foot</unit>
-		<unit factor="2.01168E+02" name="furlong" no="8B77">660 ft = 10 ch</unit>
-		<unit factor="2.01168402336805E+01" name="chain (based on US survey foot)" no="B9A8" symbol="ch">66 times US survey foot</unit>
-		<unit factor="2.01168E+01" name="chain" no="C521" symbol="ch">66 ft = 22 yd</unit>
-		<unit factor="5.02921005842012E+00" name="rod (based on US survey foot)" no="8191" symbol="rd">16.5 times US survey foot (= pole or perch)</unit>
-		<unit factor="5.0292E+00" name="rod" no="D08F" symbol="rd">16.5 ft = 5.5 yd</unit>
-		<unit factor="1.82880365760732E+00" name="fathom (based on US survey foot)" no="E5C2" symbol="fath">6 times US survey foot, a unit of measurement for water depth</unit>
-		<unit factor="1.8288E+00" name="fathom" no="89DA" symbol="fath">6 ft</unit>
-		<unit factor="9.144E-01" name="yard" no="91F4" symbol="yd">3 ft</unit>
-		<unit factor="3.04800609601219E-01" name="foot (US survey)" no="A246" symbol="ft">From 1893 until 1959, the yard was defined as being exactly equal to 3600/3937 m, and thus the foot was defined as being exactly equal to 1200/3937 m, which was called &quot;U.S. survey foot&quot;. 1 international foot (0.3048 m) = 0.999 998 U.S. survey foot exactly</unit>
-		<unit factor="3.048E-01" name="foot" no="F3D5" symbol="ft">1/3 yd</unit>
-		<unit factor="2.01168402336805E-01" name="link (based on US survey foot)" no="FEFB">0.66 time US survey foot</unit>
-		<unit factor="2.01168E-01" name="link" no="903F">0.66 ft = 1/100 ch</unit>
-		<unit factor="1.016E-01" name="hand" no="CD07">4 in</unit>
-		<unit factor="6.35E-02" name="nail" no="E2BF">2.5 in</unit>
-		<unit factor="2.54E-02" name="inch" no="E9C6" symbol="in">1/12 ft</unit>
-		<unit factor="4.23333333333333E-03" name="pica (computer)" no="F975">1/6 in</unit>
-		<unit factor="4.217518E-03" name="pica (printer's)" no="AE09"/>
-		<unit factor="3.52777777777778E-04" name="point (computer)" no="BC8C">1/72 in</unit>
-		<unit factor="3.514598E-04" name="point (printer's)" no="CA9D"/>
-		<unit factor="2.54E-05" name="mil" no="D372"/>
-		<unit factor="2.54E-08" name="microinch" no="8E7B"/>
-		<unit factor="3.92727272727273E+03" name="li [ri]" no="B438"/>
-		<unit factor="1.09090909090909E+02" name="jie [cho]" no="CA0E"/>
-		<unit factor="1.09090909090909E+01" name="duen [tan]" no="E3A8"/>
-		<unit factor="3.03030303030303E+00" name="zhang [jo]" no="AC18"/>
-		<unit factor="1.81818181818181E+00" name="jien [ken] = bu" no="8F55"/>
-		<unit factor="3.03030303030303E-01" name="chi [shaku]" no="E3FB"/>
-		<unit factor="3.03030303030303E-02" name="chun [sun]" no="D21A"/>
-		<unit factor="3.03030303030303E-03" name="fun [bu]" no="8A97"/>
-		<unit factor="3.03030303030303E-04" name="li [rin]" no="8020"/>
-	</sub>
-	<sub id="area" name="Area" no="8BFF">
-		<unit factor="1" name="square meter" no="FCFF" symbol="m&#178;"/>
-		<unit factor="1.0E+06" name="squre kilometer" no="E1DE" symbol="km&#178;"/>
-		<unit factor="1.0E+04" name="hectare" no="DEF0" symbol="ha"/>
-		<unit factor="1.0E+02" name="are" no="B228" symbol="a"/>
-		<unit factor="1.0E-04" name="squre cemtimeter" no="FBEE" symbol="cm&#178;"/>
-		<unit factor="1.0E-06" name="squre millimeter" no="9563" symbol="mm&#178;"/>
-		<unit factor="1.0E-18" name="square nanometer" no="A37A" symbol="nm&#178;"/>
-		<unit factor="1.0E-28" name="barn" no="F944" symbol="b"/>
-		<unit factor="2.589988110336E+06" name="square mile" no="9264" symbol="mi&#178;"/>
-		<unit factor="2.58999847031952E+06" name="square mile" no="89F7" symbol="mi&#178; (based on U.S. survey foot)"/>
-		<unit factor="4.04687260987425E+03" name="acre (based on U.S. survey foot)" no="D75E">43 560 times US survey foot squared</unit>
-		<unit factor="2.52929538117141E+01" name="square rod (based on U.S. survey foot)" no="84DC"/>
-		<unit factor="8.3612736E-01" name="square yard" no="9DC8" symbol="yd&#178;"/>
-		<unit factor="9.290304E-02" name="square foot" no="B3F4" symbol="ft&#178;"/>
-		<unit factor="6.4516E-04" name="square inch" no="BA87" symbol="in&#178;"/>
-		<unit factor="5.06707479097497E-10" name="circular mil" no="AD6C">Area of a disk with a diameter of 1 mil</unit>
-		<unit factor="9.917355372E+03" name="jie [cho]" no="89D3"/>
-		<unit factor="9.917355372E+02" name="duen = fan [tan]" no="E3A5"/>
-		<unit factor="9.917355372E+01" name="mu [se]" no="D51D"/>
-		<unit factor="3.305785124E+00" name="ping [tsubo] = bu [bu]" no="B677"/>
-		<unit factor="3.305785124E-01" name="hu [go]" no="C13F"/>
-		<unit factor="3.305785124E-02" name="shao [shaku]" no="9366"/>
-		<unit factor="9.182736455E-02" name="chiping [shaku-tsubo]" no="B2BC"/>
-	</sub>
 	<sub id="volume" name="Volume, Capacity" no="8ED6">
 		<unit factor="1" name="cubic meter" no="B770" symbol="m&#179;"/>
 		<unit factor="1" name="kiloliter" no="F0CB" symbol="kL"/>
@@ -466,14 +379,14 @@
 		</sub>
 		<sub id="viscosity-kinematic" name="Viscosity, Kinematic" no="D044">
 			<unit factor="1" name="meter squared per second" no="AC80" symbol="m&#178;/s"/>
-			<unit factor="2.77777777777778E-04" name="square meter per hour" no="8FDB" symbol="m&#178;/h"/>
-			<unit factor="1.0E-04" name="square centimeter per second" no="9605" symbol="cm&#178;/s"/>
+			<unit factor="2.77777777777778E-04" name="Square meter per hour" no="8FDB" symbol="m&#178;/h"/>
+			<unit factor="1.0E-04" name="Square centimeter per second" no="9605" symbol="cm&#178;/s"/>
 			<unit factor="1.0E-04" name="stokes" no="D102" symbol="St"/>
 			<unit factor="1.0E-06" name="centistokes" no="F9B0" symbol="cSt"/>
-			<unit factor="1.0E-06" name="square millimeter per second" no="C473" symbol="mm&#178;/s"/>
-			<unit factor="9.290304E-02" name="square foot per second" no="C086" symbol="ft&#178;/s"/>
-			<unit factor="6.4516E-04" name="square inch per second" no="D9D3" symbol="in&#178;/s"/>
-			<unit factor="2.58064E-05" name="square foot per hour" no="C6CB" symbol="ft&#178;/h"/>
+			<unit factor="1.0E-06" name="Square millimeter per second" no="C473" symbol="mm&#178;/s"/>
+			<unit factor="9.290304E-02" name="Square foot per second" no="C086" symbol="ft&#178;/s"/>
+			<unit factor="6.4516E-04" name="Square inch per second" no="D9D3" symbol="in&#178;/s"/>
+			<unit factor="2.58064E-05" name="Square foot per hour" no="C6CB" symbol="ft&#178;/h"/>
 		</sub>
 		<sub id="temperature-interval" name="Temperature Interval" no="BC6E">
 			<unit factor="1" name="kelvin" no="960B" symbol="K"/>
@@ -651,11 +564,11 @@
 		<unit factor="1.44131433793866E-01" name="Britsh thermal unit (th) inch per hour square foot degree Fahrenheit" no="9869" symbol="Btu(th)&#183;in/(h&#183;ft&#178;&#183;&#186;F)"/>
 	</sub>
 	<sub id="thermal-diffusivity" name="Thermal Diffusivity" no="8E25">
-		<unit factor="1" name="square meter per second" no="FF8F" symbol="m&#178;/s"/>
-		<unit factor="2.58064E-05" name="square foot per hour" no="A2F4" symbol="ft&#178;/h"/>
+		<unit factor="1" name="Square meter per second" no="FF8F" symbol="m&#178;/s"/>
+		<unit factor="2.58064E-05" name="Square foot per hour" no="A2F4" symbol="ft&#178;/h"/>
 	</sub>
 	<sub id="thermal-insulance" name="Thermal Insulance" no="842E">
-		<unit factor="1" name="square meter kelvin per watt" no="9F01" symbol="m&#178;&#183;K/W"/>
+		<unit factor="1" name="Square meter kelvin per watt" no="9F01" symbol="m&#178;&#183;K/W"/>
 		<unit factor="1.76110183682306E-01" name="degree Fahrenheit hour square foot per British thermal unit (IT)" no="B2AC" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(IT)"/>
 		<unit factor="1.76228039445764E-01" name="degree Fahrenheit hour square foot per British thermal unit (th)" no="ACE0" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(th)"/>
 		<unit factor="1.55E-01" name="clo" no="D641"/>

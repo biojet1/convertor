@@ -1,6 +1,20 @@
 from sys import stdout
 import re
 
+def children(cur):
+	cur = cur.firstChild
+	while cur:
+		x = cur
+		(cur, t) = (x.nextSibling, x.nodeType)
+		yield (x, t)
+
+def childrenR(cur):
+	cur = cur.lastChild
+	while cur:
+		x = cur
+		(cur, t) = (x.previousSibling, x.nodeType)
+		yield (x, t)
+
 def writeln(x):
 	stdout.write(x.encode("UTF-8"))
 	stdout.write(b'\n')
@@ -35,6 +49,7 @@ def doUnit(cur, type):
 		else:
 			raise RuntimeError("unexpected node %r %r" % (t, x.nodeName))
 	writeln("INSERT INTO unit VALUES(0x%X, %s, %s, %d, 0, 0x%X, %s, %s, %s);" % (no, toSQLq(name), toSQLq(desc), prio, type, toSQLq(f), toSQLq(y), toSQLq(symbol)))
+	units.append((no, name, desc, type, f, y, symbol))
 
 def toSQLq(x):
 	# x = repr(x)
@@ -42,6 +57,10 @@ def toSQLq(x):
 		# x = x[1:]
 	# return x
 	return '"' + x.replace('"', '""') + '"'
+
+units = []
+types = []
+usage = {}
 
 def doSub(cur):
 	id = cur.getAttribute("id")
@@ -79,6 +98,7 @@ def doSub(cur):
 		else:
 			raise RuntimeError("unexpected node %r %r" % (t, x.nodeName))
 	writeln("INSERT INTO kind VALUES(0x%X, %s, %s, %d, 0);" % (no, toSQLq(name), toSQLq(desc), prio))
+	types.append((no, name, desc))
 
 def doGroup(root, parent=None):
 	id = root.getAttribute("id")
@@ -113,29 +133,44 @@ def doGroup(root, parent=None):
 			pass
 		else:
 			raise RuntimeError("unexpected node %r" % t)
+
 def on_xml_doc(doc, ctx):
-	doGroup(doc.documentElement);
+	cur = doc.documentElement
+	if cur.tagName == "priority":
+		i = 0
+		for (n, t) in childrenR(cur):
+			if t == n.ELEMENT_NODE:
+				t = n.tagName
+				if t == "sub":
+					i += 1
+					no = int(n.getAttribute("no"), 16)
+					assert no not in usage
+					usage[no] = i
+	else:
+		doGroup(cur)
 
 def on_xml_start(ctx):
 	tables = {}
 	tables["unit"] =[
-	            ("id", "INTEGER UNIQUE"),
-                ("name", "TEXT"),
-                ("description", "TEXT"),
-                ("priority", "INTEGER"),
-                ("used", "INTEGER DEFAULT 0"),
-                ("type", "INTEGER"),
-                ("f", "TEXT"),
-                ("y", "TEXT"),
-               ("symbol", "TEXT"),
-			   ];
+				("id", "INTEGER UNIQUE"),
+				("name", "TEXT"),
+				("description", "TEXT"),
+				("priority", "INTEGER"),
+				("used", "INTEGER DEFAULT 0"),
+				("type", "INTEGER"),
+				("f", "TEXT"),
+				("y", "TEXT"),
+			   ("symbol", "TEXT"),
+			];
 	tables["kind"] =[
-	            ("id", "INTEGER UNIQUE"),
-                ("name", "TEXT"),
-                ("description", "TEXT"),
-                ("priority", "INTEGER"),
-                ("used", "INTEGER DEFAULT 0"),
-			   ];
+				("id", "INTEGER UNIQUE"),
+				("name", "TEXT"),
+				("description", "TEXT"),
+				("priority", "INTEGER"),
+				("used", "INTEGER DEFAULT 0"),
+				# favorite
+				# disable
+			];
 	for k in tables:
 		writeln("CREATE TABLE %s (%s);" % (k, ", ".join(["%s %s" % (name, type) for (name, type) in tables[k]])));
 """

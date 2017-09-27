@@ -10,5 +10,13 @@ checkw: check.py *.xml
 
 sql: check .build/units.sql
 
-.build/units.sql: mkdbcmd.py *.xml
+.build/units.sql: check mkdbcmd.py *.xml
 	alterx -np ./mkdbcmd.py . >.build/units.sql
+
+sqlo: check mkdbcmd.py *.xml
+	alterx -np ./mkdbcmd.py .
+
+list_types: .build/list_types
+	
+.build/list_types: list_types.py *.xml
+	alterx -np ./list_types.py . >.build/list_types.txt

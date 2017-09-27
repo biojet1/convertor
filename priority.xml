@@ -1,0 +1,71 @@
+<priority>
+
+<sub no="D302" name="Length"/>
+<sub no="8BFF" name="Area"/>
+<sub no="8ED6" name="Volume, Capacity"/>
+<sub no="B5DA" name="Mass"/>
+<sub no="95A9" name="Temperature"/>
+<sub no="C0A9" name="Density, Mass Divided by Volume"/>
+<sub no="9E50" name="Speed"/>
+<sub no="E0B0" name="Acceleration"/>
+<sub no="A9AF" name="Angular Velocity"/>
+<sub no="E0F3" name="Angle"/>
+<sub no="C5D1" name="Time"/>
+<sub no="BB21" name="Metric Prefixes"/>
+<sub no="E882" name="Bit, Byte"/>
+<sub no="DB2F" name="Force"/>
+<sub no="FD31" name="Power, Work Rate, Heat Flow Rate"/>
+<sub no="C824" name="Energy, Work, Moment of Force, Torque"/>
+<sub no="D01C" name="Stress, Pressure"/>
+
+<!--
+<sub no="C9E2" name="Flow Rate"/>
+<sub no="B95D" name="Mass Flow Rate"/>
+<sub no="A06D" name="Viscosity, Dynamic"/>
+<sub no="D044" name="Viscosity, Kinematic"/>
+<sub no="BC6E" name="Temperature Interval"/>
+<sub no="80A3" name="Moment of Inertia"/>
+<sub no="C7FA" name="Second Moment of Area"/>
+<sub no="9875" name="Section Modulus"/>
+<sub no="BA46" name="Mass Divided by Area"/>
+<sub no="8AB1" name="Mass Divided by Length"/>
+<sub no="CB2F" name="Moment of Force or Torque, Divided by Length"/>
+<sub no="EDE3" name="Force Divided by Length"/>
+<sub no="C738" name="Permeability"/>
+<sub no="CC3E" name="Energy Divided by Area Time"/>
+<sub no="E94D" name="Available Energy (Volume)"/>
+<sub no="8891" name="Available Energy (Mass)"/>
+<sub no="C980" name="Coefficient of Heat Transfer"/>
+<sub no="EDFE" name="Specific Heat Capacity, Specific Entropy"/>
+<sub no="F73B" name="Density of Heat"/>
+<sub no="C08C" name="Density of Heat Flow Rate"/>
+<sub no="9EBD" name="Fuel Consumption (Mass)"/>
+<sub no="D4FF" name="Fuel Consumption (Volume)"/>
+<sub no="D46E" name="Fuel Consumption (Distance)"/>
+<sub no="AE24" name="Heat Capacity, Entropy"/>
+<sub no="D398" name="Thermal Conductivity"/>
+<sub no="8E25" name="Thermal Diffusivity"/>
+<sub no="842E" name="Thermal Insulance"/>
+<sub no="8019" name="Thermal Resistance"/>
+<sub no="A0D2" name="Thermal Resistivity"/>
+<sub no="C8CF" name="Luminance"/>
+<sub no="F173" name="Luminous Flux"/>
+<sub no="DAFD" name="Illuminance"/>
+<sub no="AAD6" name="Magnetic Flux"/>
+<sub no="E101" name="Magnetic Field Strength"/>
+<sub no="F908" name="Magnetic Flux Density"/>
+<sub no="C4AA" name="Electric Conductance"/>
+<sub no="8DC8" name="Inductance"/>
+<sub no="E047" name="Electric Potential"/>
+<sub no="EF46" name="Electric Current"/>
+<sub no="C76A" name="Electric Charge"/>
+<sub no="F1A7" name="Electrostatic Capacitance"/>
+<sub no="BD0C" name="Electric Resistance"/>
+<sub no="DF1C" name="Electric Field Strength"/>
+<sub no="B30F" name="Radioactivity"/>
+<sub no="B3D2" name="Dose Equivalent"/>
+<sub no="D39A" name="Exposed Dose (Exposure)"/>
+<sub no="B1D5" name="Absorbed Dose"/>
+<sub no="AE7A" name="Graphics Units"/>
+-->
+</priority>

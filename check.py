@@ -184,7 +184,11 @@ def doGroup(root, parent=None):
 			raise RuntimeError("unexpected node %r" % t)
 
 def on_xml_doc(doc, ctx):
-	doGroup(doc.documentElement)
+	cur = doc.documentElement
+	if cur.tagName == "priority":
+		pass
+	else:
+		doGroup(cur)
 
 def on_xml_end(ctx):
 	i = 0
