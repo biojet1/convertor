@@ -1,0 +1,11 @@
+<sub id="length" name="Length" no="D302">
+	<unit factor="3.92727272727273E+03" name="Li [ri]" no="B438"/>
+	<unit factor="1.09090909090909E+02" name="Jie [cho]" no="CA0E"/>
+	<unit factor="1.09090909090909E+01" name="Duen [tan]" no="E3A8"/>
+	<unit factor="3.03030303030303E+00" name="Zhang [jo]" no="AC18"/>
+	<unit factor="1.81818181818181E+00" name="Jien [ken] = bu" no="8F55"/>
+	<unit factor="3.03030303030303E-01" name="Chi [shaku]" no="E3FB"/>
+	<unit factor="3.03030303030303E-02" name="Chun [sun]" no="D21A"/>
+	<unit factor="3.03030303030303E-03" name="Fun [bu]" no="8A97"/>
+	<unit factor="3.03030303030303E-04" name="Li [rin]" no="8020"/>
+</sub>

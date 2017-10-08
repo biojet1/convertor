@@ -1,4 +1,5 @@
 <sub id="bytes" name="Bit, Byte" no="E882">
+	Gigabytes, Sector, Megabit
 	<unit factor="1" name="Byte" no="F5EA">
 		8 bits
 		<same equals="0.001953125" no="FD65"/>
@@ -90,6 +91,7 @@
 	</unit>
 	
 	<!--
+	nibble
 			['Disk', 'Sectors', 'Bytes', 'Gb', 'GiB', 'MiB', 'KiB'],
 			['DVD-R SL', '2,298,496', '4,707,319,808', '4.71', '4.384', '4489.250', '4,596,992'],
 			['DVD+R SL', '2,295,104', '4,700,372,992', '4.70', '4.378', '4482.625', '4,590,208'],

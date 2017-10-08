@@ -1,0 +1,38 @@
+<sub id="length" name="Length" no="D302">
+	<unit factor="0.3048006096012192024384048768097536195072390144780289560579121158" name="Foot (US survey)" no="A246" symbol="ft" eval="1200/3937">
+		1200/3937 meter
+<!--
+	From 1893 until 1959, the yard was defined as being exactly equal to 3600/3937 m,
+	and thus the foot was defined as being exactly equal to 1200/3937 m,
+	which was called &quot;U.S. survey foot&quot;. 1 international foot (0.3048 m) = 0.999 998 U.S. survey foot exactly
+-->
+	</unit>
+	<unit factor="1609.347218694437388874777749555499110998221996443992887985775971" name="Mile (US survey foot)" no="D529" symbol="mi" eval="(1200/3937)*5280">
+		5280 US survey foot
+	</unit>
+
+	<unit factor="201.1684023368046736093472186944373888747777495554991109982219964" name="Furlong (US survey foot)" no="D5F0" eval="(660*1200)/3937">
+		660 US survey foot
+		<same equals="660" no="A246" name="Foot (US survey)"/>
+	</unit>
+	<unit factor="20.11684023368046736093472186944373888747777495554991109982219964" name="Chain (US survey foot)" no="B9A8" symbol="ch">
+		66 US survey foot
+		<same equals="66" no="A246"/>
+	</unit>
+	
+	<unit factor="5.029210058420116840233680467360934721869443738887477774955549911" name="Rod (US survey foot)" no="8191" symbol="rd" eval="(16.5*1200)/3937">
+		16.5 times US survey foot (= pole or perch)
+		<same equals="16.5" no="A246"/>
+	</unit>
+	<unit factor="1.828803657607315214630429260858521717043434086868173736347472695" name="Fathom (US survey foot)" no="E5C2" symbol="fath" eval="(6*1200)/3937">
+		6 US survey foot, a unit of measurement for water depth
+		<same equals="6" no="A246" name="US survey foot"/>
+	</unit>
+	<unit factor="0.2011684023368046736093472186944373888747777495554991109982219964" name="Link (US survey foot)" no="FEFB">
+		0.66 US survey foot
+		<same equals="0.66" no="A246"/>
+	</unit>
+
+
+
+</sub>

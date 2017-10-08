@@ -1,6 +1,35 @@
-from decimal import *
+from decimal import Decimal, getcontext
 from random import randint
 from sys import stdout, stderr
+
+def calcuator():
+	from ast import Call, Name, Load, copy_location, NodeTransformer, fix_missing_locations, Str, parse
+	from decimal import Decimal, getcontext
+	class Num2Decimal(NodeTransformer):
+		def visit_Num(self, node):
+			return Call(Name('Decimal', Load()), [Str(s=str(node.n))], [], None, None)
+	getcontext().prec = 64
+	def fn(expr):
+		n1 = parse(expr, mode='eval')
+		n0 = Num2Decimal().visit(n1)
+		fix_missing_locations(n0) 
+		return eval(compile(n0, 'q', 'eval'))
+	return fn
+
+dcalc=calcuator()
+def pi():
+	getcontext().prec += 2  # extra digits for intermediate steps
+	three = Decimal(3)      # substitute "three=3.0" for regular floats
+	lasts, t, s, n, na, d, da = 0, three, 3, 1, 0, 0, 24
+	while s != lasts:
+		lasts = s
+		n, na = n+na, na+8
+		d, da = d+da, da+32
+		t = (t * n) / d
+		s += t
+	getcontext().prec -= 2
+	return +s               # unary plus applies the new precision
+PI=pi()
 
 nos=set()
 
@@ -12,7 +41,7 @@ def attrs(cur):
 		x = a.item(n)
 		yield (x.localName, x.value)
 
-def doCheckNo(cur, add=True):
+def doCheckNo(cur, add=True, checkDup=True):
 	no = cur.getAttribute("no")
 	if no:
 		no = int(no, 16)
@@ -20,7 +49,8 @@ def doCheckNo(cur, add=True):
 			raise RuntimeError("no not in range %r %r" % (no, cur.getAttribute("no")))
 		elif add:
 			if no in nos:
-				raise RuntimeError("Duplicate no %r" % no)
+				if checkDup:
+					raise RuntimeError("Duplicate no %X" % no)
 			else:
 				nos.add(no)
 	elif add:
@@ -32,13 +62,35 @@ def doCheckNo(cur, add=True):
 		x = "%04X" % x
 		cur.setAttribute("no", x)
 		stderr.write("New no %r" % x)
+	else:
+		raise RuntimeError("no expected")
 	return no
 
 no_symbol = []
 no_desc = []
-ids={}
 conv_map={}
 same_list = []
+types_map={}
+def doCheckName(cur):
+	name = cur.getAttribute("name")
+	if name[0].isdigit():
+		pass
+	elif not name[0].isupper():
+		n = name[0].upper() + name[1:]
+		print("NotTitle: %r %r" % (name, n) )
+		assert(n[0].isupper())
+		cur.setAttribute("name", n)
+def doCheckEval(cur):
+	x = cur.getAttribute("eval")
+	if not x:
+		return
+	e = dcalc(x)
+	y = cur.getAttribute("factor")
+	f = Decimal(y)
+	if f == e:
+		return
+	raise RuntimeError("Eval %r [%r == %r] != [%r == %r] " % (cur.getAttribute("name"), x,e,y,f))
+
 
 def doUnit(cur):
 	id=None
@@ -47,45 +99,25 @@ def doUnit(cur):
 	for (k, v) in attrs(cur):
 		if k == "id": id = v
 		elif k == "name": name = v
-		# elif k == "description": desc = v
-		elif k == "priority": prio = v
+		elif k == "eval": pass
+		elif k == "ref": pass
 		elif k == "factor": f = v
 		elif k == "y": y = v
 		elif k == "symbol": symbol = v
 		elif k == "no": pass
 		else: raise RuntimeError("Unexpected attribute %r=%r" % (k, v))
-
-	# id = cur.getAttribute("id")
-	# name = cur.getAttribute("name")
-	# desc = cur.getAttribute("description")
-	# prio = cur.getAttribute("priority")
-	# f = cur.getAttribute("factor")
-	# y = cur.getAttribute("y") or "0"
-	# symbol = cur.getAttribute("symbol")
-	# zf = cur.getAttribute("zf")
-	# if desc:
-		# cur.appendChild(cur.ownerDocument.createTextNode(desc.strip().strip('.')))
-		# cur.removeAttribute("description")
-	# print("doUnit: %r %r %r %r %r %r" % (name, desc, prio, symbol, f, y) )
-	# if not desc:
-		# no_desc.append((name, desc))
-	if not id:
-		# raise RuntimeError("No id")
-		pass
-	elif id.lower() in ids:
-		raise RuntimeError("Duplicate id %r" % id)
-	else:
-		ids[id.lower()] = name
 	no = doCheckNo(cur)
 	if not symbol:
 		no_symbol.append((name, no))
 	if no in conv_map:
 		 raise RuntimeError("no %X in conv_map" % no)
-
+	doCheckName(cur)
 	assert Decimal(f).is_finite()
 	assert (1/Decimal(f)).is_finite()
 	assert Decimal(y).is_finite()
 	assert no not in conv_map
+	assert no not in types_map
+	doCheckEval(cur)
 	conv_map[no] = (Decimal(f), Decimal(y), name)
 	cur = cur.firstChild
 	while cur:
@@ -109,21 +141,28 @@ def doUnit(cur):
 		else:
 			raise RuntimeError("unexpected node %r %r" % (t, x.nodeName))
 
+
 def doSub(cur):
-	id = cur.getAttribute("id")
-	name = cur.getAttribute("name")
-	desc = cur.getAttribute("description")
-	prio = cur.getAttribute("priority")
-	print("doSub: %r %r %r %r" % (name, id, desc, prio) )
+	id = None
+	for (k, v) in attrs(cur):
+		if k == "id": id = v
+		elif k == "name": name = v
+		elif k == "no": pass
+		# elif k == "priority": prio = v
+		else: raise RuntimeError("Invalid Attribute %r" % k)
+
+	# name = cur.getAttribute("name")
+	# desc = cur.getAttribute("description")
+	# prio = cur.getAttribute("priority")
+	print("doSub: %r %r" % (name, id) )
 	if not name:
 		raise RuntimeError("No name")
-	if not id:
-		raise RuntimeError("No id")
-	elif id.lower() in ids:
-		raise RuntimeError("Duplicate id %r" % id)
-	else:
-		ids[id.lower()] = name
-	doCheckNo(cur)
+	no = doCheckNo(cur, checkDup=False)
+	# assert no not in types_map
+	assert no not in conv_map
+	
+	# types_map[no] = (name, id)
+	
 	cur = cur.firstChild
 	while cur:
 		x = cur
@@ -142,6 +181,14 @@ def doSub(cur):
 			pass
 		else:
 			raise RuntimeError("unexpected node %r %r" % (t, x.nodeName))
+	e = types_map.get(no)
+	if not e:
+		types_map[no] = e = (name, id)
+	elif e[0] != name:
+		raise RuntimeError("%X has different name %r and %r" % (no, e[0], name))
+	elif e[1] != id:
+		raise RuntimeError("%r has different id %r and %r" % (name, e[1], id))
+
 
 def doGroup(root, parent=None):
 	id = root.getAttribute("id")
@@ -150,12 +197,6 @@ def doGroup(root, parent=None):
 		print("Group: %r %s" % (name, id) )
 		if not name:
 			raise RuntimeError("No name")
-		if not id:
-			raise RuntimeError("No id")
-		elif id.lower() in ids:
-			raise RuntimeError("Duplicate id %r" % id)
-		else:
-			ids[id.lower()] = name
 		doCheckNo(root)
 	elif root.tagName == "sub":
 		return doSub(root)
@@ -183,9 +224,11 @@ def doGroup(root, parent=None):
 		else:
 			raise RuntimeError("unexpected node %r" % t)
 
+flagTag = set(("priority", "suki"))
+
 def on_xml_doc(doc, ctx):
 	cur = doc.documentElement
-	if cur.tagName == "priority":
+	if cur.tagName in flagTag:
 		pass
 	else:
 		doGroup(cur)
@@ -197,25 +240,21 @@ def on_xml_end(ctx):
 		b = conv_map[noB]
 		valueA = ((valueA*a[0]) + a[1] - b[1])/b[0]
 		if valueA != valueB:
-			stderr.write("\rFactor Error %r/%r %r %r" % (a, b, valueA, valueB))
-			raise RuntimeError("Factor [%r%X(%s)] != [%r%X(%s)]" % (a[2], noA, valueA, b[2], noB, valueB))
+			ctx = getcontext().copy()
+			ctx.prec -= 1
+			stderr.write("Factor error %r and %r\n" % (a[2], b[2]))
+			stderr.write("a = %r\n" % (a,))
+			stderr.write("b = %r\n" % (b,))
+			stderr.write("A = %r\n" % (valueA))
+			stderr.write("B = %r\n" % (valueB))
+			stderr.write("%r, %r \n" % (valueA.normalize(ctx),valueB.normalize(ctx)))
+			if valueA.normalize(ctx).compare(valueB.normalize(ctx))!=0:
+				raise RuntimeError("Factor [%r%X(%s)] != [%r%X(%s)]" % (a[2], noA, valueA, b[2], noB, valueB))
 		else:
 			i += 1
 			stdout.write("\rCHECKED %r/%r [%d]" % (a[2], b[2], i))
-	# for A in checkf:
-		# a = checkf[A]
-		# if a[2] is not None:
-			# (B, valueB) = a[2]
-			# b = checkf[B]
-			# valueA = (a[0] + a[1] - b[1])/b[0]
-			# if valueA != valueB:
-				# raise RuntimeError("Factor check [%r%X(%s)] != [%r%X(%s)]" % (b[3], B, valueB, a[3],  A, valueA))
-			# else:
-				# i += 1
-				# stdout.write("\rCHECKED %r [%d]" % (a[3], i))
+	stderr.write("\nTypes %d; Units %d;" % (len(types_map), len(conv_map)))
 
 """
-alterx -np K:\wrx\android\convertor\check.py C:\ProgramData\home\AndroidStudio2.3\AndroidStudioProjects\MasterFlow\app\src\main\assets\units1.xml
-alterx -np K:\wrx\android\convertor\check.py C:\ProgramData\home\AndroidStudio2.3\AndroidStudioProjects\MasterFlow\app\src\main\assets\units1.xml
-mee --cd K:\wrx\android\convertor -- nmake check
+mee --cd K:\wrx\android\convertor-db -- nmake check
 """

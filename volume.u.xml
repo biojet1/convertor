@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="volume" name="Volume, Capacity" no="8ED6">
+	Liter, Gallon, Pint
+	<unit factor="1" name="Cubic meter" no="B770" symbol="m&#179;"/>
+	<unit factor="1" name="Kiloliter" no="F0CB" symbol="kL"/>
+	<unit factor="1" name="Stere" no="E80D" symbol="st"/>
+	<unit factor="1.0E-03" name="Liter" no="D635" symbol="L"/>
+	<unit factor="2.5E-04" name="Cup (metric)" no="AAC4">250 mL</unit>
+	<unit factor="1.0E-04" name="Deciliter" no="DE74" symbol="dL"/>
+	<unit factor="1.5E-05" name="Tablespoon (metric)" no="BBE6">15 mL</unit>
+	<unit factor="5.0E-06" name="Teaspoon (metric)" no="ECA4">5 mL</unit>
+	<unit factor="1.0E-06" name="Cubic centimeter" no="F630" symbol="cm&#179;, cc"/>
+	<unit factor="1.0E-06" name="Milliliter" no="E979" symbol="mL"/>
+	<unit factor="1.0E-09" name="Cubic millimeter" no="DF74" symbol="mm&#179;"/>
+	<unit factor="4.16818182544058E+09" name="Cubic mile" no="9B35" symbol="mi&#179;"/>
+	<unit factor="1.23348923846815E+03" name="Acre-foot (US survey foot)" no="95D2"/>
+	<unit factor="3.624556363776E+00" name="Cord" no="E352">128 cubic feet</unit>
+	<unit factor="2.8316846592E+00" name="Ton, register" no="8E62"/>
+	<unit factor="7.64554857984E-01" name="Cubic yard" no="AAE9" symbol="yd&#179;"/>
+	<unit factor="1.6365924E-01" name="Barrel (UK)" no="9545" symbol="bbl">36 gal(UK)</unit>
+	<unit factor="1.58987294928E-01" name="Barrel (US, petroleum)" no="BB2C" symbol="bbl">42 gal(US)</unit>
+	<unit factor="1.15627123584E-01" name="Barrel (US, dry)" no="CA2F" symbol="bbl">336/11 gal(US)</unit>
+	<unit factor="2.8316846592E-02" name="Cubic foot" no="B2EC" symbol="ft&#179;"/>
+	<unit factor="3.523907016688E-02" name="Bushel (US)" no="F387" symbol="bu">107 521/11 550 gal (US)</unit>
+	<unit factor="3.636872E-02" name="Bushel [Canadian and UK (Imperial)]" no="E11F" symbol="bu">8 gal(UK)</unit>
+	<unit factor="3.785411784E-03" name="Gallon (US)" no="E5AA" symbol="gal">231 cubic inches</unit>
+	<unit factor="4.54609E-03" name="Gallon [Canadian and UK (Imperial)]" no="D99C" symbol="gal"/>
+	<unit factor="8.80976754172E-03" name="Peck (US)" no="CB7C" symbol="pk">1/4 bu(US)</unit>
+	<unit factor="9.09218E-03" name="Peck [Canadian and UK (Imperial)]" no="C3C0" symbol="pk">2 gal(UK)</unit>
+	<unit factor="1.101220942715E-03" name="Quart (US, dry)" no="D18B" symbol="dry qt">1/32 bu(US)</unit>
+	<unit factor="1.1365225E-03" name="Quart [Canadian and UK (Imperial), liquid]" no="CC5F" symbol="liq qt">1/4 gal(UK)</unit>
+	<unit factor="9.46352946E-04" name="Quart (US, liquid)" no="C481" symbol="liq qt">1/4 gal(US)</unit>
+	<unit factor="4.73176473E-04" name="Pint (US, liquid)" no="F8D2" symbol="liq pt">1/8 gal(US)</unit>
+	<unit factor="5.506104713575E-04" name="Pint (US, dry)" no="925A" symbol="dry pt">107 521/739 200 gal(US)</unit>
+	<unit factor="5.6826125E-04" name="Pint [Canadian and UK (Imperial), liquid]" no="CD0E" symbol="liq pt">1/8 gal(UK)</unit>
+	<unit factor="1.1829411825E-04" name="Gill (US)" no="822B" symbol="gi">1/32 gal(US)</unit>
+	<unit factor="1.420653125E-04" name="Gill [Canadian and UK (Imperial)]" no="D64B" symbol="gi">1/32 gal(UK)</unit>
+	<unit factor="2.365882365E-04" name="Cup (US)" no="A443">1/4 liq qt(US)</unit>
+	<unit factor="1.478676478125E-05" name="Tablespoon (US)" no="BA8F">1/2 fl oz</unit>
+	<unit factor="1.6387064E-05" name="Cubic inch" no="EA09" symbol="in&#179;"/>
+	<unit factor="2.95735295625E-05" name="Ounce (US, fluid)" no="C8FD" symbol="fl oz">1/128 gal(US)</unit>
+	<unit factor="2.84130625E-05" name="Ounce [Canadian and UK (Imperial), fluid]" no="922B" symbol="fl oz">1/160 gal(UK)</unit>
+	<unit factor="4.92892159375E-06" name="Teaspoon (US)" no="FF9C">1/3 tablespoon (US)</unit>
+	<unit factor="6.16115199218750E-08" name="Minim (US)" no="AFCC">1/61 440 gal(US)</unit>
+	<unit factor="5.91938802083333E-08" name="Minim [Canadian and UK (Imperial)]" no="ED4B">1/76 800 gal(UK)</unit>
+	<unit factor="6.010518407E+00" name="Liping [ryu-tsubo]" no="F763"/>
+	<unit factor="1.80391E-01" name="Shi [koku]" no="DB9D"/>
+	<unit factor="2.782647411E-02" name="Sui [sai]" no="F6AC"/>
+	<unit factor="1.80391E-02" name="Dou [to]" no="DA81"/>
+	<unit factor="1.80391E-03" name="Shung [sho]" no="9CA8"/>
+	<unit factor="1.80391E-04" name="Hu [go]" no="FC92"/>
+	<unit factor="1.80391E-05" name="Shao [shaku]" no="9535"/>
+</sub>

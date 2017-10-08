@@ -1,86 +1,104 @@
-<sub id="length" name="Length" no="D302" priority="1">
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="length" name="Length" no="D302">
+	Meter, Foot, Parsec
 	<unit factor="1" name="Meter" no="C35D" symbol="m">
+	Travelled by light in vacuum in 1/299792458 second
+	<!--
 	The meter is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second (17th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1983)
+	-->
 	</unit>
-	<unit factor="3.08567758128E+16" name="parsec" no="EB29" symbol="pc">
-	1 AU divided by tan(1&quot;)
+	<unit factor="3.048E-01" name="Foot" no="F3D5" symbol="ft">
+		1/3 yd
+		<same equals="1" no="91F4" value="3"/>
 	</unit>
-	<unit factor="9.46073047258080E+15" name="light year" no="CEFD" symbol="l.y.">Based on 1 day = 86 400 seconds, and 1 Julian century = 36 525 days. Refer to The Astronomical Almanac for the Year 1995, U.S. Government Printing Office, Washington, DC, 1994</unit>
-	<unit factor="1.49597870691E+11" name="astronomical unit" no="FA21" symbol="AU">Approximately, the mean distance between the earth and the sun</unit>
-	<unit factor="1.0E+03" name="kilometer" no="92FE" symbol="km"/>
-	<unit factor="1.0E-02" name="centimeter" no="D5A0" symbol="cm"/>
-	<unit factor="1.0E-03" name="millimeter" no="95A4" symbol="mm"/>
-	<unit factor="1.0E-06" name="micrometer" no="90F7" symbol="&#181;m"/>
-	<unit factor="1.0E-06" name="micron" no="AFAE" symbol="&#181;">
+	<unit factor="2.54E-02" name="Inch" no="E9C6" symbol="in">
+		1/12 ft
+		<same equals="1" no="F3D5" value="12"/>
+	</unit>
+	<unit factor="0.9144" name="Yard" no="91F4" symbol="yd">
+		3 ft
+		<same equals="3" no="F3D5"/>
+	</unit>
+
+	<unit factor="1.0E-02" name="Centimeter" no="D5A0" symbol="cm">
+		1/100 meter
+		<same equals="1" no="C35D" value="100"/>
+	</unit>
+	<unit factor="1.0E-03" name="Millimeter" no="95A4" symbol="mm">
+		1/1000 meter
+		<same equals="1" no="C35D" value="1000"/>
+	</unit>
+	<unit factor="1.0E+03" name="Kilometer" no="92FE" symbol="km">
+		1000 meter
+		<same equals="1" no="C35D" value="0.001"/>
+	</unit>
+
+	<unit factor="149597870700" name="Astronomical unit" no="FA21" symbol="AU">
+		149597870700 meter. Mean distance between earth and sun 
+		<!-- meter -->
+		<same value="0.01" no="C35D" equals="1495978707"  />
+		<!-- parse -->
+		<same no="EB29" equals="0.000004848136811095359935899141023579479759563533023727015155825531778"/>
+<!-- former: 1.49597870691E+11 -->
+	</unit>
+
+	<unit factor="30856775814913672.78913937957796471610731921160409179801404019228" name="Parsec" no="EB29" symbol="pc" ref="https://en.m.wikipedia.org/wiki/Parsec" eval="149597870700*648000/PI">
+		648000AU/&#x03C0; (Formerly  1AU/tan(1&quot;))
+	<!-- -->
+	</unit>
+	<unit factor="9.46073047258080E+15" name="Light year" no="CEFD" symbol="l.y.">
+		Travelled by light in vacuum in 365.25 days (86400 seconds/day)
+	<!--
+	Based on 1 day = 86 400 seconds, and 1 Julian century = 36 525 days.
+	Refer to The Astronomical Almanac for the Year 1995, U.S. Government Printing Office, Washington, DC, 1994
+	-->
+		<same value="1" no="C35D"  equals="9460730472580800" />
+	</unit>
+	<unit factor="1.0E-06" name="Micrometer" no="90F7" symbol="&#181;m"/>
+	<unit factor="1.0E-06" name="Micron" no="AFAE" symbol="&#181;">
+		1,000,000th of a meter
+	<!--
 		The micron was defined as one 1 000 000th of one meter in 1879.
 		Presently replaced with micro meter and excluded from the regal units
+		-->
 		<same equals="1" no="C35D" value="1000000"/>
 	</unit>
-	<unit factor="1.0E-09" name="nanometer" no="989B" symbol="nm"/>
-	<unit factor="1.0E-10" name="&#229;ngstr&#246;m" no="9DC9" symbol="&#197;">
-		A metric unit of length used to specify wavelengths of electromagnetic radiation</unit>
+	<unit factor="1.0E-09" name="Nanometer" no="989B" symbol="nm"/>
+	<unit factor="1.0E-10" name="&#197;ngstr&#246;m" no="9DC9" symbol="&#197;">
+		A metric unit of length used to specify wavelengths of electromagnetic radiation
+		</unit>
 	<unit factor="1.00208E-13" name="X unit" no="B03C">
-		A unit of measurement used to specify wavelength of X-ray</unit>
-	<unit factor="1.0E-15" name="femtometer" no="E34E" symbol="fm"/>
-	<unit factor="1.0E-15" name="fermi" no="CCB6"/>
-	<unit factor="1.0E-15" name="yukawa" no="A433"/>
-	<unit factor="5.556E+03" name="league (International nautical)" no="BFF2">
-	3 times international nautical mile</unit>
-	<unit factor="5.559552E+03" name="league (UK nautical)" no="9E6D">
-	3 times nautical mile (UK)</unit>
-	<unit factor="4.828032E+03" name="league (US)" no="8FD3">
-	3 mi</unit>
-	<unit factor="1.853184E+03" name="nautical mile (UK)" no="DABE" symbol="n mile (UK)">
-		6080 ft
-		<!-- (6080ft/12in)*(1in/1.0E-02m) -->
-		<same equals="6080" no="F3D5"/>
+		A unit of measurement used to specify wavelength of X-ray
 	</unit>
-	<unit factor="1.852E+03" name="international nautical mile" no="E74F" symbol="n mile">A unit of length used in navigation which is equivalent to the distance spanned by one second of arc in latitude. Adopted by the First International Extraordinary Hydrographic Conference, Monaco, 1929</unit>
-	<unit factor="1.609344E+03" name="mile" no="9EA2" symbol="mi">5280 ft</unit>
-	<unit factor="1.60934721869444E+03" name="Mile (based on US survey foot)" no="D529" symbol="mi">
+	<unit factor="1.0E-15" name="Femtometer" no="E34E" symbol="fm"/>
+	<unit factor="1.0E-15" name="Fermi" no="CCB6"/>
+	<unit factor="1.0E-15" name="Yukawa" no="A433"/>
 	
-	5280 times US survey foot
+	
+	
+	
+
+
+	
+	
+	<unit factor="4.217518E-03" name="Pica (printer's)" no="AE09"/>
+	<unit factor="0.0003527777777777777777777777777777777777777777777777777777777777778" name="Point (computer)" no="BC8C" eval="0.0254/72">
+		1/72 inch
+		<same equals="1" no="E9C6" value="72"/>
 	</unit>
-	<unit factor="9.144E+02" name="kiloyard" no="9DB8" symbol="kyd">3000 ft</unit>
-	<unit factor="2.01168402336805E+02" name="furlong (based on US survey foot)" no="D5F0">660 times US survey foot</unit>
-	<unit factor="2.01168E+02" name="furlong" no="8B77">660 ft = 10 ch</unit>
-	<unit factor="2.01168402336805E+01" name="chain (based on US survey foot)" no="B9A8" symbol="ch">66 times US survey foot</unit>
-	<unit factor="2.01168E+01" name="chain" no="C521" symbol="ch">66 ft = 22 yd</unit>
-	<unit factor="5.02921005842012E+00" name="rod (based on US survey foot)" no="8191" symbol="rd">16.5 times US survey foot (= pole or perch)</unit>
-	<unit factor="5.0292E+00" name="rod" no="D08F" symbol="rd">16.5 ft = 5.5 yd</unit>
-	<unit factor="1.82880365760732E+00" name="fathom (based on US survey foot)" no="E5C2" symbol="fath">6 times US survey foot, a unit of measurement for water depth</unit>
-	<unit factor="1.8288E+00" name="fathom" no="89DA" symbol="fath">6 ft</unit>
-	<unit factor="9.144E-01" name="yard" no="91F4" symbol="yd">3 ft</unit>
-	<unit factor="3.04800609601219E-01" name="foot (US survey)" no="A246" symbol="ft">From 1893 until 1959, the yard was defined as being exactly equal to 3600/3937 m, and thus the foot was defined as being exactly equal to 1200/3937 m, which was called &quot;U.S. survey foot&quot;. 1 international foot (0.3048 m) = 0.999 998 U.S. survey foot exactly</unit>
-	<unit factor="3.048E-01" name="foot" no="F3D5" symbol="ft">1/3 yd</unit>
-	<unit factor="2.01168402336805E-01" name="link (based on US survey foot)" no="FEFB">0.66 time US survey foot</unit>
-	<unit factor="2.01168E-01" name="link" no="903F">0.66 ft = 1/100 ch</unit>
-	<unit factor="1.016E-01" name="hand" no="CD07">4 in</unit>
-	<unit factor="6.35E-02" name="nail" no="E2BF">2.5 in</unit>
-	<unit factor="2.54E-02" name="inch" no="E9C6" symbol="in">
-		1/12 ft
-		<same equals="1" no="F3D5"  value="12"/>
-	</unit>
-	<unit factor="4.233333333333333333333333333333E-03" name="pica (computer)" no="F975">
-		1/6 in
+	<unit factor="3.514598E-04" name="Point (printer's)" no="CA9D"/>
+	<unit factor="0.004233333333333333333333333333333333333333333333333333333333333333" name="Pica (computer)" no="F975" eval="0.0254/6">
+		1/6 inch
 		<same equals="1" no="E9C6" value="6"/>
 		<!-- 254/60000 meter -->
 	</unit>
-	<unit factor="4.217518E-03" name="pica (printer's)" no="AE09"/>
-	<unit factor="3.527777777777777777777777778E-04" name="point (computer)" no="BC8C">
-	1/72 in
-		<same equals="1" no="E9C6" value="72"/>
+	
+	<unit factor="2.54E-05" name="Mil" no="D372" eval="0.0254/1000">
+		1/1000 inch
+		<same equals="1" no="E9C6" value="1000"/>
 	</unit>
-	<unit factor="3.514598E-04" name="point (printer's)" no="CA9D"/>
-	<unit factor="2.54E-05" name="mil" no="D372"/>
-	<unit factor="2.54E-08" name="microinch" no="8E7B"/>
-	<unit factor="3.92727272727273E+03" name="li [ri]" no="B438"/>
-	<unit factor="1.09090909090909E+02" name="jie [cho]" no="CA0E"/>
-	<unit factor="1.09090909090909E+01" name="duen [tan]" no="E3A8"/>
-	<unit factor="3.03030303030303E+00" name="zhang [jo]" no="AC18"/>
-	<unit factor="1.81818181818181E+00" name="jien [ken] = bu" no="8F55"/>
-	<unit factor="3.03030303030303E-01" name="chi [shaku]" no="E3FB"/>
-	<unit factor="3.03030303030303E-02" name="chun [sun]" no="D21A"/>
-	<unit factor="3.03030303030303E-03" name="fun [bu]" no="8A97"/>
-	<unit factor="3.03030303030303E-04" name="li [rin]" no="8020"/>
+	
+	<unit factor="2.54E-08" name="Microinch" no="8E7B" eval="0.0254/1000000"/>
+	
+	
 </sub>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="angle" name="Angle" no="E0F3">
+Radians, Degrees
+	<unit factor="1" name="Second" no="ACE4" symbol="&quot;"/>
+	<unit factor="60" name="Minute" no="B6E2" symbol="'">
+		<same equals="60" no="ACE4"/>
+	</unit>
+	<unit factor="3600" name="Degree" no="C0C8" symbol="&#186;"/>
+	<unit factor="202.5" name="Mil" no="B031">
+		An angular unit used in artillery; equal to 1/6400 of a complete revolution
+		<same equals="0.00015625" no="F3C8"/>
+		<same equals="2" no="90F0" value="6400"/>
+	</unit>
+	<unit factor="3240" name="Gon = grade" no="DC2B">
+		A unit of angle equal to 0.9&#186;
+		<same equals="0.9" no="C0C8"/>
+	</unit>
+	<unit factor="206264.8062470963551564733573307786131966597008796315575769768779" name="Radian" no="FBA7" symbol="rad" eval="3600*180/PI">
+	The radian is the plane angle between two radii of a circle
+	that cut off on the circumference an arc equal in length to the radius.
+	</unit>
+	<unit factor="1296000" name="Revolution" no="F3C8" symbol="r">
+		<same equals="360" no="C0C8"/>
+		<same equals="2" no="90F0"/>
+	</unit>
+	<unit factor="648000" name="Pi" no="90F0" symbol="&#x03C0;">
+		<same equals="180" no="C0C8"/>
+	</unit>
+<!--
+	<unit name="radian" factor="1" symbol="rad" description="The radian is the plane angle between two radii of a circle that cut off on the circumference an arc equal in length to the radius." />
+	<unit name="revolution" factor="6.2831853071795862" symbol="r" />
+	<unit name="degree" factor="0.017453292519943295" symbol="&#186;" />
+	<unit name="gon = grade" factor="0.015707963267948967" description="0.9&#186;" />
+	<unit name="mil" factor="0.00098174770424681044" description="0.05625&#186;" />
+	<unit name="minute" factor="0.00029088820866572158" symbol="'" />
+	<unit name="second" factor="4.8481368110953598e-06" symbol="&quot;" />
+-->
+</sub>

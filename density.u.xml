@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="density" name="Density" no="C0A9">
+	Mass per Volume 
+	<unit factor="1" name="Kilogram per cubic meter" no="DE4A" symbol="kg/m&#179;"/>
+	<unit factor="1.0E+06" name="Gram per cubic millimeter" no="B083" symbol="g/mm&#179;"/>
+	<unit factor="1.0E+03" name="Kilogram per liter" no="EC1F" symbol="kg/L"/>
+	<unit factor="1.0E+03" name="Gram per cubic centimeter" no="A1F3" symbol="g/cm&#179; = g/cc"/>
+	<unit factor="9.80665E+00" name="Kilogram-force second squared per meter to the fourth power" no="B28E" symbol="kgf&#183;s&#178;/m^4"/>
+	<unit factor="1" name="Gram per liter" no="C2E1" symbol="g/L"/>
+	<unit factor="1" name="Milligram per cubic centimeter" no="C3E4" symbol="mg/cm&#179;"/>
+	<unit factor="1.0E-03" name="Gram per cubic meter" no="D6C0" symbol="g/m&#179;"/>
+	<unit factor="1.0E-03" name="Milligram per liter" no="EA88" symbol="mg/L"/>
+	<unit factor="1.0E-06" name="Milligram per cubic meter" no="92E2" symbol="mg/m&#179;"/>
+	<unit factor="2.76799047102031E+04" name="Pound per cubic inch" no="99FF" symbol="lb/in&#179;"/>
+	<unit factor="1.72999404438770E+03" name="Ounce (avoirdupois) per cubic inch" no="D560" symbol="oz/in&#179;"/>
+	<unit factor="1.32893918361743E+03" name="Ton (long) per cubic yard" no="8972" symbol="t(long)/yd&#179;"/>
+	<unit factor="1.18655284251557E+03" name="Ton (short) per cubic yard" no="D29E" symbol="t(short)/yd&#179;"/>
+	<unit factor="5.15378818393196E+02" name="Slug per cubic foot" no="FD77" symbol="slug/ft&#179;">lbf&#183;s&#178;/ft^4</unit>
+	<unit factor="1.19826427316897E+02" name="Pound per gallon (US)" no="B6AF" symbol="lb/gal"/>
+	<unit factor="9.97763726631017E+01" name="Pound per gallon [Canadian and UK (Imperial)]" no="E75F" symbol="lb/gal"/>
+	<unit factor="1.60184633739601E+01" name="Pound per cubic foot" no="DE20" symbol="lb/ft&#179;"/>
+	<unit factor="7.48915170730604E+00" name="Ounce (avoirdupois) per gallon (US)" no="965B" symbol="oz/gal"/>
+	<unit factor="6.23602329144386E+00" name="Ounce (avoirdupois) per gallon [Canadian and UK (Imperial)]" no="AB26" symbol="oz/gal"/>
+	<unit factor="1.00115396087251E+00" name="Ounce (avoirdupois) per cubic foot" no="ABC8" symbol="oz/ft&#179;"/>
+	<unit factor="5.93276421257783E-01" name="Pound per cubic yard" no="CBEF" symbol="lb/yd&#179;"/>
+	<unit factor="1.71180610452709E-02" name="Grain per gallon (US)" no="9FE3" symbol="gr/gal"/>
+	<unit factor="1.42537675233002E-02" name="Grain per gallon [Canadian and UK (Imperial)]" no="88CC" symbol="gr/gal"/>
+	<unit factor="2.28835191056573E-03" name="Grain per cubic foot" no="8F5B" symbol="gr/ft&#179;"/>
+</sub>

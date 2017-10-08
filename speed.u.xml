@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="speed" name="Speed" no="9E50">
+Distance per Time
+	<unit factor="1" name="Meter per second" no="A5C5" symbol="m/s"/>
+	<unit factor="2.99792458E+08" name="Speed of light in vacuum" no="A4BD" symbol="c"/>
+	<unit factor="1.4027E+03" name="Speed of sound (pure water, 0&#186;C)" no="DE08"/>
+	<unit factor="1.4476E+03" name="Speed of sound (pure water, 10&#186;C)" no="EC27"/>
+	<unit factor="1.4827E+03" name="Speed of sound (pure water, 20&#186;C)" no="DC8A"/>
+	<unit factor="1.4491E+03" name="Speed of sound (seawater, 0&#186;C, 10 meter deep)" no="85DF"/>
+	<unit factor="1.4900E+03" name="Speed of sound (seawater, 10&#186;C, 10 meter deep)" no="80F3"/>
+	<unit factor="1.5216E+03" name="Speed of sound (seawater, 20&#186;C, 10 meter deep)" no="9747"/>
+	<unit factor="1.0E+03" name="Kilometer per second" no="FCD8" symbol="km/s"/>
+	<unit factor="3.193E+02" name="Mach (-20&#186;C, 1 atm)" no="8D80"/>
+	<unit factor="3.317E+02" name="Mach (0&#186;C, 1 atm)" no="DA2D"/>
+	<unit factor="3.436E+02" name="Mach (20&#186;C, 1 atm)" no="AE1A"/>
+	<unit factor="2.77777777777778E-01" name="Kilometer per hour" no="C966" symbol="km/h"/>
+	<unit factor="1.0E-02" name="Centimeter per second" no="E4E6" symbol="cm/s"/>
+	<unit factor="1.0E-03" name="Millimeter per second" no="F45E" symbol="mm/s"/>
+	<unit factor="1.609344E+03" name="Mile per second" no="9097" symbol="mi/s"/>
+	<unit factor="2.68224E+01" name="Mile per minute" no="9D08" symbol="mi/min"/>
+	<unit factor="5.14444444444444E-01" name="Knot, nautical mile per hour" no="FC1E" symbol="kt = kn">Derives from a historical fact that sailors in 17th century used to pay out a rope from ship's aft and count knots while measuring time with a sandglass to know ship's speed</unit>
+	<unit factor="5.14773333333333E-01" name="Knot(UK)" no="DD88" symbol="kt(UK)"/>
+	<unit factor="4.4704E-01" name="Mile per hour" no="85E0" symbol="mi/h"/>
+	<unit factor="3.048E-01" name="Foot per second" no="90EC" symbol="ft/s"/>
+	<unit factor="2.54E-02" name="Inch per second" no="8F21" symbol="in/s"/>
+	<unit factor="5.08E-03" name="Foot per minute" no="91F9" symbol="ft/min"/>
+	<unit factor="8.46666666666667E-05" name="Foot per hour" no="EBF5" symbol="ft/h"/>
+</sub>

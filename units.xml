@@ -1,521 +1,392 @@
 <?xml version="1.0" encoding="ASCII" standalone="yes"?>
 <units>
-	<sub id="volume" name="Volume, Capacity" no="8ED6">
-		<unit factor="1" name="cubic meter" no="B770" symbol="m&#179;"/>
-		<unit factor="1" name="kiloliter" no="F0CB" symbol="kL"/>
-		<unit factor="1" name="stere" no="E80D" symbol="st"/>
-		<unit factor="1.0E-03" name="liter" no="D635" symbol="L"/>
-		<unit factor="2.5E-04" name="cup (metric)" no="AAC4">250 mL</unit>
-		<unit factor="1.0E-04" name="deciliter" no="DE74" symbol="dL"/>
-		<unit factor="1.5E-05" name="tablespoon (metric)" no="BBE6">15 mL</unit>
-		<unit factor="5.0E-06" name="teaspoon (metric)" no="ECA4">5 mL</unit>
-		<unit factor="1.0E-06" name="cubic centimeter" no="F630" symbol="cm&#179;, cc"/>
-		<unit factor="1.0E-06" name="milliliter" no="E979" symbol="mL"/>
-		<unit factor="1.0E-09" name="cubic millimeter" no="DF74" symbol="mm&#179;"/>
-		<unit factor="4.16818182544058E+09" name="cubic mile" no="9B35" symbol="mi&#179;"/>
-		<unit factor="1.23348923846815E+03" name="acre-foot (based on US survey foot)" no="95D2"/>
-		<unit factor="3.624556363776E+00" name="cord" no="E352">128 cubic feet</unit>
-		<unit factor="2.8316846592E+00" name="ton, register" no="8E62"/>
-		<unit factor="7.64554857984E-01" name="cubic yard" no="AAE9" symbol="yd&#179;"/>
-		<unit factor="1.6365924E-01" name="barrel (UK)" no="9545" symbol="bbl">36 gal(UK)</unit>
-		<unit factor="1.58987294928E-01" name="barrel (US, petroleum)" no="BB2C" symbol="bbl">42 gal(US)</unit>
-		<unit factor="1.15627123584E-01" name="barrel (US, dry)" no="CA2F" symbol="bbl">336/11 gal(US)</unit>
-		<unit factor="2.8316846592E-02" name="cubic foot" no="B2EC" symbol="ft&#179;"/>
-		<unit factor="3.523907016688E-02" name="bushel (US)" no="F387" symbol="bu">107 521/11 550 gal (US)</unit>
-		<unit factor="3.636872E-02" name="bushel [Canadian and UK (Imperial)]" no="E11F" symbol="bu">8 gal(UK)</unit>
-		<unit factor="3.785411784E-03" name="gallon (US)" no="E5AA" symbol="gal">231 cubic inches</unit>
-		<unit factor="4.54609E-03" name="gallon [Canadian and UK (Imperial)]" no="D99C" symbol="gal"/>
-		<unit factor="8.80976754172E-03" name="peck (US)" no="CB7C" symbol="pk">1/4 bu(US)</unit>
-		<unit factor="9.09218E-03" name="peck [Canadian and UK (Imperial)]" no="C3C0" symbol="pk">2 gal(UK)</unit>
-		<unit factor="1.101220942715E-03" name="quart (US, dry)" no="D18B" symbol="dry qt">1/32 bu(US)</unit>
-		<unit factor="1.1365225E-03" name="quart [Canadian and UK (Imperial), liquid]" no="CC5F" symbol="liq qt">1/4 gal(UK)</unit>
-		<unit factor="9.46352946E-04" name="quart (US, liquid)" no="C481" symbol="liq qt">1/4 gal(US)</unit>
-		<unit factor="4.73176473E-04" name="pint (US, liquid)" no="F8D2" symbol="liq pt">1/8 gal(US)</unit>
-		<unit factor="5.506104713575E-04" name="pint (US, dry)" no="925A" symbol="dry pt">107 521/739 200 gal(US)</unit>
-		<unit factor="5.6826125E-04" name="pint [Canadian and UK (Imperial), liquid]" no="CD0E" symbol="liq pt">1/8 gal(UK)</unit>
-		<unit factor="1.1829411825E-04" name="gill (US)" no="822B" symbol="gi">1/32 gal(US)</unit>
-		<unit factor="1.420653125E-04" name="gill [Canadian and UK (Imperial)]" no="D64B" symbol="gi">1/32 gal(UK)</unit>
-		<unit factor="2.365882365E-04" name="cup (US)" no="A443">1/4 liq qt(US)</unit>
-		<unit factor="1.478676478125E-05" name="tablespoon (US)" no="BA8F">1/2 fl oz</unit>
-		<unit factor="1.6387064E-05" name="cubic inch" no="EA09" symbol="in&#179;"/>
-		<unit factor="2.95735295625E-05" name="ounce (US, fluid)" no="C8FD" symbol="fl oz">1/128 gal(US)</unit>
-		<unit factor="2.84130625E-05" name="ounce [Canadian and UK (Imperial), fluid]" no="922B" symbol="fl oz">1/160 gal(UK)</unit>
-		<unit factor="4.92892159375E-06" name="teaspoon (US)" no="FF9C">1/3 tablespoon (US)</unit>
-		<unit factor="6.16115199218750E-08" name="minim (US)" no="AFCC">1/61 440 gal(US)</unit>
-		<unit factor="5.91938802083333E-08" name="minim [Canadian and UK (Imperial)]" no="ED4B">1/76 800 gal(UK)</unit>
-		<unit factor="6.010518407E+00" name="liping [ryu-tsubo]" no="F763"/>
-		<unit factor="1.80391E-01" name="shi [koku]" no="DB9D"/>
-		<unit factor="2.782647411E-02" name="sui [sai]" no="F6AC"/>
-		<unit factor="1.80391E-02" name="dou [to]" no="DA81"/>
-		<unit factor="1.80391E-03" name="shung [sho]" no="9CA8"/>
-		<unit factor="1.80391E-04" name="hu [go]" no="FC92"/>
-		<unit factor="1.80391E-05" name="shao [shaku]" no="9535"/>
-	</sub>
 	<sub id="force" name="Force" no="DB2F">
-		<unit factor="1" name="newton" no="D101" symbol="N"/>
-		<unit factor="9.80665E+03" name="ton-force (metric)" no="CA96" symbol="tf(metric)"/>
-		<unit factor="1.0E+03" name="kilonewton" no="BAA3" symbol="kN"/>
-		<unit factor="9.80665E+00" name="kilogram-force" no="D425" symbol="kgf"/>
-		<unit factor="9.80665E+00" name="kilopond" no="84F8" symbol="kp"/>
-		<unit factor="1.0E-05" name="dyne" no="F006" symbol="dyn"/>
-		<unit factor="1.0E-03" name="millinewton" no="AC9E" symbol="mN"/>
-		<unit factor="8.896443230521E+03" name="ton-force " no="E797">2000 lbf</unit>
-		<unit factor="4.44822161526050E+03" name="kip " no="87FE">1000 lbf</unit>
-		<unit factor="4.44822161526050E+00" name="pound-force" no="E3F0" symbol="lbf"/>
-		<unit factor="2.78013850953781E-01" name="ounce-force (avoirdupois)" no="AA74" symbol="ozf"/>
-		<unit factor="1.38254954376E-01" name="poundal" no="BE47" symbol="pdl">lb&#183;ft/s&#178;</unit>
-		<unit factor="1.38254954376E-01" name="pound foot per square second" no="811A" symbol="lb&#183;ft/s&#178;"/>
+		<unit factor="1" name="Newton" no="D101" symbol="N"/>
+		<unit factor="9.80665E+03" name="Ton-force (metric)" no="CA96" symbol="tf(metric)"/>
+		<unit factor="1.0E+03" name="Kilonewton" no="BAA3" symbol="kN"/>
+		<unit factor="9.80665E+00" name="Kilogram-force" no="D425" symbol="kgf"/>
+		<unit factor="9.80665E+00" name="Kilopond" no="84F8" symbol="kp"/>
+		<unit factor="1.0E-05" name="Dyne" no="F006" symbol="dyn"/>
+		<unit factor="1.0E-03" name="Millinewton" no="AC9E" symbol="mN"/>
+		<unit factor="8.896443230521E+03" name="Ton-force " no="E797">2000 lbf</unit>
+		<unit factor="4.44822161526050E+03" name="Kip " no="87FE">1000 lbf</unit>
+		<unit factor="4.44822161526050E+00" name="Pound-force" no="E3F0" symbol="lbf"/>
+		<unit factor="2.78013850953781E-01" name="Ounce-force (avoirdupois)" no="AA74" symbol="ozf"/>
+		<unit factor="1.38254954376E-01" name="Poundal" no="BE47" symbol="pdl">lb&#183;ft/s&#178;</unit>
+		<unit factor="1.38254954376E-01" name="Pound foot per square second" no="811A" symbol="lb&#183;ft/s&#178;"/>
 	</sub>
 	<sub id="power" name="Power, Work Rate, Heat Flow Rate" no="FD31">
-		<unit factor="1" name="watt" no="E386" symbol="W"/>
-		<unit factor="1.0E+09" name="gigawatt" no="967B" symbol="GW"/>
-		<unit factor="1.0E+06" name="megawatt" no="CBF8" symbol="MW"/>
-		<unit factor="9.8095E+03" name="horsepower (boiler)" no="8777"/>
-		<unit factor="4.1868E+03" name="kilocalorie (IT) per second" no="EFF2" symbol="kcal(IT)/s"/>
-		<unit factor="4.184E+03" name="kilocalorie (th) per second" no="B992" symbol="kcal(th)/s"/>
-		<unit factor="1.0E+03" name="kilowatt" no="82B9" symbol="kW"/>
-		<unit factor="1.0E+03" name="kilovolt ampere" no="8907" symbol="kV&#183;A"/>
-		<unit factor="7.46043E+02" name="horsepower (water)" no="8528"/>
-		<unit factor="7.46E+02" name="horsepower (electric)" no="867B"/>
-		<unit factor="7.3549875E+02" name="horsepower (metric)" no="8D8C" symbol="hp(metric)">75kgf&#183;m/s</unit>
-		<unit factor="6.978E+01" name="kilocalorie (IT) per minute" no="B0B7" symbol="kcal(IT)/min"/>
-		<unit factor="6.97333333333333E+01" name="kilocalorie (th) per minute" no="9676" symbol="kcal(th)/min"/>
-		<unit factor="9.80665E+00" name="kilogram-force meter per second" no="992D" symbol="kgf&#183;m/s"/>
-		<unit factor="4.1868E+00" name="calorie (IT) per second" no="BC3D" symbol="cal(IT)/s"/>
-		<unit factor="4.184E+00" name="calorie (th) per second" no="F8AA" symbol="cal(th)/s"/>
-		<unit factor="1.163E+00" name="kilocalorie (IT) per hour" no="9901" symbol="kcal(IT)/h"/>
-		<unit factor="1.16222222222222E+00" name="kilocalorie (th) per hour" no="F3B7" symbol="kcal(th)/h"/>
-		<unit factor="1" name="joule per second" no="AFCE" symbol="J/s"/>
-		<unit factor="1" name="newton meter per second" no="E3CC" symbol="N&#183;m/s"/>
-		<unit factor="1" name="volt ampere" no="DDCF" symbol="V&#183;A"/>
-		<unit factor="6.978E-02" name="calorie (IT) per minute" no="CF77" symbol="cal(IT)/min"/>
-		<unit factor="6.97333333333333E-02" name="calorie (th) per minute" no="DC87" symbol="cal(th)/min"/>
-		<unit factor="1.163E-03" name="calorie (IT) per hour" no="F326" symbol="cal(IT)/h"/>
-		<unit factor="1.16222222222222E-03" name="calorie (th) per hour" no="88D9" symbol="cal(th)/h"/>
-		<unit factor="1.0E-03" name="milliwatt" no="AA6C" symbol="mW"/>
-		<unit factor="1.0E-06" name="microwatt" no="A214" symbol="&#181;W"/>
-		<unit factor="1.0E-07" name="erg per second" no="C89D" symbol="erg/s"/>
-		<unit factor="3.51685284206666E+03" name="ton of refrigeration" no="8A89">12000 Btu(IT)/h</unit>
+		<unit factor="1" name="Watt" no="E386" symbol="W"/>
+		<unit factor="1.0E+09" name="Gigawatt" no="967B" symbol="GW"/>
+		<unit factor="1.0E+06" name="Megawatt" no="CBF8" symbol="MW"/>
+		<unit factor="9.8095E+03" name="Horsepower (boiler)" no="8777"/>
+		<unit factor="4.1868E+03" name="Kilocalorie (IT) per second" no="EFF2" symbol="kcal(IT)/s"/>
+		<unit factor="4.184E+03" name="Kilocalorie (th) per second" no="B992" symbol="kcal(th)/s"/>
+		<unit factor="1.0E+03" name="Kilowatt" no="82B9" symbol="kW"/>
+		<unit factor="1.0E+03" name="Kilovolt ampere" no="8907" symbol="kV&#183;A"/>
+		<unit factor="7.46043E+02" name="Horsepower (water)" no="8528"/>
+		<unit factor="7.46E+02" name="Horsepower (electric)" no="867B"/>
+		<unit factor="7.3549875E+02" name="Horsepower (metric)" no="8D8C" symbol="hp(metric)">75kgf&#183;m/s</unit>
+		<unit factor="6.978E+01" name="Kilocalorie (IT) per minute" no="B0B7" symbol="kcal(IT)/min"/>
+		<unit factor="6.97333333333333E+01" name="Kilocalorie (th) per minute" no="9676" symbol="kcal(th)/min"/>
+		<unit factor="9.80665E+00" name="Kilogram-force meter per second" no="992D" symbol="kgf&#183;m/s"/>
+		<unit factor="4.1868E+00" name="Calorie (IT) per second" no="BC3D" symbol="cal(IT)/s"/>
+		<unit factor="4.184E+00" name="Calorie (th) per second" no="F8AA" symbol="cal(th)/s"/>
+		<unit factor="1.163E+00" name="Kilocalorie (IT) per hour" no="9901" symbol="kcal(IT)/h"/>
+		<unit factor="1.16222222222222E+00" name="Kilocalorie (th) per hour" no="F3B7" symbol="kcal(th)/h"/>
+		<unit factor="1" name="Joule per second" no="AFCE" symbol="J/s"/>
+		<unit factor="1" name="Newton meter per second" no="E3CC" symbol="N&#183;m/s"/>
+		<unit factor="1" name="Volt ampere" no="DDCF" symbol="V&#183;A"/>
+		<unit factor="6.978E-02" name="Calorie (IT) per minute" no="CF77" symbol="cal(IT)/min"/>
+		<unit factor="6.97333333333333E-02" name="Calorie (th) per minute" no="DC87" symbol="cal(th)/min"/>
+		<unit factor="1.163E-03" name="Calorie (IT) per hour" no="F326" symbol="cal(IT)/h"/>
+		<unit factor="1.16222222222222E-03" name="Calorie (th) per hour" no="88D9" symbol="cal(th)/h"/>
+		<unit factor="1.0E-03" name="Milliwatt" no="AA6C" symbol="mW"/>
+		<unit factor="1.0E-06" name="Microwatt" no="A214" symbol="&#181;W"/>
+		<unit factor="1.0E-07" name="Erg per second" no="C89D" symbol="erg/s"/>
+		<unit factor="3.51685284206666E+03" name="Ton of refrigeration" no="8A89">12000 Btu(IT)/h</unit>
 		<unit factor="1.05505585262E+03" name="British thermal unit (IT) per second" no="F792" symbol="Btu(IT)/s"/>
 		<unit factor="1.05435026448889E+03" name="British thermal unit (th) per second" no="E088" symbol="Btu(th)/s"/>
-		<unit factor="7.45699871582270E+02" name="horsepower (550 ft&#183;lbf/s)" no="BA55"/>
+		<unit factor="7.45699871582270E+02" name="Horsepower (550 ft&#183;lbf/s)" no="BA55"/>
 		<unit factor="1.75842642103333E+01" name="British thermal unit (IT) per minute" no="E1E1" symbol="Btu(IT)/min"/>
 		<unit factor="1.75725044081482E+01" name="British thermal unit (th) per minute" no="ADD6" symbol="Btu(th)/min"/>
-		<unit factor="1.35581794833140E+00" name="foot pound-force per second" no="8259" symbol="ft&#183;lbf/s"/>
+		<unit factor="1.35581794833140E+00" name="Foot pound-force per second" no="8259" symbol="ft&#183;lbf/s"/>
 		<unit factor="2.93071070172222E-01" name="British thermal unit (IT) per hour" no="93BC" symbol="Btu(IT)/h"/>
 		<unit factor="2.92875073469136E-01" name="British thermal unit (th) per hour" no="B7AA" symbol="Btu(th)/h"/>
-		<unit factor="2.25969658055233E-02" name="foot pound-force per minute" no="CC62" symbol="ft&#183;lbf/min"/>
-		<unit factor="3.76616096758722E-04" name="foot pound-force per hour" no="B1A7" symbol="ft&#183;lbf/h"/>
+		<unit factor="2.25969658055233E-02" name="Foot pound-force per minute" no="CC62" symbol="ft&#183;lbf/min"/>
+		<unit factor="3.76616096758722E-04" name="Foot pound-force per hour" no="B1A7" symbol="ft&#183;lbf/h"/>
 	</sub>
 	<sub id="energy" name="Energy, Work, Moment of Force, Torque" no="C824">
-		<unit factor="1" name="newton meter" no="DAF8" symbol="N&#183;m"/>
-		<unit factor="1" name="watt second" no="EF02" symbol="W&#183;s"/>
-		<unit factor="1" name="joule" no="F562" symbol="J"/>
-		<unit factor="3.6E+12" name="gigawatt hour" no="C819" symbol="GW&#183;h"/>
+		<unit factor="1" name="Newton meter" no="DAF8" symbol="N&#183;m"/>
+		<unit factor="1" name="Watt second" no="EF02" symbol="W&#183;s"/>
+		<unit factor="1" name="Joule" no="F562" symbol="J"/>
+		<unit factor="3.6E+12" name="Gigawatt hour" no="C819" symbol="GW&#183;h"/>
 		<unit factor="4.01976279848220E+10" name="Fuel oil equivalent @kiloliter" no="A992">38.1 MBtu(IT)</unit>
-		<unit factor="4.184E+09" name="ton of TNT (energy equivalent)" no="B938"/>
-		<unit factor="3.6E+09" name="megawatt hour" no="DC3E" symbol="MW&#183;h"/>
-		<unit factor="1.0E+09" name="gigajoule" no="DD79" symbol="GJ"/>
-		<unit factor="3.6E+06" name="kilowatt hour" no="BCE7" symbol="kW&#183;h"/>
-		<unit factor="2.6477955E+06" name="horsepower (metric) hour = PS&#183;h" no="F693" symbol="hp&#183;h"/>
-		<unit factor="1.0E+06" name="megajoule" no="8C0B" symbol="MJ"/>
-		<unit factor="4.1868E+03" name="calorie (IT), kilogram (nutrition)" no="90AD">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
-		<unit factor="4.184E+03" name="calorie (th), kilogram (nutrition)" no="EF87">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
-		<unit factor="4.19002E+03" name="calorie (mean), kilogram (nutrition)" no="9D4C">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
-		<unit factor="4.1868E+03" name="kilocalorie (IT)" no="9A30" symbol="kcal(IT)"/>
-		<unit factor="4.184E+03" name="kilocalorie (th)" no="AA4D" symbol="kcal(th)"/>
-		<unit factor="4.19002E+03" name="kilocalorie (mean)" no="8876" symbol="kcal"/>
-		<unit factor="3.6E+03" name="watt hour" no="83A3" symbol="W&#183;h"/>
-		<unit factor="1.0E+03" name="kilojoule" no="8B1C" symbol="kJ"/>
-		<unit factor="9.80665E+00" name="kilogram-force meter" no="9D7B" symbol="kgf&#183;m"/>
-		<unit factor="4.1868E+00" name="calorie (IT)" no="F6F2" symbol="cal(IT)"/>
-		<unit factor="4.184E+00" name="calorie (th)" no="B9BF" symbol="cal(th)"/>
-		<unit factor="4.19002E+00" name="calorie (mean)" no="D506" symbol="cal"/>
-		<unit factor="4.1858E+00" name="calorie (15&#186;C)" no="82C1" symbol="cal(15)"/>
-		<unit factor="4.1819E+00" name="calorie (20&#186;C)" no="E2AC" symbol="cal(20)"/>
-		<unit factor="1.0E-03" name="millijoule" no="F305" symbol="mJ"/>
-		<unit factor="1.0E-03" name="millinewton meter" no="D43A" symbol="mN&#183;m"/>
-		<unit factor="1.0E-06" name="microjoule" no="8127" symbol="&#181;J"/>
-		<unit factor="1.0E-07" name="dyne centimeter" no="ACE7" symbol="dyn&#183;cm"/>
-		<unit factor="1.0E-07" name="elg" no="CE86">dyn&#183;cm</unit>
-		<unit factor="1.60217733E-13" name="megaelectronvolt" no="D68D" symbol="MeV"/>
-		<unit factor="1.60217733E-19" name="electronvolt" no="F807" symbol="eV">The kinetic energy a electron obtains when it passes through the potential difference of 1 volt in a vacuum</unit>
-		<unit factor="1.05505585262E+18" name="quad" no="E3B7">1E+15 Btu (IT)</unit>
+		<unit factor="4.184E+09" name="Ton of TNT (energy equivalent)" no="B938"/>
+		<unit factor="3.6E+09" name="Megawatt hour" no="DC3E" symbol="MW&#183;h"/>
+		<unit factor="1.0E+09" name="Gigajoule" no="DD79" symbol="GJ"/>
+		<unit factor="3.6E+06" name="Kilowatt hour" no="BCE7" symbol="kW&#183;h"/>
+		<unit factor="2.6477955E+06" name="Horsepower (metric) hour = PS&#183;h" no="F693" symbol="hp&#183;h"/>
+		<unit factor="1.0E+06" name="Megajoule" no="8C0B" symbol="MJ"/>
+		<unit factor="4.1868E+03" name="Calorie (IT), kilogram (nutrition)" no="90AD">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
+		<unit factor="4.184E+03" name="Calorie (th), kilogram (nutrition)" no="EF87">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
+		<unit factor="4.19002E+03" name="Calorie (mean), kilogram (nutrition)" no="9D4C">The kilogram calorie (or &quot;large calorie&quot;) is an obsolete term used for the kilocalorie, which is the calorie used to express the energy content of foods. In practice, the prefix &quot;kilo&quot; is usually omitted</unit>
+		<unit factor="4.1868E+03" name="Kilocalorie (IT)" no="9A30" symbol="kcal(IT)"/>
+		<unit factor="4.184E+03" name="Kilocalorie (th)" no="AA4D" symbol="kcal(th)"/>
+		<unit factor="4.19002E+03" name="Kilocalorie (mean)" no="8876" symbol="kcal"/>
+		<unit factor="3.6E+03" name="Watt hour" no="83A3" symbol="W&#183;h"/>
+		<unit factor="1.0E+03" name="Kilojoule" no="8B1C" symbol="kJ"/>
+		<unit factor="9.80665E+00" name="Kilogram-force meter" no="9D7B" symbol="kgf&#183;m"/>
+		<unit factor="4.1868E+00" name="Calorie (IT)" no="F6F2" symbol="cal(IT)"/>
+		<unit factor="4.184E+00" name="Calorie (th)" no="B9BF" symbol="cal(th)"/>
+		<unit factor="4.19002E+00" name="Calorie (mean)" no="D506" symbol="cal"/>
+		<unit factor="4.1858E+00" name="Calorie (15&#186;C)" no="82C1" symbol="cal(15)"/>
+		<unit factor="4.1819E+00" name="Calorie (20&#186;C)" no="E2AC" symbol="cal(20)"/>
+		<unit factor="1.0E-03" name="Millijoule" no="F305" symbol="mJ"/>
+		<unit factor="1.0E-03" name="Millinewton meter" no="D43A" symbol="mN&#183;m"/>
+		<unit factor="1.0E-06" name="Microjoule" no="8127" symbol="&#181;J"/>
+		<unit factor="1.0E-07" name="Dyne centimeter" no="ACE7" symbol="dyn&#183;cm"/>
+		<unit factor="1.0E-07" name="Elg" no="CE86">dyn&#183;cm</unit>
+		<unit factor="1.60217733E-13" name="Megaelectronvolt" no="D68D" symbol="MeV"/>
+		<unit factor="1.60217733E-19" name="Electronvolt" no="F807" symbol="eV">The kinetic energy a electron obtains when it passes through the potential difference of 1 volt in a vacuum</unit>
+		<unit factor="1.05505585262E+18" name="Quad" no="E3B7">1E+15 Btu (IT)</unit>
 		<unit factor="6.383087908351E+09" name="Fuel oil equivalent @barrel US" no="8551">6.05 MBtu(IT)</unit>
-		<unit factor="1.05505585262E+09" name="mega Btu" no="B070" symbol="MBtu(IT)"/>
-		<unit factor="1.054804E+08" name="therm(US)" no="99FE">The therm (US) is legally defined in the Federal Register of July 27, 1968</unit>
-		<unit factor="1.05506E+08" name="therm(EC)" no="CD72">The therm (EC) is legally defined in the Council Directive of 20 December 1979, Council of the European Communities (now the European Union, EU)</unit>
-		<unit factor="2.68451953769617E+06" name="horsepower (550 ft&#183;lbf/s) hour" no="D536" symbol="hp&#183;h"/>
+		<unit factor="1.05505585262E+09" name="Mega Btu" no="B070" symbol="MBtu(IT)"/>
+		<unit factor="1.054804E+08" name="Therm(US)" no="99FE">The therm (US) is legally defined in the Federal Register of July 27, 1968</unit>
+		<unit factor="1.05506E+08" name="Therm(EC)" no="CD72">The therm (EC) is legally defined in the Council Directive of 20 December 1979, Council of the European Communities (now the European Union, EU)</unit>
+		<unit factor="2.68451953769617E+06" name="Horsepower (550 ft&#183;lbf/s) hour" no="D536" symbol="hp&#183;h"/>
 		<unit factor="1.05505585262E+03" name="British thermal unit (IT)" no="ED8C" symbol="Btu(IT)">The Fifth International Conference on the Properties of Steam (London, July 1956) defined the International Table calorie as 4.1868 J</unit>
 		<unit factor="1.05435026448889E+03" name="British thermal unit (th)" no="FB3D" symbol="Btu(th)">Based on the thermochemical calorie, cal(th), where cal(th) = 4.184 J exactly</unit>
 		<unit factor="1.05587E+03" name="British thermal unit (mean)" no="B06A" symbol="Btu(mean)"/>
 		<unit factor="1.05967E+03" name="British thermal unit (39&#186;F)" no="8B52" symbol="Btu(39&#186;F)"/>
 		<unit factor="1.0548E+03" name="British thermal unit (59&#186;F)" no="FB88" symbol="Btu(59&#186;F)"/>
 		<unit factor="1.05468E+03" name="British thermal unit (60&#186;F)" no="FCCB" symbol="Btu(60&#186;F)"/>
-		<unit factor="1.35581794833140E+00" name="pound-force foot = foot pound-force" no="C8C3" symbol="lbf&#183;ft = ft&#183;lbf"/>
-		<unit factor="1.12984829027617E-01" name="pound-force inch = inch pound-force" no="D43D" symbol="lbf&#183;in = in&#183;lbf"/>
-		<unit factor="4.21401100938048E-02" name="foot poundal" no="F292" symbol="ft&#183;pdl"/>
-		<unit factor="7.06155181422604E-03" name="ounce-force (avoirdupois) inch" no="ECF6" symbol="ozf&#183;in"/>
-	</sub>
-	<sub id="speed" name="Speed" no="9E50">
-		<unit factor="1" name="meter per second" no="A5C5" symbol="m/s"/>
-		<unit factor="2.99792458E+08" name="speed of light in vacuum" no="A4BD" symbol="c"/>
-		<unit factor="1.4027E+03" name="speed of sound (pure water, 0&#186;C)" no="DE08"/>
-		<unit factor="1.4476E+03" name="speed of sound (pure water, 10&#186;C)" no="EC27"/>
-		<unit factor="1.4827E+03" name="speed of sound (pure water, 20&#186;C)" no="DC8A"/>
-		<unit factor="1.4491E+03" name="speed of sound (seawater, 0&#186;C, 10 meter deep)" no="85DF"/>
-		<unit factor="1.4900E+03" name="speed of sound (seawater, 10&#186;C, 10 meter deep)" no="80F3"/>
-		<unit factor="1.5216E+03" name="speed of sound (seawater, 20&#186;C, 10 meter deep)" no="9747"/>
-		<unit factor="1.0E+03" name="kilometer per second" no="FCD8" symbol="km/s"/>
-		<unit factor="3.193E+02" name="Mach (-20&#186;C, 1 atm)" no="8D80"/>
-		<unit factor="3.317E+02" name="Mach (0&#186;C, 1 atm)" no="DA2D"/>
-		<unit factor="3.436E+02" name="Mach (20&#186;C, 1 atm)" no="AE1A"/>
-		<unit factor="2.77777777777778E-01" name="kilometer per hour" no="C966" symbol="km/h"/>
-		<unit factor="1.0E-02" name="centimeter per second" no="E4E6" symbol="cm/s"/>
-		<unit factor="1.0E-03" name="millimeter per second" no="F45E" symbol="mm/s"/>
-		<unit factor="1.609344E+03" name="mile per second" no="9097" symbol="mi/s"/>
-		<unit factor="2.68224E+01" name="mile per minute" no="9D08" symbol="mi/min"/>
-		<unit factor="5.14444444444444E-01" name="knot, nautical mile per hour" no="FC1E" symbol="kt = kn">Derives from a historical fact that sailors in 17th century used to pay out a rope from ship's aft and count knots while measuring time with a sandglass to know ship's speed</unit>
-		<unit factor="5.14773333333333E-01" name="knot(UK)" no="DD88" symbol="kt(UK)"/>
-		<unit factor="4.4704E-01" name="mile per hour" no="85E0" symbol="mi/h"/>
-		<unit factor="3.048E-01" name="foot per second" no="90EC" symbol="ft/s"/>
-		<unit factor="2.54E-02" name="inch per second" no="8F21" symbol="in/s"/>
-		<unit factor="5.08E-03" name="foot per minute" no="91F9" symbol="ft/min"/>
-		<unit factor="8.46666666666667E-05" name="foot per hour" no="EBF5" symbol="ft/h"/>
+		<unit factor="1.35581794833140E+00" name="Pound-force foot = foot pound-force" no="C8C3" symbol="lbf&#183;ft = ft&#183;lbf"/>
+		<unit factor="1.12984829027617E-01" name="Pound-force inch = inch pound-force" no="D43D" symbol="lbf&#183;in = in&#183;lbf"/>
+		<unit factor="4.21401100938048E-02" name="Foot poundal" no="F292" symbol="ft&#183;pdl"/>
+		<unit factor="7.06155181422604E-03" name="Ounce-force (avoirdupois) inch" no="ECF6" symbol="ozf&#183;in"/>
 	</sub>
 	<sub id="angular-velocity" name="Angular Velocity" no="A9AF">
-		<unit factor="1" name="radian per second" no="CF25" symbol="rad/s"/>
-		<unit factor="6.28318530717959E+00" name="revolution per second" no="93D1" symbol="rps = r/s"/>
-		<unit factor="1.04719755119660E-01" name="revolution per minute" no="A8D9" symbol="rpm = r/min"/>
-		<unit factor="1.74532925199433E-02" name="degree per second" no="CC01" symbol="&#186;/s"/>
-		<unit factor="1.74532925199433E-03" name="revolution per hour" no="DB25" symbol="r/h"/>
-		<unit factor="7.27220521664304E-05" name="revolution per day" no="CBBC" symbol="r/d"/>
+		Revolution per Time
+		<unit factor="1" name="Radian per second" no="CF25" symbol="rad/s"/>
+		<unit factor="6.28318530717959E+00" name="Revolution per second" no="93D1" symbol="rps = r/s"/>
+		<unit factor="1.04719755119660E-01" name="Revolution per minute" no="A8D9" symbol="rpm = r/min"/>
+		<unit factor="1.74532925199433E-02" name="Degree per second" no="CC01" symbol="&#186;/s"/>
+		<unit factor="1.74532925199433E-03" name="Revolution per hour" no="DB25" symbol="r/h"/>
+		<unit factor="7.27220521664304E-05" name="Revolution per day" no="CBBC" symbol="r/d"/>
 	</sub>
 	<sub id="acceleration" name="Acceleration" no="E0B0">
-		<unit factor="1" name="meter per second squared" no="A326" symbol="m/s&#178;"/>
-		<unit factor="9.80665E+00" name="acceleration of free fall, standard" no="AF56" symbol="g"/>
-		<unit factor="1.0E-02" name="gal, galileo" no="C9DA"/>
-		<unit factor="1.609344E+03" name="mile per second squared" no="93B7" symbol="mi/s&#178;"/>
-		<unit factor="9.144E-01" name="yard per second squared" no="FC11" symbol="yd/s&#178;"/>
-		<unit factor="3.048E-01" name="foot per second squared" no="8D1F" symbol="ft/s&#178;"/>
-		<unit factor="2.54E-02" name="inch per second squared" no="84CB" symbol="in/s&#178;"/>
+		Speed per Time
+		<unit factor="1" name="Meter per second squared" no="A326" symbol="m/s&#178;"/>
+		<unit factor="9.80665E+00" name="Acceleration of free fall, standard" no="AF56" symbol="g"/>
+		<unit factor="1.0E-02" name="Gal, galileo" no="C9DA"/>
+		<unit factor="1.609344E+03" name="Mile per second squared" no="93B7" symbol="mi/s&#178;"/>
+		<unit factor="9.144E-01" name="Yard per second squared" no="FC11" symbol="yd/s&#178;"/>
+		<unit factor="3.048E-01" name="Foot per second squared" no="8D1F" symbol="ft/s&#178;"/>
+		<unit factor="2.54E-02" name="Inch per second squared" no="84CB" symbol="in/s&#178;"/>
 	</sub>
 	<sub id="pressure" name="Stress, Pressure" no="D01C">
-		<unit factor="1" name="pascal" no="F16E" symbol="Pa"/>
-		<unit factor="1" name="newton per square meter" no="9F2A" symbol="N/m&#178;"/>
-		<unit factor="9.80665E+06" name="kilogram-force per square millimeter" no="A1F0" symbol="kgf/mm&#178;"/>
-		<unit factor="1.0E+06" name="megapascal" no="B154" symbol="MPa"/>
-		<unit factor="1.01325E+05" name="atmosphere, standard" no="CEFC" symbol="atm"/>
-		<unit factor="1.0E+05" name="bar" no="E857"/>
-		<unit factor="9.80665E+04" name="atmosphere, technical" no="CAB9" symbol="at"/>
-		<unit factor="9.80665E+04" name="kilogram-force per square centimeter" no="FEB5" symbol="kgf/cm&#178;"/>
-		<unit factor="1.33322368421053E+03" name="centimeter of mercury, conventional" no="C726" symbol="cmHg"/>
-		<unit factor="1.33322E+03" name="centimeter of mercury (0&#186;C)" no="8386" symbol="cmHg"/>
-		<unit factor="1.0E+03" name="kilopascal" no="F3D7" symbol="kPa"/>
-		<unit factor="1.33322368421053E+02" name="millimeter of mercury, conventional" no="E2ED" symbol="mmHg"/>
-		<unit factor="1.33322368421053E+02" name="torr" no="A527" symbol="Torr"/>
-		<unit factor="1.0E+02" name="hectopascal" no="BB93" symbol="hPa"/>
-		<unit factor="1.0E+02" name="millibar" no="952E" symbol="mbar"/>
-		<unit factor="9.80665E+01" name="centimeter of water, conventional" no="838F" symbol="cmAq"/>
-		<unit factor="9.80638E+01" name="centimeter of water (4&#186;C)" no="BB9D" symbol="cmAq"/>
-		<unit factor="9.80665E+01" name="gram-force per square centimeter" no="8FB2" symbol="gf/cm&#178;"/>
-		<unit factor="9.80665E+00" name="millimeter of water, conventional" no="9C9F" symbol="mmAq"/>
-		<unit factor="9.80665E+00" name="kilogram-force per square meter" no="DB00" symbol="kgf/m&#178;">Those who feel hard to convert pressure or stress from MKS unit system to SI, remember one kgf/cm&#178; is about 100 kPa</unit>
-		<unit factor="1.0E-01" name="dyne per square centimeter" no="A993" symbol="dyn/cm&#178;"/>
-		<unit factor="1.54442563366971E+07" name="ton-force (long) per square inch" no="F531" symbol="tf/in&#178;"/>
-		<unit factor="1.37895145863367E+07" name="ton-force (short) per square inch" no="FC0C" symbol="tf/in&#178;"/>
-		<unit factor="6.89475729316836E+06" name="kip per square inch" no="9865" symbol="kip/in&#178; = ksi"/>
-		<unit factor="4.06366578947368E+04" name="foot of mercury, conventional" no="8728" symbol="ftHg"/>
-		<unit factor="6.89475729316836E+03" name="pound-force per square inch" no="ACD9" symbol="lbf/in&#178; = psi"/>
-		<unit factor="3.38638815789474E+03" name="inch of mercury, conventional" no="9978" symbol="inHg"/>
-		<unit factor="3.38638E+03" name="inch of mercury (32&#186;F)" no="F2B1" symbol="inHg"/>
-		<unit factor="3.37685E+03" name="inch of mercury (60&#186;F)" no="D5CD" symbol="inHg"/>
-		<unit factor="2.98906692E+03" name="foot of water, conventional" no="ACBB" symbol="ftAq"/>
-		<unit factor="2.98898E+03" name="foot of water (39.2&#186;F = 4&#186;C)" no="BD99" symbol="ftAq"/>
-		<unit factor="2.4908891E+02" name="inch of water, conventional" no="D492" symbol="inAq"/>
-		<unit factor="2.49082E+02" name="inch of water (39.2&#186;F = 4&#186;C)" no="8EA9" symbol="inAq"/>
-		<unit factor="2.48843E+02" name="inch of water (60&#186;F)" no="C1BA" symbol="inAq"/>
-		<unit factor="4.78802589803358E+01" name="pound-force per square foot" no="846B" symbol="lbf/ft&#178;"/>
-		<unit factor="1.48816394356955E+00" name="poundal per square foot" no="9C6F" symbol="pdl/ft&#178;"/>
-	</sub>
-	<sub id="density" name="Density, Mass Divided by Volume" no="C0A9">
-		<unit factor="1" name="kilogram per cubic meter" no="DE4A" symbol="kg/m&#179;"/>
-		<unit factor="1.0E+06" name="gram per cubic millimeter" no="B083" symbol="g/mm&#179;"/>
-		<unit factor="1.0E+03" name="kilogram per liter" no="EC1F" symbol="kg/L"/>
-		<unit factor="1.0E+03" name="gram per cubic centimeter" no="A1F3" symbol="g/cm&#179; = g/cc"/>
-		<unit factor="9.80665E+00" name="kilogram-force second squared per meter to the fourth power" no="B28E" symbol="kgf&#183;s&#178;/m^4"/>
-		<unit factor="1" name="gram per liter" no="C2E1" symbol="g/L"/>
-		<unit factor="1" name="milligram per cubic centimeter" no="C3E4" symbol="mg/cm&#179;"/>
-		<unit factor="1.0E-03" name="gram per cubic meter" no="D6C0" symbol="g/m&#179;"/>
-		<unit factor="1.0E-03" name="milligram per liter" no="EA88" symbol="mg/L"/>
-		<unit factor="1.0E-06" name="milligram per cubic meter" no="92E2" symbol="mg/m&#179;"/>
-		<unit factor="2.76799047102031E+04" name="pound per cubic inch" no="99FF" symbol="lb/in&#179;"/>
-		<unit factor="1.72999404438770E+03" name="ounce (avoirdupois) per cubic inch" no="D560" symbol="oz/in&#179;"/>
-		<unit factor="1.32893918361743E+03" name="ton (long) per cubic yard" no="8972" symbol="t(long)/yd&#179;"/>
-		<unit factor="1.18655284251557E+03" name="ton (short) per cubic yard" no="D29E" symbol="t(short)/yd&#179;"/>
-		<unit factor="5.15378818393196E+02" name="slug per cubic foot" no="FD77" symbol="slug/ft&#179;">lbf&#183;s&#178;/ft^4</unit>
-		<unit factor="1.19826427316897E+02" name="pound per gallon (US)" no="B6AF" symbol="lb/gal"/>
-		<unit factor="9.97763726631017E+01" name="pound per gallon [Canadian and UK (Imperial)]" no="E75F" symbol="lb/gal"/>
-		<unit factor="1.60184633739601E+01" name="pound per cubic foot" no="DE20" symbol="lb/ft&#179;"/>
-		<unit factor="7.48915170730604E+00" name="ounce (avoirdupois) per gallon (US)" no="965B" symbol="oz/gal"/>
-		<unit factor="6.23602329144386E+00" name="ounce (avoirdupois) per gallon [Canadian and UK (Imperial)]" no="AB26" symbol="oz/gal"/>
-		<unit factor="1.00115396087251E+00" name="ounce (avoirdupois) per cubic foot" no="ABC8" symbol="oz/ft&#179;"/>
-		<unit factor="5.93276421257783E-01" name="pound per cubic yard" no="CBEF" symbol="lb/yd&#179;"/>
-		<unit factor="1.71180610452709E-02" name="grain per gallon (US)" no="9FE3" symbol="gr/gal"/>
-		<unit factor="1.42537675233002E-02" name="grain per gallon [Canadian and UK (Imperial)]" no="88CC" symbol="gr/gal"/>
-		<unit factor="2.28835191056573E-03" name="grain per cubic foot" no="8F5B" symbol="gr/ft&#179;"/>
+		<unit factor="1" name="Pascal" no="F16E" symbol="Pa"/>
+		<unit factor="1" name="Newton per square meter" no="9F2A" symbol="N/m&#178;"/>
+		<unit factor="9.80665E+06" name="Kilogram-force per square millimeter" no="A1F0" symbol="kgf/mm&#178;"/>
+		<unit factor="1.0E+06" name="Megapascal" no="B154" symbol="MPa"/>
+		<unit factor="1.01325E+05" name="Atmosphere, standard" no="CEFC" symbol="atm"/>
+		<unit factor="1.0E+05" name="Bar" no="E857"/>
+		<unit factor="9.80665E+04" name="Atmosphere, technical" no="CAB9" symbol="at"/>
+		<unit factor="9.80665E+04" name="Kilogram-force per square centimeter" no="FEB5" symbol="kgf/cm&#178;"/>
+		<unit factor="1.33322368421053E+03" name="Centimeter of mercury, conventional" no="C726" symbol="cmHg"/>
+		<unit factor="1.33322E+03" name="Centimeter of mercury (0&#186;C)" no="8386" symbol="cmHg"/>
+		<unit factor="1.0E+03" name="Kilopascal" no="F3D7" symbol="kPa"/>
+		<unit factor="1.33322368421053E+02" name="Millimeter of mercury, conventional" no="E2ED" symbol="mmHg"/>
+		<unit factor="1.33322368421053E+02" name="Torr" no="A527" symbol="Torr"/>
+		<unit factor="1.0E+02" name="Hectopascal" no="BB93" symbol="hPa"/>
+		<unit factor="1.0E+02" name="Millibar" no="952E" symbol="mbar"/>
+		<unit factor="9.80665E+01" name="Centimeter of water, conventional" no="838F" symbol="cmAq"/>
+		<unit factor="9.80638E+01" name="Centimeter of water (4&#186;C)" no="BB9D" symbol="cmAq"/>
+		<unit factor="9.80665E+01" name="Gram-force per square centimeter" no="8FB2" symbol="gf/cm&#178;"/>
+		<unit factor="9.80665E+00" name="Millimeter of water, conventional" no="9C9F" symbol="mmAq"/>
+		<unit factor="9.80665E+00" name="Kilogram-force per square meter" no="DB00" symbol="kgf/m&#178;">Those who feel hard to convert pressure or stress from MKS unit system to SI, remember one kgf/cm&#178; is about 100 kPa</unit>
+		<unit factor="1.0E-01" name="Dyne per square centimeter" no="A993" symbol="dyn/cm&#178;"/>
+		<unit factor="1.54442563366971E+07" name="Ton-force (long) per square inch" no="F531" symbol="tf/in&#178;"/>
+		<unit factor="1.37895145863367E+07" name="Ton-force (short) per square inch" no="FC0C" symbol="tf/in&#178;"/>
+		<unit factor="6.89475729316836E+06" name="Kip per square inch" no="9865" symbol="kip/in&#178; = ksi"/>
+		<unit factor="4.06366578947368E+04" name="Foot of mercury, conventional" no="8728" symbol="ftHg"/>
+		<unit factor="6.89475729316836E+03" name="Pound-force per square inch" no="ACD9" symbol="lbf/in&#178; = psi"/>
+		<unit factor="3.38638815789474E+03" name="Inch of mercury, conventional" no="9978" symbol="inHg"/>
+		<unit factor="3.38638E+03" name="Inch of mercury (32&#186;F)" no="F2B1" symbol="inHg"/>
+		<unit factor="3.37685E+03" name="Inch of mercury (60&#186;F)" no="D5CD" symbol="inHg"/>
+		<unit factor="2.98906692E+03" name="Foot of water, conventional" no="ACBB" symbol="ftAq"/>
+		<unit factor="2.98898E+03" name="Foot of water (39.2&#186;F = 4&#186;C)" no="BD99" symbol="ftAq"/>
+		<unit factor="2.4908891E+02" name="Inch of water, conventional" no="D492" symbol="inAq"/>
+		<unit factor="2.49082E+02" name="Inch of water (39.2&#186;F = 4&#186;C)" no="8EA9" symbol="inAq"/>
+		<unit factor="2.48843E+02" name="Inch of water (60&#186;F)" no="C1BA" symbol="inAq"/>
+		<unit factor="4.78802589803358E+01" name="Pound-force per square foot" no="846B" symbol="lbf/ft&#178;"/>
+		<unit factor="1.48816394356955E+00" name="Poundal per square foot" no="9C6F" symbol="pdl/ft&#178;"/>
 	</sub>
 	<sub id="flow-rate" name="Flow Rate" no="C9E2">
-	Volume Divided by Time
-		<unit factor="1" name="cubic meter per second" no="DFE7" symbol="m&#179;/s"/>
-		<unit factor="1.66666666666667E-02" name="cubic meter per minute" no="C325" symbol="m&#179;/min"/>
-		<unit factor="1.0E-03" name="liter per second" no="9C05" symbol="L/s"/>
-		<unit factor="2.77777777777778E-04" name="cubic meter per hour" no="B721" symbol="m&#179;/h"/>
-		<unit factor="1.66666666666667E-05" name="liter per minute" no="8CA3" symbol="L/min"/>
-		<unit factor="1.0E-06" name="cubic centimeter per second" no="808E" symbol="cm&#179;/s"/>
-		<unit factor="2.77777777777778E-07" name="liter per hour" no="B04C" symbol="L/h"/>
-		<unit factor="1.66666666666667E-08" name="cubic centimeter per minute" no="E403" symbol="cm&#179;/min"/>
-		<unit factor="1.58987294928E-01" name="barrel (US, petroleum) per second" no="9F2F" symbol="bbl/s"/>
-		<unit factor="1.27425809664E-02" name="cubic yard per minute" no="E127" symbol="yd&#179;/min"/>
-		<unit factor="2.8316846592E-02" name="cubic foot per second" no="9CAC" symbol="ft&#179;/s"/>
-		<unit factor="3.785411784E-03" name="gallon (US) per second" no="FFF9" symbol="gal/s"/>
-		<unit factor="4.54609E-03" name="gallon [Canadian and UK (Imperial)] per second" no="ABFB" symbol="gal/s"/>
-		<unit factor="2.6497882488E-03" name="barrel (US, petroleum) per minute" no="929A" symbol="bbl/min"/>
-		<unit factor="1.84013072833333E-03" name="kilobarrel (US, petroleum) per day" no="C712" symbol="kbbl/d"/>
-		<unit factor="4.719474432E-04" name="cubic foot per minutes" no="8089" symbol="ft&#179;/min"/>
-		<unit factor="7.57681666666667E-05" name="gallon [Canadian and UK (Imperial)] per minute" no="96A5" symbol="gal/min"/>
-		<unit factor="6.30901964E-05" name="gallon (US) per minute" no="EF05" symbol="gal/min"/>
-		<unit factor="4.416313748E-05" name="barrel (US, petroleum) per hour" no="80EF" symbol="bbl/h"/>
-		<unit factor="1.6387064E-05" name="cubic inch per second" no="E24E" symbol="in&#179;/s"/>
-		<unit factor="7.86579072E-06" name="cubic foot per hour" no="F6A0" symbol="ft&#179;/h"/>
-		<unit factor="1.05150327333333E-06" name="gallon (US) per hour" no="DBC8" symbol="gal/h"/>
-		<unit factor="1.26280277777778E-06" name="gallon [Canadian and UK (Imperial)] per hour" no="AFD5" symbol="gal/h"/>
-		<unit factor="1.84013072833333E-06" name="barrel (US, petroleum) per day" no="F129" symbol="bbl/d"/>
-		<unit factor="2.73117733333333E-07" name="cubic inch per minute" no="BED4" symbol="in&#179;/min"/>
-		<unit factor="4.38126363888889E-08" name="gallon (US) per day" no="C39A" symbol="gal/d"/>
+	Volume per Time
+		<unit factor="1" name="Cubic meter per second" no="DFE7" symbol="m&#179;/s"/>
+		<unit factor="1.66666666666667E-02" name="Cubic meter per minute" no="C325" symbol="m&#179;/min"/>
+		<unit factor="1.0E-03" name="Liter per second" no="9C05" symbol="L/s"/>
+		<unit factor="2.77777777777778E-04" name="Cubic meter per hour" no="B721" symbol="m&#179;/h"/>
+		<unit factor="1.66666666666667E-05" name="Liter per minute" no="8CA3" symbol="L/min"/>
+		<unit factor="1.0E-06" name="Cubic centimeter per second" no="808E" symbol="cm&#179;/s"/>
+		<unit factor="2.77777777777778E-07" name="Liter per hour" no="B04C" symbol="L/h"/>
+		<unit factor="1.66666666666667E-08" name="Cubic centimeter per minute" no="E403" symbol="cm&#179;/min"/>
+		<unit factor="1.58987294928E-01" name="Barrel (US, petroleum) per second" no="9F2F" symbol="bbl/s"/>
+		<unit factor="1.27425809664E-02" name="Cubic yard per minute" no="E127" symbol="yd&#179;/min"/>
+		<unit factor="2.8316846592E-02" name="Cubic foot per second" no="9CAC" symbol="ft&#179;/s"/>
+		<unit factor="3.785411784E-03" name="Gallon (US) per second" no="FFF9" symbol="gal/s"/>
+		<unit factor="4.54609E-03" name="Gallon [Canadian and UK (Imperial)] per second" no="ABFB" symbol="gal/s"/>
+		<unit factor="2.6497882488E-03" name="Barrel (US, petroleum) per minute" no="929A" symbol="bbl/min"/>
+		<unit factor="1.84013072833333E-03" name="Kilobarrel (US, petroleum) per day" no="C712" symbol="kbbl/d"/>
+		<unit factor="4.719474432E-04" name="Cubic foot per minutes" no="8089" symbol="ft&#179;/min"/>
+		<unit factor="7.57681666666667E-05" name="Gallon [Canadian and UK (Imperial)] per minute" no="96A5" symbol="gal/min"/>
+		<unit factor="6.30901964E-05" name="Gallon (US) per minute" no="EF05" symbol="gal/min"/>
+		<unit factor="4.416313748E-05" name="Barrel (US, petroleum) per hour" no="80EF" symbol="bbl/h"/>
+		<unit factor="1.6387064E-05" name="Cubic inch per second" no="E24E" symbol="in&#179;/s"/>
+		<unit factor="7.86579072E-06" name="Cubic foot per hour" no="F6A0" symbol="ft&#179;/h"/>
+		<unit factor="1.05150327333333E-06" name="Gallon (US) per hour" no="DBC8" symbol="gal/h"/>
+		<unit factor="1.26280277777778E-06" name="Gallon [Canadian and UK (Imperial)] per hour" no="AFD5" symbol="gal/h"/>
+		<unit factor="1.84013072833333E-06" name="Barrel (US, petroleum) per day" no="F129" symbol="bbl/d"/>
+		<unit factor="2.73117733333333E-07" name="Cubic inch per minute" no="BED4" symbol="in&#179;/min"/>
+		<unit factor="4.38126363888889E-08" name="Gallon (US) per day" no="C39A" symbol="gal/d"/>
 	</sub>
 	<sub id="mass-flow-rate" name="Mass Flow Rate" no="B95D">
-	Mass Divided by Time
-		<unit factor="1" name="kilogram per second" no="AFD1" symbol="kg/s"/>
-		<unit factor="1.0E+03" name="ton (metric) per second" no="A43D" symbol="t(metric)/s"/>
-		<unit factor="1.66666666666667E+01" name="ton (metric) per minute" no="F5F4" symbol="t(metric)/min"/>
-		<unit factor="2.77777777777778E-01" name="ton (metric) per hour" no="B42B" symbol="t(metric)/h"/>
-		<unit factor="1.66666666666667E-02" name="kilogram per minute" no="882F" symbol="kg/min"/>
-		<unit factor="1.15740740740741E-02" name="ton (metric) per day" no="9F9E" symbol="t(metric)/day"/>
-		<unit factor="2.77777777777778E-04" name="kilogram per hour" no="C3E1" symbol="kg/h"/>
-		<unit factor="4.5359237E-01" name="pound per second" no="A6CB" symbol="lb/s"/>
-		<unit factor="2.51995761111111E-01" name="ton (short) per hour" no="FA70"/>
-		<unit factor="7.55987283333333E-03" name="pound per minute" no="B1A5" symbol="lb/min"/>
-		<unit factor="1.25997880555556E-04" name="pound per hour" no="9C1A" symbol="lb/h"/>
+	Mass per Time
+		<unit factor="1" name="Kilogram per second" no="AFD1" symbol="kg/s"/>
+		<unit factor="1.0E+03" name="Ton (metric) per second" no="A43D" symbol="t(metric)/s"/>
+		<unit factor="1.66666666666667E+01" name="Ton (metric) per minute" no="F5F4" symbol="t(metric)/min"/>
+		<unit factor="2.77777777777778E-01" name="Ton (metric) per hour" no="B42B" symbol="t(metric)/h"/>
+		<unit factor="1.66666666666667E-02" name="Kilogram per minute" no="882F" symbol="kg/min"/>
+		<unit factor="1.15740740740741E-02" name="Ton (metric) per day" no="9F9E" symbol="t(metric)/day"/>
+		<unit factor="2.77777777777778E-04" name="Kilogram per hour" no="C3E1" symbol="kg/h"/>
+		<unit factor="4.5359237E-01" name="Pound per second" no="A6CB" symbol="lb/s"/>
+		<unit factor="2.51995761111111E-01" name="Ton (short) per hour" no="FA70"/>
+		<unit factor="7.55987283333333E-03" name="Pound per minute" no="B1A5" symbol="lb/min"/>
+		<unit factor="1.25997880555556E-04" name="Pound per hour" no="9C1A" symbol="lb/h"/>
 	</sub>
-	<sub id="angle" name="Angle" no="E0F3" priority="3">
-		<unit factor="1" name="second" no="ACE4" symbol="&quot;"/>
-		<unit factor="60" name="minute" no="B6E2" symbol="'">
-			<same equals="60" no="ACE4"/>
-		</unit>
-		<unit factor="3600" name="degree" no="C0C8" symbol="&#186;"/>
-		<unit factor="202.5" name="mil" no="B031">
-			An angular unit used in artillery; equal to 1/6400 of a complete revolution
-			<same equals="0.00015625" no="F3C8"/>
-			<same equals="2" no="90F0" value="6400"/>
-		</unit>
-		<unit factor="3240" name="gon = grade" no="DC2B">
-			A unit of angle equal to 0.9&#186;
-			<same equals="0.9" no="C0C8"/>
-		</unit>
-		<unit factor="206264.8062470963551564733573307786131966597008796315575769768779" name="radian" no="FBA7" symbol="rad">The radian is the plane angle between two radii of a circle that cut off on the circumference an arc equal in length to the radius. 3600*180/PI</unit>
-		<unit factor="1296000" name="revolution" no="F3C8" symbol="r">
-			<same equals="360" no="C0C8"/>
-			<same equals="2" no="90F0"/>
-			
-		</unit>
-		<unit factor="648000" name="pi" no="90F0" symbol="">
-			<same equals="180" no="C0C8"/>
-		</unit>
-<!--
-		<unit name="radian" factor="1" symbol="rad" description="The radian is the plane angle between two radii of a circle that cut off on the circumference an arc equal in length to the radius." />
-		<unit name="revolution" factor="6.2831853071795862" symbol="r" />
-		<unit name="degree" factor="0.017453292519943295" symbol="&#186;" />
-		<unit name="gon = grade" factor="0.015707963267948967" description="0.9&#186;" />
-		<unit name="mil" factor="0.00098174770424681044" description="0.05625&#186;" />
-		<unit name="minute" factor="0.00029088820866572158" symbol="'" />
-		<unit name="second" factor="4.8481368110953598e-06" symbol="&quot;" />
--->
-	</sub>
+
 	<sub id="time" name="Time" no="C5D1">
-		<unit factor="1" name="second" no="F261" symbol="s">The second is the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium-133 atom (13th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1967)</unit>
-		<unit factor="3.1536E+09" name="century" no="E0E7">100 years</unit>
-		<unit factor="3.1536E+08" name="decade" no="E57E">10 years</unit>
-		<unit factor="31536000" name="year" no="B274" symbol="y">365 days</unit>
-		<unit factor="2628000" name="month" no="830D">1/12 year</unit>
-		<unit factor="604800" name="week" no="EB3C">7 days</unit>
-		<unit factor="86400" name="day (solar, mean)" no="C96C" symbol="d"/>
-		<unit factor="3600" name="hour (solar, mean)" no="D114" symbol="h"/>
-		<unit factor="60" name="minute (solar, mean)" no="8D55" symbol="min"/>
-		<unit factor="1000" name="millisecond" no="DA8A" symbol="ms"/>
-		<unit factor="1000000" name="microsecond" no="CA48" symbol="&#181;s"/>
-		<unit factor="1.0E-08" name="shake" no="E95F"/>
-		<unit factor="1.0E-09" name="nanosecond" no="EF5A" symbol="ns"/>
-		<unit factor="31557600" name="year (Julian)" no="B012"/>
-		<unit factor="3.155814954E+07" name="year (sidereal)" no="8D02">365 days 6 hours 9 minutes 9.54 seconds</unit>
-		<unit factor="3.155693E+07" name="year (tropical)" no="8C27"/>
-		<unit factor="8.616409E+04" name="day (sidereal)" no="C7A5">23 hours 56 minutes 4.09 seconds</unit>
-		<unit factor="3.59017041666667E+03" name="hour (sidereal)" no="8FE6"/>
-		<unit factor="5.98361736111111E+01" name="minute (sidereal)" no="E00E"/>
-		<unit factor="9.97269560185185E-01" name="second (sidereal)" no="E595"/>
+		Seconds, Days, Hours
+		<unit factor="1" name="Second" no="F261" symbol="s">
+		The second is the duration of 9 192 631 770 periods of
+		the radiation corresponding to the transition between the
+		two hyperfine levels of the ground state of the cesium-133 atom 
+		(13th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1967)
+		</unit>
+		<unit factor="3.1536E+09" name="Century" no="E0E7">100 years</unit>
+		<unit factor="3.1536E+08" name="Decade" no="E57E">10 years</unit>
+		<unit factor="31536000" name="Year" no="B274" symbol="y">365 days</unit>
+		<unit factor="2628000" name="Month" no="830D">1/12 year</unit>
+		<unit factor="604800" name="Week" no="EB3C">7 days</unit>
+		<unit factor="86400" name="Day (solar, mean)" no="C96C" symbol="d"/>
+		<unit factor="3600" name="Hour (solar, mean)" no="D114" symbol="h"/>
+		<unit factor="60" name="Minute (solar, mean)" no="8D55" symbol="min"/>
+		<unit factor="1000" name="Millisecond" no="DA8A" symbol="ms"/>
+		<unit factor="1000000" name="Microsecond" no="CA48" symbol="&#181;s"/>
+		<unit factor="1.0E-08" name="Shake" no="E95F"/>
+		<unit factor="1.0E-09" name="Nanosecond" no="EF5A" symbol="ns"/>
+		<unit factor="31557600" name="Year (Julian)" no="B012"/>
+		<unit factor="3.155814954E+07" name="Year (sidereal)" no="8D02">365 days 6 hours 9 minutes 9.54 seconds</unit>
+		<unit factor="3.155693E+07" name="Year (tropical)" no="8C27"/>
+		<unit factor="8.616409E+04" name="Day (sidereal)" no="C7A5">23 hours 56 minutes 4.09 seconds</unit>
+		<unit factor="3.59017041666667E+03" name="Hour (sidereal)" no="8FE6"/>
+		<unit factor="5.98361736111111E+01" name="Minute (sidereal)" no="E00E"/>
+		<unit factor="9.97269560185185E-01" name="Second (sidereal)" no="E595"/>
 	</sub>
 	<group id="engineering" name="ENGINEERING" no="F923">
 		<sub id="viscosity-dynamic" name="Viscosity, Dynamic" no="A06D">
-			<unit factor="1" name="pascal second" no="C6E7" symbol="Pa&#183;s"/>
-			<unit factor="9.80665E+00" name="kilogram-force second per square meter" no="99AE" symbol="kgf&#183;s/m&#178;"/>
-			<unit factor="1.0E-01" name="poise" no="FFAE" symbol="P"/>
-			<unit factor="1.0E-03" name="centipoise" no="FA27" symbol="cP"/>
-			<unit factor="6.89475729316836E+03" name="pound-force second per square inch" no="C81D" symbol="lbf&#183;s/in&#178;"/>
-			<unit factor="4.78802589803358E+01" name="slug per foot second" no="AAFE" symbol="slug/(ft&#183;s)">lbf&#183;s/ft&#178;</unit>
-			<unit factor="4.78802589803358E+01" name="pound-force second per square foot" no="8877" symbol="lbf&#183;s/ft&#178;"/>
-			<unit factor="1.48816394356955E+00" name="poundal second per square foot" no="8E8E" symbol="pdl&#183;s/ft&#178;"/>
-			<unit factor="1.48816394356955E+00" name="pound per foot second" no="93A8" symbol="lb/(ft&#183;s)"/>
-			<unit factor="4.13378873213765E-04" name="pound per foot hour" no="81E9" symbol="lb/(ft&#183;h)"/>
+			<unit factor="1" name="Pascal second" no="C6E7" symbol="Pa&#183;s"/>
+			<unit factor="9.80665E+00" name="Kilogram-force second per square meter" no="99AE" symbol="kgf&#183;s/m&#178;"/>
+			<unit factor="1.0E-01" name="Poise" no="FFAE" symbol="P"/>
+			<unit factor="1.0E-03" name="Centipoise" no="FA27" symbol="cP"/>
+			<unit factor="6.89475729316836E+03" name="Pound-force second per square inch" no="C81D" symbol="lbf&#183;s/in&#178;"/>
+			<unit factor="4.78802589803358E+01" name="Slug per foot second" no="AAFE" symbol="slug/(ft&#183;s)">lbf&#183;s/ft&#178;</unit>
+			<unit factor="4.78802589803358E+01" name="Pound-force second per square foot" no="8877" symbol="lbf&#183;s/ft&#178;"/>
+			<unit factor="1.48816394356955E+00" name="Poundal second per square foot" no="8E8E" symbol="pdl&#183;s/ft&#178;"/>
+			<unit factor="1.48816394356955E+00" name="Pound per foot second" no="93A8" symbol="lb/(ft&#183;s)"/>
+			<unit factor="4.13378873213765E-04" name="Pound per foot hour" no="81E9" symbol="lb/(ft&#183;h)"/>
 		</sub>
 		<sub id="viscosity-kinematic" name="Viscosity, Kinematic" no="D044">
-			<unit factor="1" name="meter squared per second" no="AC80" symbol="m&#178;/s"/>
+			<unit factor="1" name="Meter squared per second" no="AC80" symbol="m&#178;/s"/>
 			<unit factor="2.77777777777778E-04" name="Square meter per hour" no="8FDB" symbol="m&#178;/h"/>
 			<unit factor="1.0E-04" name="Square centimeter per second" no="9605" symbol="cm&#178;/s"/>
-			<unit factor="1.0E-04" name="stokes" no="D102" symbol="St"/>
-			<unit factor="1.0E-06" name="centistokes" no="F9B0" symbol="cSt"/>
+			<unit factor="1.0E-04" name="Stokes" no="D102" symbol="St"/>
+			<unit factor="1.0E-06" name="Centistokes" no="F9B0" symbol="cSt"/>
 			<unit factor="1.0E-06" name="Square millimeter per second" no="C473" symbol="mm&#178;/s"/>
 			<unit factor="9.290304E-02" name="Square foot per second" no="C086" symbol="ft&#178;/s"/>
 			<unit factor="6.4516E-04" name="Square inch per second" no="D9D3" symbol="in&#178;/s"/>
 			<unit factor="2.58064E-05" name="Square foot per hour" no="C6CB" symbol="ft&#178;/h"/>
 		</sub>
 		<sub id="temperature-interval" name="Temperature Interval" no="BC6E">
-			<unit factor="1" name="kelvin" no="960B" symbol="K"/>
-			<unit factor="1" name="degree Celsius" no="8734" symbol="&#186;C"/>
-			<unit factor="1" name="degree centigrade" no="998C" symbol="&#186;C">The centigrade temperature scale is obsolete. The degree centigrade is only approximately equal to the degree Celsius</unit>
-			<unit factor="5.55555555555555556E-01" name="degree Fahrenheit" no="C5F1" symbol="&#186;F"/>
-			<unit factor="5.55555555555555556E-01" name="degree Rankine" no="C46B" symbol="&#186;R"/>
-			<unit factor="1.25" name="deg R&#233;aumur" no="AE42" symbol="&#186;r">Named for the French scientist Ren&#233;-Antoine Ferchault de R&#233;aumur (1683-1757). The interval between the freezing and boiling temperatures of water equals to 80 &#176;r instead of 100 &#176;C</unit>
+			<unit factor="1" name="Kelvin" no="960B" symbol="K"/>
+			<unit factor="1" name="Degree Celsius" no="8734" symbol="&#186;C"/>
+			<unit factor="1" name="Degree centigrade" no="998C" symbol="&#186;C">The centigrade temperature scale is obsolete. The degree centigrade is only approximately equal to the degree Celsius</unit>
+			<unit factor="5.55555555555555556E-01" name="Degree Fahrenheit" no="C5F1" symbol="&#186;F"/>
+			<unit factor="5.55555555555555556E-01" name="Degree Rankine" no="C46B" symbol="&#186;R"/>
+			<unit factor="1.25" name="Deg R&#233;aumur" no="AE42" symbol="&#186;r">Named for the French scientist Ren&#233;-Antoine Ferchault de R&#233;aumur (1683-1757). The interval between the freezing and boiling temperatures of water equals to 80 &#176;r instead of 100 &#176;C</unit>
 		</sub>
 		<sub id="moment-of-inertia" name="Moment of Inertia" no="80A3">
-			<unit factor="1" name="kilogram meter squared" no="803D" symbol="kg&#183;m&#178;"/>
-			<unit factor="1.0E-04" name="kilogram centimeter squared" no="A6A8" symbol="kg&#183;cm&#178;"/>
-			<unit factor="1.0E-06" name="kilogram millimeter squared" no="8E5F" symbol="kg&#183;mm&#178;"/>
-			<unit factor="1.0E-07" name="gram centimeter squared" no="AAEB" symbol="g&#183;cm&#178;"/>
-			<unit factor="1.0E-09" name="gram millimeter squared" no="C1D6" symbol="g&#183;mm&#178;"/>
-			<unit factor="4.21401100938048E-02" name="pound foot squared" no="C527" symbol="lb&#183;ft&#178;"/>
-			<unit factor="2.926396534292E-04" name="pound inch squared" no="E1F1" symbol="lb&#183;in&#178;"/>
+			<unit factor="1" name="Kilogram meter squared" no="803D" symbol="kg&#183;m&#178;"/>
+			<unit factor="1.0E-04" name="Kilogram centimeter squared" no="A6A8" symbol="kg&#183;cm&#178;"/>
+			<unit factor="1.0E-06" name="Kilogram millimeter squared" no="8E5F" symbol="kg&#183;mm&#178;"/>
+			<unit factor="1.0E-07" name="Gram centimeter squared" no="AAEB" symbol="g&#183;cm&#178;"/>
+			<unit factor="1.0E-09" name="Gram millimeter squared" no="C1D6" symbol="g&#183;mm&#178;"/>
+			<unit factor="4.21401100938048E-02" name="Pound foot squared" no="C527" symbol="lb&#183;ft&#178;"/>
+			<unit factor="2.926396534292E-04" name="Pound inch squared" no="E1F1" symbol="lb&#183;in&#178;"/>
 		</sub>
 		<sub id="second-moment-of-area" name="Second Moment of Area" no="C7FA">
-			<unit factor="1" name="meter to the fourth power" no="E84E" symbol="m^4"/>
-			<unit factor="1.0E-08" name="centimeter to the fourth power" no="BE36" symbol="cm^4"/>
-			<unit factor="1.0E-12" name="millimeter to the fourth power" no="FF13" symbol="mm^4"/>
-			<unit factor="6.99108962140570E-01" name="yard to the fourth power" no="95DD" symbol="yd^4"/>
-			<unit factor="8.63097484124160E-03" name="foot to the fourth power" no="820E" symbol="ft^4"/>
-			<unit factor="4.162314256E-07" name="inch to the fourth power" no="A40F" symbol="in^4"/>
+			<unit factor="1" name="Meter to the fourth power" no="E84E" symbol="m^4"/>
+			<unit factor="1.0E-08" name="Centimeter to the fourth power" no="BE36" symbol="cm^4"/>
+			<unit factor="1.0E-12" name="Millimeter to the fourth power" no="FF13" symbol="mm^4"/>
+			<unit factor="6.99108962140570E-01" name="Yard to the fourth power" no="95DD" symbol="yd^4"/>
+			<unit factor="8.63097484124160E-03" name="Foot to the fourth power" no="820E" symbol="ft^4"/>
+			<unit factor="4.162314256E-07" name="Inch to the fourth power" no="A40F" symbol="in^4"/>
 		</sub>
 		<sub id="section-modulus" name="Section Modulus" no="9875">
-			<unit factor="1" name="meter to the third power" no="AA83" symbol="m&#179;"/>
-			<unit factor="1.0E-06" name="centimeter to the third power" no="A8AB" symbol="cm&#179;"/>
-			<unit factor="1.0E-09" name="millimeter to the third power" no="ACDB" symbol="mm&#179;"/>
-			<unit factor="7.64554857984E-01" name="yard to the third power" no="FA3B" symbol="yd&#179;"/>
-			<unit factor="2.8316846592E-02" name="foot to the third power" no="B4C9" symbol="ft&#179;"/>
-			<unit factor="1.6387064E-05" name="inch to the third power" no="F7CE" symbol="in&#179;"/>
+			<unit factor="1" name="Meter to the third power" no="AA83" symbol="m&#179;"/>
+			<unit factor="1.0E-06" name="Centimeter to the third power" no="A8AB" symbol="cm&#179;"/>
+			<unit factor="1.0E-09" name="Millimeter to the third power" no="ACDB" symbol="mm&#179;"/>
+			<unit factor="7.64554857984E-01" name="Yard to the third power" no="FA3B" symbol="yd&#179;"/>
+			<unit factor="2.8316846592E-02" name="Foot to the third power" no="B4C9" symbol="ft&#179;"/>
+			<unit factor="1.6387064E-05" name="Inch to the third power" no="F7CE" symbol="in&#179;"/>
 		</sub>
 		<sub id="mass-per-area" name="Mass Divided by Area" no="BA46">
-			<unit factor="1" name="kilogram per square meter" no="DDA9" symbol="kg/m&#178;"/>
-			<unit factor="1.0E+06" name="kilogram per square millimeter" no="FBE1" symbol="kg/mm&#178;"/>
-			<unit factor="1.0E+04" name="kilogram per square centimeter" no="812B" symbol="kg/cm&#178;"/>
-			<unit factor="1.0E+03" name="gram per square millimeter" no="BB2F" symbol="g/mm&#178;"/>
-			<unit factor="1.0E+01" name="gram per square centimeter" no="D7A2" symbol="g/cm&#178;"/>
-			<unit factor="7.03069579639159E+02" name="pound per square inch" no="A877" symbol="lb/in&#178;"/>
-			<unit factor="4.39418487274475E+01" name="ounce (avoirdupois) per square inch" no="8229" symbol="oz/in&#178;"/>
-			<unit factor="4.88242763638305E+00" name="pound per square foot" no="9270" symbol="lb/ft&#178;"/>
-			<unit factor="3.05151727273941E-01" name="ounce (avoirdupois) per square foot" no="BBDE" symbol="oz/ft&#178;"/>
-			<unit factor="3.39057474748823E-02" name="ounce (avoirdupois) per square yard" no="AD87" symbol="oz/yd&#178;"/>
+			<unit factor="1" name="Kilogram per square meter" no="DDA9" symbol="kg/m&#178;"/>
+			<unit factor="1.0E+06" name="Kilogram per square millimeter" no="FBE1" symbol="kg/mm&#178;"/>
+			<unit factor="1.0E+04" name="Kilogram per square centimeter" no="812B" symbol="kg/cm&#178;"/>
+			<unit factor="1.0E+03" name="Gram per square millimeter" no="BB2F" symbol="g/mm&#178;"/>
+			<unit factor="1.0E+01" name="Gram per square centimeter" no="D7A2" symbol="g/cm&#178;"/>
+			<unit factor="7.03069579639159E+02" name="Pound per square inch" no="A877" symbol="lb/in&#178;"/>
+			<unit factor="4.39418487274475E+01" name="Ounce (avoirdupois) per square inch" no="8229" symbol="oz/in&#178;"/>
+			<unit factor="4.88242763638305E+00" name="Pound per square foot" no="9270" symbol="lb/ft&#178;"/>
+			<unit factor="3.05151727273941E-01" name="Ounce (avoirdupois) per square foot" no="BBDE" symbol="oz/ft&#178;"/>
+			<unit factor="3.39057474748823E-02" name="Ounce (avoirdupois) per square yard" no="AD87" symbol="oz/yd&#178;"/>
 		</sub>
 		<sub id="mass-per-length" name="Mass Divided by Length" no="8AB1">
-			<unit factor="1" name="kilogram per meter" no="A36D" symbol="kg/m"/>
-			<unit factor="1.0E+03" name="kilogram per millimeter" no="ED19" symbol="kg/mm"/>
-			<unit factor="1.0E+02" name="kilogram per centimeter" no="BCE4" symbol="kg/cm"/>
-			<unit factor="1" name="gram per millimeter" no="D1DB" symbol="g/mm"/>
-			<unit factor="1.0E-01" name="gram per centimeter" no="CE12" symbol="g/cm"/>
-			<unit factor="1.0E-03" name="gram per meter" no="D344" symbol="g/m"/>
-			<unit factor="1.0E-06" name="tex" no="C82C"/>
-			<unit factor="1.78579673228346E+01" name="pound per inch" no="CB8A" symbol="lb/in"/>
-			<unit factor="1.48816394356955E+00" name="pound per foot" no="FA1B" symbol="lb/ft"/>
-			<unit factor="4.96054647856518E-01" name="pound per yard" no="82FD" symbol="lb/yd"/>
-			<unit factor="1.11111111111111E-07" name="denier" no="84C8"/>
+			<unit factor="1" name="Kilogram per meter" no="A36D" symbol="kg/m"/>
+			<unit factor="1.0E+03" name="Kilogram per millimeter" no="ED19" symbol="kg/mm"/>
+			<unit factor="1.0E+02" name="Kilogram per centimeter" no="BCE4" symbol="kg/cm"/>
+			<unit factor="1" name="Gram per millimeter" no="D1DB" symbol="g/mm"/>
+			<unit factor="1.0E-01" name="Gram per centimeter" no="CE12" symbol="g/cm"/>
+			<unit factor="1.0E-03" name="Gram per meter" no="D344" symbol="g/m"/>
+			<unit factor="1.0E-06" name="Tex" no="C82C"/>
+			<unit factor="1.78579673228346E+01" name="Pound per inch" no="CB8A" symbol="lb/in"/>
+			<unit factor="1.48816394356955E+00" name="Pound per foot" no="FA1B" symbol="lb/ft"/>
+			<unit factor="4.96054647856518E-01" name="Pound per yard" no="82FD" symbol="lb/yd"/>
+			<unit factor="1.11111111111111E-07" name="Denier" no="84C8"/>
 		</sub>
 		<sub id="torque-per-length" name="Moment of Force or Torque, Divided by Length" no="CB2F">
-			<unit factor="1" name="newton meter per meter" no="9201" symbol="N&#183;m/m"/>
-			<unit factor="9.80665E+03" name="kilogram-force meter per millimeter" no="9AAC" symbol="kgf&#183;m/mm"/>
-			<unit factor="9.80665E+02" name="kilogram-force meter per centimeter" no="F45A" symbol="kgf&#183;m/cm"/>
-			<unit factor="5.33786593831260E+01" name="pound-force foot per inch" no="A61C" symbol="lbf&#183;ft/in"/>
-			<unit factor="4.44822161526050E+00" name="pound-force inch per inch" no="F013" symbol="lbf&#183;in/in"/>
+			<unit factor="1" name="Newton meter per meter" no="9201" symbol="N&#183;m/m"/>
+			<unit factor="9.80665E+03" name="Kilogram-force meter per millimeter" no="9AAC" symbol="kgf&#183;m/mm"/>
+			<unit factor="9.80665E+02" name="Kilogram-force meter per centimeter" no="F45A" symbol="kgf&#183;m/cm"/>
+			<unit factor="5.33786593831260E+01" name="Pound-force foot per inch" no="A61C" symbol="lbf&#183;ft/in"/>
+			<unit factor="4.44822161526050E+00" name="Pound-force inch per inch" no="F013" symbol="lbf&#183;in/in"/>
 		</sub>
 		<sub id="force-per-length" name="Force Divided by Length" no="EDE3">
-			<unit factor="1" name="newton per meter" no="F943" symbol="N/m"/>
-			<unit factor="1.75126835246476E+02" name="pound-force per inch" no="B8BB" symbol="lbf/in"/>
-			<unit factor="1.45939029372064E+01" name="pound-force per foot" no="F4F5" symbol="lbf/ft"/>
+			<unit factor="1" name="Newton per meter" no="F943" symbol="N/m"/>
+			<unit factor="1.75126835246476E+02" name="Pound-force per inch" no="B8BB" symbol="lbf/in"/>
+			<unit factor="1.45939029372064E+01" name="Pound-force per foot" no="F4F5" symbol="lbf/ft"/>
 		</sub>
 		<sub id="permeability" name="Permeability" no="C738">
-			<unit factor="1" name="kilogram per pascal second square meter" no="8CBA" symbol="kg/(Pa&#183;s&#183;m&#178;)"/>
-			<unit factor="5.72135E-11" name="perm (0&#186;C)" no="9279"/>
-			<unit factor="5.74525E-11" name="perm (23&#186;C)" no="DF75"/>
+			<unit factor="1" name="Kilogram per pascal second square meter" no="8CBA" symbol="kg/(Pa&#183;s&#183;m&#178;)"/>
+			<unit factor="5.72135E-11" name="Perm (0&#186;C)" no="9279"/>
+			<unit factor="5.74525E-11" name="Perm (23&#186;C)" no="DF75"/>
 		</sub>
 	</group>
 	<sub id="energy-per-area-time" name="Energy Divided by Area Time" no="CC3E">
-		<unit factor="1" name="watt per square meter" no="CF43" symbol="W/m&#178;"/>
-		<unit factor="1.0E+04" name="watt per square centimeter" no="9F8E" symbol="W/cm&#178;"/>
-		<unit factor="1.0E-03" name="erg per square centimeter second" no="8570" symbol="erg/(cm&#178;&#183;s)"/>
-		<unit factor="1.55000310000620E+03" name="watt per square inch" no="B186" symbol="W/in&#178;"/>
+		<unit factor="1" name="Watt per square meter" no="CF43" symbol="W/m&#178;"/>
+		<unit factor="1.0E+04" name="Watt per square centimeter" no="9F8E" symbol="W/cm&#178;"/>
+		<unit factor="1.0E-03" name="Erg per square centimeter second" no="8570" symbol="erg/(cm&#178;&#183;s)"/>
+		<unit factor="1.55000310000620E+03" name="Watt per square inch" no="B186" symbol="W/in&#178;"/>
 	</sub>
 	<sub id="energy-per-volume" name="Available Energy (Volume)" no="E94D">
-		<unit factor="1" name="joule per cubic meter" no="895E" symbol="J/m&#179;"/>
+		<unit factor="1" name="Joule per cubic meter" no="895E" symbol="J/m&#179;"/>
 		<unit factor="3.72589458078313E+04" name="British thermal unit (IT) per cubic foot" no="E3CD" symbol="Btu(IT)/ft&#179;"/>
 		<unit factor="3.72340281981385E+04" name="British thermal unit (th) per cubic foot" no="DBCC" symbol="Btu(th)/ft&#179;"/>
 	</sub>
 	<sub id="energy-per-mass" name="Available Energy (Mass)" no="8891">
-		<unit factor="1" name="joule per kilogram" no="C094" symbol="J/kg"/>
-		<unit factor="4.1868E+03" name="calorie (IT) per gram" no="9940" symbol="cal(IT)/g"/>
-		<unit factor="4.184E+03" name="calorie (th) per gram" no="E297" symbol="cal(th)/g"/>
+		<unit factor="1" name="Joule per kilogram" no="C094" symbol="J/kg"/>
+		<unit factor="4.1868E+03" name="Calorie (IT) per gram" no="9940" symbol="cal(IT)/g"/>
+		<unit factor="4.184E+03" name="Calorie (th) per gram" no="E297" symbol="cal(th)/g"/>
 		<unit factor="2.326E+03" name="British thermal unit (IT) per pound" no="E0F5" symbol="Btu(IT)/lb"/>
 		<unit factor="2.32444444444445E+03" name="British thermal unit (th) per pound" no="B69D" symbol="Btu(th)/lb"/>
 	</sub>
 	<sub id="coefficient-of-heat-transfer" name="Coefficient of Heat Transfer" no="C980">
-		<unit factor="1" name="watt per square meter kelvin" no="A02E" symbol="W/(m&#178;&#183;K)"/>
-		<unit factor="1.163E+00" name="kilocalorie (IT) per square meter hour degree Celsius" no="8E92" symbol="kcal(IT)/(m&#178;&#183;h&#183;&#186;C)"/>
+		<unit factor="1" name="Watt per square meter kelvin" no="A02E" symbol="W/(m&#178;&#183;K)"/>
+		<unit factor="1.163E+00" name="Kilocalorie (IT) per square meter hour degree Celsius" no="8E92" symbol="kcal(IT)/(m&#178;&#183;h&#183;&#186;C)"/>
 		<unit factor="2.04417480280085E+04" name="Btu(IT)/(s&#183;ft&#178;&#183;&#186;F)]British thermal unit (IT) per second square foot degree Fahrenheit" no="D26B"/>
 		<unit factor="2.04280772306267E+04" name="Btu(th)/(s&#183;ft&#178;&#183;&#186;F)]British thermal unit (th) per second square foot degree Fahrenheit" no="FC00"/>
 		<unit factor="5.67826334111348E+00" name="Btu(IT)/(h&#183;ft&#178;&#183;&#186;F)]British thermal unit (IT) per hour square foot degree Fahrenheit" no="EE60"/>
 		<unit factor="5.67446589739630E+00" name="Btu(th)/(h&#183;ft&#178;&#183;&#186;F)]British thermal unit (th) per hour square foot degree Fahrenheit" no="9987"/>
 	</sub>
 	<sub id="specific-heat-capacity" name="Specific Heat Capacity, Specific Entropy" no="EDFE">
-		<unit factor="1" name="joule per kilogram kelvin" no="DDD3" symbol="J/(kg&#183;K)"/>
-		<unit factor="4.1868E+03" name="calorie (IT) per gram degree Celsius" no="CB7F" symbol="cal(IT)/(g&#183;&#186;C)"/>
-		<unit factor="4.184E+03" name="calorie (th) per gram degree Celsius" no="8197" symbol="cal(th)/(g&#183;&#186;C)"/>
-		<unit factor="4.1868E+03" name="kilocalorie (IT) per kilogram kelvin" no="B82E" symbol="kcal(IT)/(kg&#183;K)"/>
-		<unit factor="4.1868E+03" name="kilocalorie (IT) per kilogram degree Celsius" no="8836" symbol="kcal(IT)/(kg&#183;&#186;C)"/>
-		<unit factor="4.184E+03" name="kilocalorie(th) per kilogram kelvin" no="B95C" symbol="kcal(th)/(kg&#183;K)"/>
-		<unit factor="4.184E+03" name="kilocalorie (th) per kilogram degree Celsius" no="CE90" symbol="kcal(th)/(kg&#183;&#186;C)"/>
-		<unit factor="9.80665E+00" name="kilogram-force meter per kilogram kelvin" no="AA5F" symbol="kgf&#183;m/(kg&#183;K)"/>
+		<unit factor="1" name="Joule per kilogram kelvin" no="DDD3" symbol="J/(kg&#183;K)"/>
+		<unit factor="4.1868E+03" name="Calorie (IT) per gram degree Celsius" no="CB7F" symbol="cal(IT)/(g&#183;&#186;C)"/>
+		<unit factor="4.184E+03" name="Calorie (th) per gram degree Celsius" no="8197" symbol="cal(th)/(g&#183;&#186;C)"/>
+		<unit factor="4.1868E+03" name="Kilocalorie (IT) per kilogram kelvin" no="B82E" symbol="kcal(IT)/(kg&#183;K)"/>
+		<unit factor="4.1868E+03" name="Kilocalorie (IT) per kilogram degree Celsius" no="8836" symbol="kcal(IT)/(kg&#183;&#186;C)"/>
+		<unit factor="4.184E+03" name="Kilocalorie(th) per kilogram kelvin" no="B95C" symbol="kcal(th)/(kg&#183;K)"/>
+		<unit factor="4.184E+03" name="Kilocalorie (th) per kilogram degree Celsius" no="CE90" symbol="kcal(th)/(kg&#183;&#186;C)"/>
+		<unit factor="9.80665E+00" name="Kilogram-force meter per kilogram kelvin" no="AA5F" symbol="kgf&#183;m/(kg&#183;K)"/>
 		<unit factor="4.1868E+03" name="British thermal unit (IT) per pound degree Fahrenheit" no="A40B" symbol="Btu(IT)/(lb&#183;&#186;F)"/>
 		<unit factor="4.1868E+03" name="British thermal unit (IT) per pound degree Rankine" no="D00C" symbol="Btu(IT)/(lb&#183;&#186;R)"/>
 		<unit factor="4.184E+03" name="British thermal unit (th) per pound degree Fahrenheit" no="82EA" symbol="Btu(th)/(lb&#183;&#186;F)"/>
 		<unit factor="4.184E+03" name="British thermal unit (th) per pound degree Rankine" no="C94E" symbol="Btu(th)/(lb&#183;&#186;R)"/>
-		<unit factor="5.380320456E+00" name="foot pound-force per pound degree Rankine" no="F6C1" symbol="ft&#183;lbf/(lb&#183;&#186;R)"/>
+		<unit factor="5.380320456E+00" name="Foot pound-force per pound degree Rankine" no="F6C1" symbol="ft&#183;lbf/(lb&#183;&#186;R)"/>
 	</sub>
 	<sub id="density-of-heat" name="Density of Heat" no="F73B">
-		<unit factor="1" name="joule per square meter" no="CAE3" symbol="J/m&#178;"/>
-		<unit factor="4.184E+04" name="calorie (th) per square centimeter" no="F241" symbol="cal(th)/cm&#178;"/>
-		<unit factor="4.184E+04" name="langley" no="BE9B"/>
+		<unit factor="1" name="Joule per square meter" no="CAE3" symbol="J/m&#178;"/>
+		<unit factor="4.184E+04" name="Calorie (th) per square centimeter" no="F241" symbol="cal(th)/cm&#178;"/>
+		<unit factor="4.184E+04" name="Langley" no="BE9B"/>
 		<unit factor="1.13565266822270E+04" name="British thermal unit (IT) per square foot" no="CE89" symbol="Btu(IT)/ft&#178;"/>
 		<unit factor="1.13489317947926E+04" name="British thermal unit (th) per square foot" no="8C41" symbol="Btu(th)/ft&#178;"/>
 	</sub>
 	<sub id="density-of-heat-flow-rate" name="Density of Heat Flow Rate" no="C08C">
-		<unit factor="1" name="watt per square meter" no="D893" symbol="W/m&#178;"/>
-		<unit factor="4.184E+04" name="calorie (th) per square centimeter second" no="D75C" symbol="cal(th)/(cm&#178;&#183;s)"/>
-		<unit factor="6.97333333333333E+02" name="calorie (th) per square centimeter minute" no="BD2C" symbol="cal(th)/(cm&#178;&#183;min)"/>
+		<unit factor="1" name="Watt per square meter" no="D893" symbol="W/m&#178;"/>
+		<unit factor="4.184E+04" name="Calorie (th) per square centimeter second" no="D75C" symbol="cal(th)/(cm&#178;&#183;s)"/>
+		<unit factor="6.97333333333333E+02" name="Calorie (th) per square centimeter minute" no="BD2C" symbol="cal(th)/(cm&#178;&#183;min)"/>
 		<unit factor="1.63424617845014E+06" name="British thermal unit (th) per square inch second" no="BE8F" symbol="Btu(th)/(in&#178;s)"/>
 		<unit factor="1.13565266822270E+04" name="British thermal unit (IT) per square foot second" no="A626" symbol="Btu(IT)/(ft&#178;&#183;s)"/>
 		<unit factor="1.13489317947926E+04" name="British thermal unit (th) per square foot second" no="EE16" symbol="Btu(th)/(ft&#178;&#183;s)"/>
@@ -524,38 +395,38 @@
 		<unit factor="3.15248105410906E+00" name="British thermal unit (th) per square foot hour" no="9354" symbol="Btu(th)/(ft&#178;&#183;h)"/>
 	</sub>
 	<sub id="fuel-consumption-mass" name="Fuel Consumption (Mass)" no="9EBD">
-		<unit factor="1" name="kilogram per joule" no="F94B" symbol="kg/J"/>
-		<unit factor="1.68965941067156E-07" name="pound per horsepower (550 ft&#183;lbf/s) hour" no="81D7" symbol="lb/(hp&#183;h)"/>
-		<unit factor="3.77672671473307E-10" name="gram per horsepower (metric) hour" no="A8EC" symbol="g/(hp&#183;h)"/>
-		<unit factor="2.77777777777778E-10" name="gram per kilowatt hour" no="B5BD" symbol="g/(kW&#183;h)"/>
+		<unit factor="1" name="Kilogram per joule" no="F94B" symbol="kg/J"/>
+		<unit factor="1.68965941067156E-07" name="Pound per horsepower (550 ft&#183;lbf/s) hour" no="81D7" symbol="lb/(hp&#183;h)"/>
+		<unit factor="3.77672671473307E-10" name="Gram per horsepower (metric) hour" no="A8EC" symbol="g/(hp&#183;h)"/>
+		<unit factor="2.77777777777778E-10" name="Gram per kilowatt hour" no="B5BD" symbol="g/(kW&#183;h)"/>
 	</sub>
 	<sub id="fuel-consumption-volume" name="Fuel Consumption (Volume)" no="D4FF">
-		<unit factor="1" name="cubic meter per joule" no="8F39" symbol="m&#179;/J"/>
-		<unit factor="1.0E-03" name="liter per joule" no="821E" symbol="L/J"/>
-		<unit factor="1.41008911682148E-09" name="gallon (US) per horsepower (550 ft&#183;lbf/s) hour" no="95AF" symbol="gal/(hp&#183;h)"/>
-		<unit factor="1.42964658108982E-09" name="gallon (US) per horsepower (metric) hour" no="B571" symbol="gal/(hp&#183;h)"/>
+		<unit factor="1" name="Cubic meter per joule" no="8F39" symbol="m&#179;/J"/>
+		<unit factor="1.0E-03" name="Liter per joule" no="821E" symbol="L/J"/>
+		<unit factor="1.41008911682148E-09" name="Gallon (US) per horsepower (550 ft&#183;lbf/s) hour" no="95AF" symbol="gal/(hp&#183;h)"/>
+		<unit factor="1.42964658108982E-09" name="Gallon (US) per horsepower (metric) hour" no="B571" symbol="gal/(hp&#183;h)"/>
 	</sub>
 	<sub id="fuel-consumption-distance" name="Fuel Consumption (Distance)" no="D46E">
-		<unit factor="1" name="meter per cubic meter" no="941E" symbol="m/m&#179;"/>
-		<unit factor="1.0E+06" name="kilometer per liter" no="9E13" symbol="km/L"/>
+		<unit factor="1" name="Meter per cubic meter" no="941E" symbol="m/m&#179;"/>
+		<unit factor="1.0E+06" name="Kilometer per liter" no="9E13" symbol="km/L"/>
 		<unit factor="1.0E+08" name="100 kilometer per liter" no="A835"/>
-		<unit factor="1.0E+04" name="kilometer per 100 liter" no="C1C4"/>
-		<unit factor="4.25143707430272E+05" name="mile per gallon (US)" no="F752" symbol="mi/gal(US) = mpg"/>
+		<unit factor="1.0E+04" name="Kilometer per 100 liter" no="C1C4"/>
+		<unit factor="4.25143707430272E+05" name="Mile per gallon (US)" no="F752" symbol="mi/gal(US) = mpg"/>
 		<unit factor="4.25143707430272E+07" name="100 mile per gallon (US)" no="909D"/>
 	</sub>
 	<sub id="heat-capacity" name="Heat Capacity, Entropy" no="AE24">
-		<unit factor="1" name="joule per kelvin" no="BBE5" symbol="J/k"/>
+		<unit factor="1" name="Joule per kelvin" no="BBE5" symbol="J/k"/>
 		<unit factor="1.899100534716E+03" name="British thermal unit (IT) per degree Fahrenheit" no="DD32" symbol="Btu(IT)/&#186;F"/>
 		<unit factor="1.899100534716E+03" name="British thermal unit (IT) per degree Rankine" no="C5DF" symbol="Btu(IT)/&#186;R"/>
 		<unit factor="1.89783047608E+03" name="British thermal unit (th) per degree Fahrenheit" no="959E" symbol="Btu(th)/&#186;F"/>
 		<unit factor="1.89783047608E+03" name="British thermal unit (th) per degree Rankine" no="FE62" symbol="Btu(th)/&#186;R"/>
 	</sub>
 	<sub id="thermal-conductivity" name="Thermal Conductivity" no="D398">
-		<unit factor="1" name="watt per meter kelvin" no="84A5" symbol="W/(m&#183;K)"/>
-		<unit factor="4.1868E+02" name="calorie (IT) per centimeter second degree Celsius" no="CCBE" symbol="cal(IT)/(cm&#183;s&#183;&#186;C)"/>
-		<unit factor="4.184E+02" name="calorie (th) per centimeter second degree Celsius" no="D6DE" symbol="cal(th)/(cm&#183;s&#183;&#186;C)"/>
-		<unit factor="1.163E+00" name="kilocalorie (IT) per meter hour degree Celsius" no="ECF2" symbol="kcal(IT)/(m&#183;h&#183;&#186;C)"/>
-		<unit factor="1.16222222222222E+00" name="kilocalorie (th) per meter hour degree Celsius" no="C8BB" symbol="kcal(th)/(m&#183;h&#183;&#186;C)"/>
+		<unit factor="1" name="Watt per meter kelvin" no="84A5" symbol="W/(m&#183;K)"/>
+		<unit factor="4.1868E+02" name="Calorie (IT) per centimeter second degree Celsius" no="CCBE" symbol="cal(IT)/(cm&#183;s&#183;&#186;C)"/>
+		<unit factor="4.184E+02" name="Calorie (th) per centimeter second degree Celsius" no="D6DE" symbol="cal(th)/(cm&#183;s&#183;&#186;C)"/>
+		<unit factor="1.163E+00" name="Kilocalorie (IT) per meter hour degree Celsius" no="ECF2" symbol="kcal(IT)/(m&#183;h&#183;&#186;C)"/>
+		<unit factor="1.16222222222222E+00" name="Kilocalorie (th) per meter hour degree Celsius" no="C8BB" symbol="kcal(th)/(m&#183;h&#183;&#186;C)"/>
 		<unit factor="5.19220399911417E+02" name="Britsh thermal unit (IT) inch per second square foot degree Fahrenheit" no="8AE9" symbol="Btu(IT)&#183;in/(s&#183;ft&#178;&#183;&#186;F)"/>
 		<unit factor="5.18873161657918E+02" name="Britsh thermal unit (th) inch per second square foot degree Fahrenheit" no="D4C3" symbol="Btu(th)&#183;in/(s&#183;ft&#178;&#183;&#186;F)"/>
 		<unit factor="1.73073466637139E+00" name="Britsh thermal unit (IT) foot per hour square foot degree Fahrenheit" no="FFAA" symbol="Btu(IT)&#183;ft/(h&#183;ft&#178;&#183;&#186;F)"/>
@@ -569,232 +440,202 @@
 	</sub>
 	<sub id="thermal-insulance" name="Thermal Insulance" no="842E">
 		<unit factor="1" name="Square meter kelvin per watt" no="9F01" symbol="m&#178;&#183;K/W"/>
-		<unit factor="1.76110183682306E-01" name="degree Fahrenheit hour square foot per British thermal unit (IT)" no="B2AC" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(IT)"/>
-		<unit factor="1.76228039445764E-01" name="degree Fahrenheit hour square foot per British thermal unit (th)" no="ACE0" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(th)"/>
-		<unit factor="1.55E-01" name="clo" no="D641"/>
+		<unit factor="1.76110183682306E-01" name="Degree Fahrenheit hour square foot per British thermal unit (IT)" no="B2AC" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(IT)"/>
+		<unit factor="1.76228039445764E-01" name="Degree Fahrenheit hour square foot per British thermal unit (th)" no="ACE0" symbol="&#186;F&#183;h&#183;ft&#178;/ Btu(th)"/>
+		<unit factor="1.55E-01" name="Clo" no="D641"/>
 	</sub>
 	<sub id="thermal-resistance" name="Thermal Resistance" no="8019">
-		<unit factor="1" name="kelvin per watt" no="F78D" symbol="K/W"/>
-		<unit factor="1.89563424062664E+00" name="degree Fahrenheit hour per British thermal unit (IT)" no="D5B0" symbol="&#186;F&#183;h/Btu(IT)"/>
-		<unit factor="1.89690282950659E+00" name="degree Fahrenheit hour per British thermal unit (th)" no="E187" symbol="&#186;F&#183;h/Btu(th)"/>
-		<unit factor="5.26565066840732E-04" name="degree Fahrenheit second per British thermal unit (IT)" no="FA1F" symbol="&#186;F&#183;s/Btu(IT)"/>
-		<unit factor="5.26917452640721E-04" name="degree Fahrenheit second per British thermal unit (th)" no="EF39" symbol="&#186;F&#183;s/Btu(th)"/>
+		<unit factor="1" name="Kelvin per watt" no="F78D" symbol="K/W"/>
+		<unit factor="1.89563424062664E+00" name="Degree Fahrenheit hour per British thermal unit (IT)" no="D5B0" symbol="&#186;F&#183;h/Btu(IT)"/>
+		<unit factor="1.89690282950659E+00" name="Degree Fahrenheit hour per British thermal unit (th)" no="E187" symbol="&#186;F&#183;h/Btu(th)"/>
+		<unit factor="5.26565066840732E-04" name="Degree Fahrenheit second per British thermal unit (IT)" no="FA1F" symbol="&#186;F&#183;s/Btu(IT)"/>
+		<unit factor="5.26917452640721E-04" name="Degree Fahrenheit second per British thermal unit (th)" no="EF39" symbol="&#186;F&#183;s/Btu(th)"/>
 	</sub>
 	<sub id="thermal-resistivity" name="Thermal Resistivity" no="A0D2">
-		<unit factor="1" name="meter kelvin per watt" no="B897" symbol="m&#183;K/W"/>
-		<unit factor="6.93347179851598E+00" name="degree Fahrenheit hour square foot per British thermal unit (IT) inch" no="DD9C" symbol="&#186;F&#183;h&#183;ft&#178;/[Btu(IT)&#183;in]"/>
-		<unit factor="6.93811178920332E+00" name="degree Fahrenheit hour square foot per British thermal unit (th) inch" no="B352" symbol="&#186;F&#183;h&#183;ft&#178;/[Btu(th)&#183;in]"/>
+		<unit factor="1" name="Meter kelvin per watt" no="B897" symbol="m&#183;K/W"/>
+		<unit factor="6.93347179851598E+00" name="Degree Fahrenheit hour square foot per British thermal unit (IT) inch" no="DD9C" symbol="&#186;F&#183;h&#183;ft&#178;/[Btu(IT)&#183;in]"/>
+		<unit factor="6.93811178920332E+00" name="Degree Fahrenheit hour square foot per British thermal unit (th) inch" no="B352" symbol="&#186;F&#183;h&#183;ft&#178;/[Btu(th)&#183;in]"/>
 	</sub>
 	<sub id="luminance" name="Luminance" no="C8CF">
-		<unit factor="1" name="candela per square meter" no="A870" symbol="cd/m&#178;">The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540E+12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian (16th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1979)</unit>
-		<unit factor="1.0E+04" name="candela per square centimeter" no="AFC8" symbol="cd/cm&#178;"/>
-		<unit factor="1.0E+04" name="stilb" no="EBDF" symbol="sb"/>
-		<unit factor="1.0E+03" name="kilocandela per square meter" no="F175" symbol="kcd/m&#178;"/>
-		<unit factor="3.183098861838E+03" name="lambert" no="CD73" symbol="L">The exact conversion factor is 1E+04/pi</unit>
-		<unit factor="1.55000310000620E+03" name="candela per square inch" no="8004" symbol="cd/in&#178;"/>
-		<unit factor="1.07639104167097E+01" name="candela per square foot" no="93F6" symbol="cd/ft&#178;"/>
-		<unit factor="3.426259099635E+00" name="footlambert" no="8D3F" symbol="fL"/>
+		<unit factor="1" name="Candela per square meter" no="A870" symbol="cd/m&#178;">The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540E+12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian (16th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1979)</unit>
+		<unit factor="1.0E+04" name="Candela per square centimeter" no="AFC8" symbol="cd/cm&#178;"/>
+		<unit factor="1.0E+04" name="Stilb" no="EBDF" symbol="sb"/>
+		<unit factor="1.0E+03" name="Kilocandela per square meter" no="F175" symbol="kcd/m&#178;"/>
+		<unit factor="3.183098861838E+03" name="Lambert" no="CD73" symbol="L">The exact conversion factor is 1E+04/pi</unit>
+		<unit factor="1.55000310000620E+03" name="Candela per square inch" no="8004" symbol="cd/in&#178;"/>
+		<unit factor="1.07639104167097E+01" name="Candela per square foot" no="93F6" symbol="cd/ft&#178;"/>
+		<unit factor="3.426259099635E+00" name="Footlambert" no="8D3F" symbol="fL"/>
 	</sub>
 	<sub id="luminance-flux" name="Luminous Flux" no="F173">
-		<unit factor="1" name="lumen" no="F757" symbol="lm"/>
-		<unit factor="1" name="candera steradian" no="EB8B" symbol="cd&#183;sr"/>
+		<unit factor="1" name="Lumen" no="F757" symbol="lm"/>
+		<unit factor="1" name="Candera steradian" no="EB8B" symbol="cd&#183;sr"/>
 	</sub>
 	<sub id="illuminance" name="Illuminance" no="DAFD">
-		<unit factor="1" name="lux" no="EBED" symbol="lx"/>
-		<unit factor="1.0E+04" name="phot" no="E632" symbol="ph"/>
-		<unit factor="1" name="candela steradian per square meter" no="872A" symbol="cd&#183;sr/m&#178;"/>
-		<unit factor="1" name="lumen per square meter" no="FF9A" symbol="lm/m&#178;"/>
-		<unit factor="1.07639104167097E+01" name="lumen per square foot" no="8848" symbol="lm/ft&#178;"/>
-		<unit factor="1.07639104167097E+01" name="footcandle" no="8E4E" symbol="fc"/>
+		<unit factor="1" name="Lux" no="EBED" symbol="lx"/>
+		<unit factor="1.0E+04" name="Phot" no="E632" symbol="ph"/>
+		<unit factor="1" name="Candela steradian per square meter" no="872A" symbol="cd&#183;sr/m&#178;"/>
+		<unit factor="1" name="Lumen per square meter" no="FF9A" symbol="lm/m&#178;"/>
+		<unit factor="1.07639104167097E+01" name="Lumen per square foot" no="8848" symbol="lm/ft&#178;"/>
+		<unit factor="1.07639104167097E+01" name="Footcandle" no="8E4E" symbol="fc"/>
 	</sub>
 	<sub id="magnetic-flux" name="Magnetic Flux" no="AAD6">
-		<unit factor="1" name="weber" no="999C" symbol="Wb"/>
-		<unit factor="1" name="volt second" no="8F99" symbol="V&#183;s"/>
-		<unit factor="1.0E-03" name="milliweber" no="D6A3" symbol="mWb"/>
-		<unit factor="1.0E-06" name="microweber" no="A48D" symbol="&#181;Wb"/>
-		<unit factor="1.256637061436E-07" name="unit pole" no="C711"/>
-		<unit factor="1.0E-08" name="maxwell" no="D8F4" symbol="Mx"/>
+		<unit factor="1" name="Weber" no="999C" symbol="Wb"/>
+		<unit factor="1" name="Volt second" no="8F99" symbol="V&#183;s"/>
+		<unit factor="1.0E-03" name="Milliweber" no="D6A3" symbol="mWb"/>
+		<unit factor="1.0E-06" name="Microweber" no="A48D" symbol="&#181;Wb"/>
+		<unit factor="1.256637061436E-07" name="Unit pole" no="C711"/>
+		<unit factor="1.0E-08" name="Maxwell" no="D8F4" symbol="Mx"/>
 	</sub>
 	<sub id="magnetic-field-strength" name="Magnetic Field Strength" no="E101">
-		<unit factor="1" name="ampere per meter" no="ECF4" symbol="A/m"/>
-		<unit factor="1" name="ampere turn per meter" no="D5E5" symbol="At/m"/>
-		<unit factor="1.0E+03" name="kiloampere per meter" no="ACB9" symbol="kA/m"/>
-		<unit factor="7.95774715459477E+01" name="&#246;rsted" no="C770" symbol="Oe">250/pi</unit>
+		<unit factor="1" name="Ampere per meter" no="ECF4" symbol="A/m"/>
+		<unit factor="1" name="Ampere turn per meter" no="D5E5" symbol="At/m"/>
+		<unit factor="1.0E+03" name="Kiloampere per meter" no="ACB9" symbol="kA/m"/>
+		<unit factor="7.95774715459477E+01" name="&#214;rsted" no="C770" symbol="Oe">250/pi</unit>
 	</sub>
 	<sub id="magnetic-flux-density" name="Magnetic Flux Density" no="F908">
-		<unit factor="1" name="tesla" no="FDF8" symbol="T"/>
-		<unit factor="1" name="weber per square meter" no="DD6A" symbol="Wb/m&#178;"/>
-		<unit factor="1.0E-04" name="gauss" no="ABD7" symbol="Gs, G"/>
-		<unit factor="1.0E-04" name="maxwell per square centimeter" no="98A4" symbol="Mx/cm&#178;"/>
-		<unit factor="1.0E-09" name="gamma" no="9BF8"/>
-		<unit factor="1.55000310000620E-05" name="maxwell per square inch" no="8B7A" symbol="Mx/in&#178;"/>
+		<unit factor="1" name="Tesla" no="FDF8" symbol="T"/>
+		<unit factor="1" name="Weber per square meter" no="DD6A" symbol="Wb/m&#178;"/>
+		<unit factor="1.0E-04" name="Gauss" no="ABD7" symbol="Gs, G"/>
+		<unit factor="1.0E-04" name="Maxwell per square centimeter" no="98A4" symbol="Mx/cm&#178;"/>
+		<unit factor="1.0E-09" name="Gamma" no="9BF8"/>
+		<unit factor="1.55000310000620E-05" name="Maxwell per square inch" no="8B7A" symbol="Mx/in&#178;"/>
 	</sub>
 	<sub id="electric-conductance" name="Electric Conductance" no="C4AA">
-		<unit factor="1" name="siemens" no="A7CE" symbol="S"/>
-		<unit factor="1.0E+09" name="abmho" no="F5F6"/>
-		<unit factor="1" name="mho" no="D3B7"/>
-		<unit factor="1" name="apmere per volt" no="958D" symbol="A/V"/>
-		<unit factor="1.112650056054E-12" name="statmho" no="A470"/>
+		<unit factor="1" name="Siemens" no="A7CE" symbol="S"/>
+		<unit factor="1.0E+09" name="Abmho" no="F5F6"/>
+		<unit factor="1" name="Mho" no="D3B7"/>
+		<unit factor="1" name="Apmere per volt" no="958D" symbol="A/V"/>
+		<unit factor="1.112650056054E-12" name="Statmho" no="A470"/>
 	</sub>
 	<sub id="inductance" name="Inductance" no="8DC8">
-		<unit factor="1" name="henry" no="B88E" symbol="H"/>
+		<unit factor="1" name="Henry" no="B88E" symbol="H"/>
 		<unit factor="8.987552E+11" name="ESU of inductance" no="ED32"/>
-		<unit factor="8.987552E+11" name="stathenry" no="D96B"/>
-		<unit factor="1" name="weber per ampere" no="DDCC" symbol="Wb/A"/>
+		<unit factor="8.987552E+11" name="Stathenry" no="D96B"/>
+		<unit factor="1" name="Weber per ampere" no="DDCC" symbol="Wb/A"/>
 		<unit factor="1.0E-09" name="EMU of inductance" no="AF1A"/>
-		<unit factor="1.0E-09" name="abhenry" no="D922"/>
+		<unit factor="1.0E-09" name="Abhenry" no="D922"/>
 	</sub>
 	<sub id="electric-potential" name="Electric Potential" no="E047">
-		<unit factor="1" name="volt" no="F7CC" symbol="V">Named for the Italian physicist Alessandro Volta</unit>
+		<unit factor="1" name="Volt" no="F7CC" symbol="V">Named for the Italian physicist Alessandro Volta</unit>
 		<unit factor="2.997925E+02" name="ESU of electric potential" no="E9D4"/>
-		<unit factor="2.997925E+02" name="statvolt" no="B6E6"/>
-		<unit factor="1" name="watt per ampere" no="A53D" symbol="W/A"/>
+		<unit factor="2.997925E+02" name="Statvolt" no="B6E6"/>
+		<unit factor="1" name="Watt per ampere" no="A53D" symbol="W/A"/>
 		<unit factor="1.0E-08" name="EMU of electric potential" no="844C"/>
-		<unit factor="1.0E-08" name="abvolt" no="84C4"/>
+		<unit factor="1.0E-08" name="Abvolt" no="84C4"/>
 	</sub>
 	<sub id="electric-current" name="Electric Current" no="EF46">
-		<unit factor="1" name="ampere" no="8889" symbol="A">The ampere is the constant current in two straight conductors, which have infinite length and negligible circular cross section, parallel to each other and placed 1 meter apart in vacuum, and produce a force equal to 2E-07 newton per meter of length (9th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1948)</unit>
-		<unit factor="1.0E+06" name="megaampere" no="C381" symbol="MA"/>
-		<unit factor="1.0E+03" name="kiloampere" no="CF8F" symbol="kA"/>
-		<unit factor="1.0E+01" name="abampere" no="9F43"/>
-		<unit factor="1.0E+01" name="biot" no="DBEE" symbol="Bi"/>
+		<unit factor="1" name="Ampere" no="8889" symbol="A">The ampere is the constant current in two straight conductors, which have infinite length and negligible circular cross section, parallel to each other and placed 1 meter apart in vacuum, and produce a force equal to 2E-07 newton per meter of length (9th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1948)</unit>
+		<unit factor="1.0E+06" name="Megaampere" no="C381" symbol="MA"/>
+		<unit factor="1.0E+03" name="Kiloampere" no="CF8F" symbol="kA"/>
+		<unit factor="1.0E+01" name="Abampere" no="9F43"/>
+		<unit factor="1.0E+01" name="Biot" no="DBEE" symbol="Bi"/>
 		<unit factor="1.0E+01" name="EMU of current" no="89B4"/>
-		<unit factor="7.957747154595E-01" name="gilbert" no="B260" symbol="Gi"/>
+		<unit factor="7.957747154595E-01" name="Gilbert" no="B260" symbol="Gi"/>
 		<unit factor="3.335641E-10" name="ESU of current" no="FCF3"/>
-		<unit factor="3.335641E-10" name="statampere" no="9FE9"/>
+		<unit factor="3.335641E-10" name="Statampere" no="9FE9"/>
 	</sub>
 	<sub id="electric-charge" name="Electric Charge" no="C76A">
-		<unit factor="1" name="coulomb" no="EBBE" symbol="C"/>
-		<unit factor="9.6485309E+04" name="faraday (based on carbon 12)" no="E90C"/>
-		<unit factor="3.6E+03" name="ampere hour" no="BF49" symbol="A&#183;h"/>
-		<unit factor="1" name="ampere second" no="8BC4" symbol="A&#183;s"/>
-		<unit factor="1.0E+01" name="abcoulomb" no="A3A4"/>
+		<unit factor="1" name="Coulomb" no="EBBE" symbol="C"/>
+		<unit factor="9.6485309E+04" name="Faraday (based on carbon 12)" no="E90C"/>
+		<unit factor="3.6E+03" name="Ampere hour" no="BF49" symbol="A&#183;h"/>
+		<unit factor="1" name="Ampere second" no="8BC4" symbol="A&#183;s"/>
+		<unit factor="1.0E+01" name="Abcoulomb" no="A3A4"/>
 		<unit factor="1.0E+01" name="EMU of Charge" no="8F9A"/>
-		<unit factor="3.335640951982E-10" name="statcoulomb" no="824D"/>
+		<unit factor="3.335640951982E-10" name="Statcoulomb" no="824D"/>
 		<unit factor="3.335640951982E-10" name="ESU of Charge" no="E0D6"/>
-		<unit factor="3.335640951982E-10" name="franklin" no="FC8B" symbol="Fr"/>
+		<unit factor="3.335640951982E-10" name="Franklin" no="FC8B" symbol="Fr"/>
 	</sub>
 	<sub id="capacitance" name="Electrostatic Capacitance" no="F1A7">
-		<unit factor="1" name="farad" no="E811" symbol="F"/>
-		<unit factor="1.0E+09" name="abfarad" no="A65E"/>
+		<unit factor="1" name="Farad" no="E811" symbol="F"/>
+		<unit factor="1.0E+09" name="Abfarad" no="A65E"/>
 		<unit factor="1.0E+09" name="EMU of capacitance" no="D6A4"/>
-		<unit factor="1" name="coulomb per volt" no="996F" symbol="C/V"/>
+		<unit factor="1" name="Coulomb per volt" no="996F" symbol="C/V"/>
 		<unit factor="1.112650056054E-12" name="ESU of capacitance" no="9539"/>
-		<unit factor="1.112650056054E-12" name="statfarad" no="9D75"/>
+		<unit factor="1.112650056054E-12" name="Statfarad" no="9D75"/>
 	</sub>
 	<sub id="electric-resistance" name="Electric Resistance" no="BD0C">
-		<unit factor="1" name="ohm" no="8EEA"/>
-		<unit factor="8.987552E+11" name="statohm" no="8C49"/>
+		<unit factor="1" name="Ohm" no="8EEA"/>
+		<unit factor="8.987552E+11" name="Statohm" no="8C49"/>
 		<unit factor="8.987552E+11" name="ESU of resistance" no="8186"/>
-		<unit factor="1" name="reciprocal siemens" no="D047" symbol="1/S"/>
-		<unit factor="1" name="volt per ampere" no="D84B" symbol="V/A"/>
+		<unit factor="1" name="Reciprocal siemens" no="D047" symbol="1/S"/>
+		<unit factor="1" name="Volt per ampere" no="D84B" symbol="V/A"/>
 		<unit factor="1.0E-09" name="EMU of resistance" no="8945"/>
-		<unit factor="1.0E-09" name="abohm" no="E208"/>
+		<unit factor="1.0E-09" name="Abohm" no="E208"/>
 	</sub>
 	<sub id="electric-field" name="Electric Field Strength" no="DF1C">
 	<!--	<unit name="volt per meter" factor="" symbol="V/ m" />-->
-		<unit factor="1.0E+03" name="kilovolt per meter" no="8659" symbol="kV/m"/>
-		<unit factor="1" name="newton per coulomb" no="9D0C" symbol="N/C"/>
-		<unit factor="3.93700787401575E+04" name="kilovolt per inch" no="D1B3" symbol="kV/in"/>
-		<unit factor="3.93700787401575E+04" name="volt per mil" no="CCA8" symbol="V/mil"/>
+		<unit factor="1.0E+03" name="Kilovolt per meter" no="8659" symbol="kV/m"/>
+		<unit factor="1" name="Newton per coulomb" no="9D0C" symbol="N/C"/>
+		<unit factor="3.93700787401575E+04" name="Kilovolt per inch" no="D1B3" symbol="kV/in"/>
+		<unit factor="3.93700787401575E+04" name="Volt per mil" no="CCA8" symbol="V/mil"/>
 	</sub>
 	<sub id="radioactivity" name="Radioactivity" no="B30F">
-		<unit factor="1" name="becquerel = 1/s" no="BF19" symbol="Bq">Named for Antoine Henri Becquerel, a French Nobel prize winner (1903). Activation of nucleus disintegration. One becauerel is defined as the number of radial rays spontaneously emitted by a radioactive substance in one second, not proportional to radial energy or danger</unit>
-		<unit factor="3.7E+10" name="curie" no="EFD3" symbol="Ci"/>
+		<unit factor="1" name="Becquerel = 1/s" no="BF19" symbol="Bq">Named for Antoine Henri Becquerel, a French Nobel prize winner (1903). Activation of nucleus disintegration. One becauerel is defined as the number of radial rays spontaneously emitted by a radioactive substance in one second, not proportional to radial energy or danger</unit>
+		<unit factor="3.7E+10" name="Curie" no="EFD3" symbol="Ci"/>
 	</sub>
 	<sub id="dose-equivalent" name="Dose Equivalent" no="B3D2">
-		<unit factor="1" name="sievert = J/kg" no="AA6D" symbol="Sv">Named for the Swedish physicist Rolf Maximilliam Sievert. Used to measure biological effect by radiation and expresses a degree of danger against human body</unit>
-		<unit factor="1.0E-02" name="centisievert" no="D6D4" symbol="cSv"/>
-		<unit factor="1.0E-02" name="rem" no="C060"/>
+		<unit factor="1" name="Sievert = J/kg" no="AA6D" symbol="Sv">Named for the Swedish physicist Rolf Maximilliam Sievert. Used to measure biological effect by radiation and expresses a degree of danger against human body</unit>
+		<unit factor="1.0E-02" name="Centisievert" no="D6D4" symbol="cSv"/>
+		<unit factor="1.0E-02" name="Rem" no="C060"/>
 	</sub>
 	<sub id="dose-exposed" name="Exposed Dose (Exposure)" no="D39A">
-		<unit factor="1" name="coulomb per kilogram" no="BB75" symbol="C/kg"/>
-		<unit factor="2.58E-04" name="r&#246;ntgen" no="B3F2" symbol="R"/>
+		<unit factor="1" name="Coulomb per kilogram" no="BB75" symbol="C/kg"/>
+		<unit factor="2.58E-04" name="R&#246;ntgen" no="B3F2" symbol="R"/>
 	</sub>
 	<sub id="dose-absorbed" name="Absorbed Dose" no="B1D5">
-		<unit factor="1" name="gray = J/kg" no="F63B" symbol="Gy">Named for the English physicist Stephen Gray. An SI unit which expresses energy received by a substance irradiated with ionized radiation</unit>
-		<unit factor="1.0E-02" name="centigray" no="DF4F" symbol="cGy"/>
-		<unit factor="1.0E-02" name="rad, rd" no="D68E"/>
+		<unit factor="1" name="Gray = J/kg" no="F63B" symbol="Gy">Named for the English physicist Stephen Gray. An SI unit which expresses energy received by a substance irradiated with ionized radiation</unit>
+		<unit factor="1.0E-02" name="Centigray" no="DF4F" symbol="cGy"/>
+		<unit factor="1.0E-02" name="Rad, rd" no="D68E"/>
 	</sub>
 
-		<sub id="graphics" name="Graphics Units" no="AE7A">
-			<unit factor="1" name="twip" no="8ED9">
-				1/1440 inch
-				<same equals="1" no="C1FE" value="1440"/>
-			</unit>
-			<unit factor="56692.91338582677165354330708" name="meter" no="C6EF" symbol="m">
-				<same equals="1" no="C1FE" value="0.0254"/>
-			</unit>
-			<unit factor="566.9291338582677165354330708" name="centimeter" no="DE47" symbol="cm">
-				<same equals="1" no="C1FE" value="2.54"/>
-			</unit>
-			<unit factor="2.4E+02" name="character (Y)" no="EBAC"/>
-			<unit factor="1.2E+02" name="character (X)" no="96E8"/>
-			<unit factor="56.69291338582677165354330708" name="millimeter" no="B28A" symbol="mm">
-				<same equals="1" no="C1FE" value="25.4"/>
-			</unit>
-			<unit factor="15" name="pixel (X)" no="9EFD"/>
-			<unit factor="15" name="pixel (Y)" no="FC82"/>
-			<unit factor="1440" name="inch" no="C1FE" symbol="in"/>
-			<unit factor="2.4E+02" name="pica (computer)" no="C89A">
-				1/6 inch
-				<same equals="1" no="C1FE" value="6"/>
-			</unit>
-			<unit factor="2.3910336E+02" name="pica (printer's)" no="FB11"/>
-			<unit factor="2.0E+01" name="point (computer)" no="B747">
-				1/72 inch
-				<same equals="1" no="C1FE" value="72"/>
-			</unit>
-			<unit factor="1.992528E+01" name="point (printer's)" no="CF9A"/>
-		</sub>
 		<sub id="metric-prefixes" name="Metric Prefixes" no="BB21">
 			<unit factor="1" name="1, one" no="9692"/>
-			<unit factor="1.0E+88" name="uliangdashu [muryotaisu]" no="C005">Means a uncountable big number</unit>
-			<unit factor="1.0E+80" name="bukusi-i [fukashigi]" no="B377">Means an incomprehensible number</unit>
-			<unit factor="1.0E+72" name="nayonta [nayuta]" no="CD09"/>
-			<unit factor="1.0E+64" name="asunshi [asogi]" no="CEE2"/>
-			<unit factor="1.0E+56" name="hunhusha [gogasha]" no="9F9F"/>
-			<unit factor="1.0E+48" name="ji [goku]" no="A44E"/>
-			<unit factor="1.0E+44" name="zai [sai]" no="92BC"/>
-			<unit factor="1.0E+40" name="zhung [sei]" no="DD85"/>
-			<unit factor="1.0E+36" name="jian [kan]" no="AF3D"/>
-			<unit factor="1.0E+32" name="gou [ko]" no="DE11"/>
-			<unit factor="1.0E+28" name="xiang [jo]" no="ABAC"/>
-			<unit factor="1.0E+24" name="shi" no="B07F"/>
-			<unit factor="1.0E+20" name="hai [gai]" no="E0D5"/>
-			<unit factor="1.0E+16" name="jing [kei]" no="C658"/>
-			<unit factor="1.0E+12" name="zhao [cho]" no="90CC"/>
-			<unit factor="1.0E+24" name="yotta" no="9BCC" symbol="Y"/>
-			<unit factor="1.0E+21" name="zetta" no="D61A" symbol="Z"/>
-			<unit factor="1.0E+18" name="exa" no="F4A8" symbol="E"/>
-			<unit factor="1.0E+15" name="peta" no="D002" symbol="P"/>
-			<unit factor="1.0E+12" name="tera" no="87BF" symbol="T"/>
-			<unit factor="1.0E+09" name="giga" no="CD7D" symbol="G"/>
-			<unit factor="1.0E+06" name="mega" no="D2C8" symbol="M"/>
-			<unit factor="1.0E+03" name="kilo" no="AABA" symbol="k"/>
-			<unit factor="1.0E+08" name="i [oku]" no="E1EF"/>
-			<unit factor="1.0E+02" name="hecto" no="9099" symbol="h"/>
-			<unit factor="1.0E+01" name="deca" no="A3D3" symbol="da"/>
-			<unit factor="1.0E-01" name="fun [bu]" no="AA8B"/>
-			<unit factor="1.0E-01" name="deci" no="8B8A" symbol="d"/>
-			<unit factor="1.0E-02" name="li [rin]" no="C4B9"/>
-			<unit factor="1.0E-02" name="centi" no="CF2E" symbol="c"/>
-			<unit factor="1.0E-03" name="mao [mo]" no="8218"/>
-			<unit factor="1.0E-03" name="milli" no="9299" symbol="m"/>
-			<unit factor="1.0E-04" name="su [shi]" no="CF5F"/>
-			<unit factor="1.0E-05" name="hu [kotsu]" no="E69D"/>
-			<unit factor="1.0E-06" name="wei [bi]" no="B6EC"/>
-			<unit factor="1.0E-06" name="micro " no="A3C8" symbol="&#181;"/>
-			<unit factor="1.0E-07" name="sien [sen]" no="BFD8">Means delicate</unit>
-			<unit factor="1.0E-08" name="sha" no="A705"/>
-			<unit factor="1.0E-09" name="chun [jin]" no="CD43"/>
-			<unit factor="1.0E-09" name="nano" no="D053" symbol="n"/>
-			<unit factor="1.0E-10" name="ai" no="8772">Means dust</unit>
-			<unit factor="1.0E-12" name="pico" no="9BC7" symbol="p"/>
-			<unit factor="1.0E-15" name="femto" no="9AEA" symbol="f"/>
-			<unit factor="1.0E-18" name="atto" no="B841" symbol="a"/>
-			<unit factor="1.0E-21" name="zepto" no="EC78" symbol="z"/>
-			<unit factor="1.0E-24" name="yocto" no="FA51" symbol="y"/>
+			<unit factor="1.0E+88" name="Uliangdashu [muryotaisu]" no="C005">Means a uncountable big number</unit>
+			<unit factor="1.0E+80" name="Bukusi-i [fukashigi]" no="B377">Means an incomprehensible number</unit>
+			<unit factor="1.0E+72" name="Nayonta [nayuta]" no="CD09"/>
+			<unit factor="1.0E+64" name="Asunshi [asogi]" no="CEE2"/>
+			<unit factor="1.0E+56" name="Hunhusha [gogasha]" no="9F9F"/>
+			<unit factor="1.0E+48" name="Ji [goku]" no="A44E"/>
+			<unit factor="1.0E+44" name="Zai [sai]" no="92BC"/>
+			<unit factor="1.0E+40" name="Zhung [sei]" no="DD85"/>
+			<unit factor="1.0E+36" name="Jian [kan]" no="AF3D"/>
+			<unit factor="1.0E+32" name="Gou [ko]" no="DE11"/>
+			<unit factor="1.0E+28" name="Xiang [jo]" no="ABAC"/>
+			<unit factor="1.0E+24" name="Shi" no="B07F"/>
+			<unit factor="1.0E+20" name="Hai [gai]" no="E0D5"/>
+			<unit factor="1.0E+16" name="Jing [kei]" no="C658"/>
+			<unit factor="1.0E+12" name="Zhao [cho]" no="90CC"/>
+			<unit factor="1.0E+24" name="Yotta" no="9BCC" symbol="Y"/>
+			<unit factor="1.0E+21" name="Zetta" no="D61A" symbol="Z"/>
+			<unit factor="1.0E+18" name="Exa" no="F4A8" symbol="E"/>
+			<unit factor="1.0E+15" name="Peta" no="D002" symbol="P"/>
+			<unit factor="1.0E+12" name="Tera" no="87BF" symbol="T"/>
+			<unit factor="1.0E+09" name="Giga" no="CD7D" symbol="G"/>
+			<unit factor="1.0E+06" name="Mega" no="D2C8" symbol="M"/>
+			<unit factor="1.0E+03" name="Kilo" no="AABA" symbol="k"/>
+			<unit factor="1.0E+08" name="I [oku]" no="E1EF"/>
+			<unit factor="1.0E+02" name="Hecto" no="9099" symbol="h"/>
+			<unit factor="1.0E+01" name="Deca" no="A3D3" symbol="da"/>
+			<unit factor="1.0E-01" name="Fun [bu]" no="AA8B"/>
+			<unit factor="1.0E-01" name="Deci" no="8B8A" symbol="d"/>
+			<unit factor="1.0E-02" name="Li [rin]" no="C4B9"/>
+			<unit factor="1.0E-02" name="Centi" no="CF2E" symbol="c"/>
+			<unit factor="1.0E-03" name="Mao [mo]" no="8218"/>
+			<unit factor="1.0E-03" name="Milli" no="9299" symbol="m"/>
+			<unit factor="1.0E-04" name="Su [shi]" no="CF5F"/>
+			<unit factor="1.0E-05" name="Hu [kotsu]" no="E69D"/>
+			<unit factor="1.0E-06" name="Wei [bi]" no="B6EC"/>
+			<unit factor="1.0E-06" name="Micro " no="A3C8" symbol="&#181;"/>
+			<unit factor="1.0E-07" name="Sien [sen]" no="BFD8">Means delicate</unit>
+			<unit factor="1.0E-08" name="Sha" no="A705"/>
+			<unit factor="1.0E-09" name="Chun [jin]" no="CD43"/>
+			<unit factor="1.0E-09" name="Nano" no="D053" symbol="n"/>
+			<unit factor="1.0E-10" name="Ai" no="8772">Means dust</unit>
+			<unit factor="1.0E-12" name="Pico" no="9BC7" symbol="p"/>
+			<unit factor="1.0E-15" name="Femto" no="9AEA" symbol="f"/>
+			<unit factor="1.0E-18" name="Atto" no="B841" symbol="a"/>
+			<unit factor="1.0E-21" name="Zepto" no="EC78" symbol="z"/>
+			<unit factor="1.0E-24" name="Yocto" no="FA51" symbol="y"/>
 		</sub>
 
 </units>

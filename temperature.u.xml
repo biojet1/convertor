@@ -1,13 +1,15 @@
-<sub id="temperature" name="Temperature" no="95A9" priority="2">
-	<unit factor="1" name="kelvin" no="ED9E" symbol="K">
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<sub id="temperature" name="Temperature" no="95A9">
+	Kelvin, Fahrenheit, Celsius
+	<unit factor="1" name="Kelvin" no="ED9E" symbol="K">
 	Named for Lord William Thomson Kelvin, an English physicist.
 	The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of
 	the thermodynamic temperature of the triple point of water (13th CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1967).;Body Temp. (Normal);309.65;Body Temp. (High);311.15;Boiling temp. of water;373.15;Freezing Temp. of water;273.15;Room temp.;298.15;Tempura oil temp.;453.15;Red wine temp.;282.15;Hot 'sake' temp.;318.15</unit>
-	<unit factor="1" name="deg Celsius" no="8FCB" symbol="&#186;C" y="273.15">
+	<unit factor="1" name="Deg Celsius" no="8FCB" symbol="&#186;C" y="273.15">
 		Named for the Swedish scientist A. Celsius in 1742.
 		Defined as one hundredth of temperature difference between the freezing and boiling points of pure water
 	</unit>
-	<unit factor="5.55555555555555556E-01" name="deg Fahrenheit" no="AE85" symbol="&#186;F" y="255.372222222222222"/>
-	<unit factor="5.55555555555555556E-01" name="deg Rankine" no="80F8" symbol="&#186;R"/>
-	<unit factor="1.25" name="deg R&#233;aumur" no="861C" symbol="&#186;r" y="273.15">Named for the French scientist Ren&#233;-Antoine Ferchault de R&#233;aumur (1683-1757). The interval between the freezing and boiling temperatures of water equals to 80 &#176;r instead of 100 &#176;C</unit>
+	<unit factor="5.55555555555555556E-01" name="Deg Fahrenheit" no="AE85" symbol="&#186;F" y="255.372222222222222"/>
+	<unit factor="5.55555555555555556E-01" name="Deg Rankine" no="80F8" symbol="&#186;R"/>
+	<unit factor="1.25" name="Deg R&#233;aumur" no="861C" symbol="&#186;r" y="273.15">Named for the French scientist Ren&#233;-Antoine Ferchault de R&#233;aumur (1683-1757). The interval between the freezing and boiling temperatures of water equals to 80 &#176;r instead of 100 &#176;C</unit>
 </sub>

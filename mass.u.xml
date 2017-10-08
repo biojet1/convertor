@@ -1,31 +1,50 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
 <sub id="mass" name="Mass" no="B5DA">
-	<unit factor="1" name="kilogram" no="EC09" symbol="kg">The kilogram is the unit of mass, equal to the mass of the international prototype of the kilogram, which is an alloy column made of 90% platinum and 10% iridium, 39 millimeters in diameter and height, preserved in the suburbs of Paris (3rd CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1901)</unit>
-	<unit factor="1.0E+06" name="kiloton (metric)" no="93E7"/>
-	<unit factor="1.0E+03" name="ton (metric)" no="9D09" symbol="t"/>
-	<unit factor="9.80665E+00" name="kilogram-force second squared per meter" no="E225" symbol="kgf&#183;s&#178;/m"/>
-	<unit factor="1.0E-03" name="gram" no="A872" symbol="g"/>
-	<unit factor="2.0E-04" name="carat (metric)" no="BD59" symbol="car, ct">Used to weigh gems or noble metals. Standardized as 0.2 gram in 1907</unit>
-	<unit factor="1.0E-06" name="milligram" no="A270" symbol="mg"/>
-	<unit factor="1.0E-12" name="nanogram" no="CBAB" symbol="ng"/>
-	<unit factor="1.0E-09" name="gamma" no="F488"/>
-	<unit factor="1.6605402E-27" name="atomic mass unit" no="9FDD" symbol="u">
+	Gram, Carat, Pound
+	<unit factor="1" name="Kilogram" no="EC09" symbol="kg">
+	The kilogram is the unit of mass,
+	equal to the mass of the international prototype of the kilogram,
+	which is an alloy column made of 90% platinum and 10% iridium,
+	39 millimeters in diameter and height, preserved in the suburbs of Paris (3rd CGPM, Conf&#233;rence G&#233;n&#233;rale des Poids et Mesures, 1901)
+	</unit>
+	<unit factor="1.0E+06" name="Kiloton (metric)" no="93E7"/>
+	<unit factor="1.0E+03" name="Ton (metric)" no="9D09" symbol="t">
+	1000kg
+		<!-- 1=1000kg -->
+		<same equals="1000" no="EC09"/>
+	</unit>
+	<unit factor="9.80665E+00" name="Kilogram-force second squared per meter" no="E225" symbol="kgf&#183;s&#178;/m"/>
+	<unit factor="1.0E-03" name="Gram" no="A872" symbol="g">
+		<!-- 1=0.001kg -->
+		<same equals="0.001" no="EC09"/>
+	</unit>
+	<unit factor="2.0E-04" name="Carat (metric)" no="BD59" symbol="car, ct">
+	Used to weigh gems or noble metals.
+	Standardized as 0.2 gram in 1907
+		<!-- 1=0.2g -->
+		<same equals="0.2" no="A872"/>
+	</unit>
+	<unit factor="1.0E-06" name="Milligram" no="A270" symbol="mg"/>
+	<unit factor="1.0E-12" name="Nanogram" no="CBAB" symbol="ng"/>
+	<unit factor="1.0E-09" name="Gamma" no="F488"/>
+	<unit factor="1.6605402E-27" name="Atomic mass unit" no="9FDD" symbol="u">
 	A unit to measure mass of elementary particles, atoms and molecules.
 	1 u is equal to 1/12 of the mass of an atom of the nuclide 12C
 	</unit>
-	<unit factor="1.0160469088E+03" name="ton, long" no="FFB4">2240 lb</unit>
-	<unit factor="9.0718474E+02" name="ton, short" no="D1DF">2000 lb</unit>
-	<unit factor="5.080234544E+01" name="hundredweight, long" no="8AE8">112 lb</unit>
-	<unit factor="4.5359237E+01" name="hundredweight, short" no="9225">100 lb</unit>
-	<unit factor="1.45939029372064E+01" name="slug" no="CF14">lbf&#183;s&#178;/ft</unit>
-	<unit factor="1.45939029372064E+01" name="pound-force square second per foot" no="D592" symbol="lbf&#183;s&#178;/ft"/>
-	<unit factor="4.5359237E-01" name="pound (avoirdupois)" no="F54A" symbol="lb"/>
-	<unit factor="3.732417216E-01" name="pound (troy or apothecary)" no="AF55" symbol="lb"/>
-	<unit factor="2.916667E-02" name="ton, assay" no="D03C" symbol="AT"/>
-	<unit factor="2.8349523125E-02" name="ounce (avoirdupois)" no="D4BB" symbol="oz">1/16 lb</unit>
-	<unit factor="3.11034768E-02" name="ounce (troy or apothecary)" no="F022" symbol="oz"/>
-	<unit factor="1.55517384E-03" name="pennyweight (dwt)" no="8DE3">1/20 oz (troy)</unit>
-	<unit factor="6.479891E-05" name="grain" no="9696" symbol="gr">1/7000 lb</unit>
-	<unit factor="3.75E+00" name="guen [kan]" no="87E9"/>
-	<unit factor="6.0E-01" name="jin [kin]" no="B142"/>
-	<unit factor="3.75E-03" name="reng [mon-me]" no="BA5B"/>
+	<unit factor="1.0160469088E+03" name="Ton, long" no="FFB4">2240 lb</unit>
+	<unit factor="9.0718474E+02" name="Ton, short" no="D1DF">2000 lb</unit>
+	<unit factor="5.080234544E+01" name="Hundredweight, long" no="8AE8">112 lb</unit>
+	<unit factor="4.5359237E+01" name="Hundredweight, short" no="9225">100 lb</unit>
+	<unit factor="1.45939029372064E+01" name="Slug" no="CF14">lbf&#183;s&#178;/ft</unit>
+	<unit factor="1.45939029372064E+01" name="Pound-force square second per foot" no="D592" symbol="lbf&#183;s&#178;/ft"/>
+	<unit factor="4.5359237E-01" name="Pound (avoirdupois)" no="F54A" symbol="lb"/>
+	<unit factor="3.732417216E-01" name="Pound (troy or apothecary)" no="AF55" symbol="lb"/>
+	<unit factor="2.916667E-02" name="Ton, assay" no="D03C" symbol="AT"/>
+	<unit factor="2.8349523125E-02" name="Ounce (avoirdupois)" no="D4BB" symbol="oz">1/16 lb</unit>
+	<unit factor="3.11034768E-02" name="Ounce (troy or apothecary)" no="F022" symbol="oz"/>
+	<unit factor="1.55517384E-03" name="Pennyweight (dwt)" no="8DE3">1/20 oz (troy)</unit>
+	<unit factor="6.479891E-05" name="Grain" no="9696" symbol="gr">1/7000 lb</unit>
+	<unit factor="3.75E+00" name="Guen [kan]" no="87E9"/>
+	<unit factor="6.0E-01" name="Jin [kin]" no="B142"/>
+	<unit factor="3.75E-03" name="Reng [mon-me]" no="BA5B"/>
 </sub>

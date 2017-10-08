@@ -1,4 +1,5 @@
 <sub id="area" name="Area" no="8BFF">
+	Square meter, Hectare, Acre
 	<unit factor="1" name="Square meter" no="FCFF" symbol="m&#178;"/>
 	<unit factor="1.0E+06" name="Square kilometer" no="E1DE" symbol="km&#178;"/>
 	<unit factor="1.0E+04" name="Hectare" no="DEF0" symbol="ha"/>
@@ -8,13 +9,13 @@
 	<unit factor="1.0E-18" name="Square nanometer" no="A37A" symbol="nm&#178;"/>
 	<unit factor="1.0E-28" name="Barn" no="F944" symbol="b"/>
 	<unit factor="2.589988110336E+06" name="Square mile" no="9264" symbol="mi&#178;"/>
-	<unit factor="2.58999847031952E+06" name="Square mile" no="89F7" symbol="mi&#178;">
-		Based on U.S. survey foot
+	<unit factor="2.58999847031952E+06" name="Square mile (US survey foot)" no="89F7" symbol="mi&#178;">
+		
 	</unit>
-	<unit factor="4.04687260987425E+03" name="Acre (based on U.S. survey foot)" no="D75E">
+	<unit factor="4.04687260987425E+03" name="Acre (US survey foot)" no="D75E">
 		43 560 times US survey foot squared
 	</unit>
-	<unit factor="2.52929538117141E+01" name="Square rod (based on U.S. survey foot)" no="84DC"/>
+	<unit factor="2.52929538117141E+01" name="Square rod (US survey foot)" no="84DC"/>
 	<unit factor="8.3612736E-01" name="Square yard" no="9DC8" symbol="yd&#178;"/>
 	<unit factor="9.290304E-02" name="Square foot" no="B3F4" symbol="ft&#178;"/>
 	<unit factor="6.4516E-04" name="Square inch" no="BA87" symbol="in&#178;"/>
