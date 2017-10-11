@@ -12,7 +12,7 @@ sql: check .build/units.sql
 
 unitsdb: .build/UnitsDB.java
 
-.build/units.sql: mkdbcmd.py *.xml
+.build/units.sql: check mkdbcmd.py *.xml
 	alterx -np ./mkdbcmd.py .>.build/units.sql
 
 .build/UnitsDB.java: .build/units.sql
@@ -22,8 +22,12 @@ sqlo: mkdbcmd.py *.xml
 	alterx -np ./mkdbcmd.py .
 
 list_types: .build/list_types
+list_names: list_names.py  *.xml
+	alterx -np ./list_names.py .
 
 .build/list_types: list_types.py *.xml
 	alterx -np ./list_types.py . >.build/list_types.txt
 
 
+check_names: list_names.py *.xml
+	alterx -np ./list_names.py . | alterx -np ./check_names.py .

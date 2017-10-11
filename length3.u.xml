@@ -26,8 +26,10 @@
 		<same equals="3" no="DABE" name="Nautical Mile (UK)"/>
 	</unit>
 
-	<unit factor="4.828032E+03" name="League (US)" no="8FD3" eval="(1200/3937)*5280*3">
-		3 mi
+	<unit factor="4.828032E+03" name="League (US)" no="8FD3" eval="0.3048*5280*3" ref="https://en.wikipedia.org/wiki/League_(unit)#United_States">
+		3 Miles
+		<same equals="15840" no="F3D5" name="Foot"/>
+		<same equals="3" no="9EA2" name="Mile"/>
 	</unit>
 
 	<unit factor="9.144E+02" name="Kiloyard" no="9DB8" symbol="kyd" eval="0.3048*3000">

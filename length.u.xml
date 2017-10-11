@@ -66,21 +66,20 @@
 	<unit factor="1.0E-09" name="Nanometer" no="989B" symbol="nm"/>
 	<unit factor="1.0E-10" name="&#197;ngstr&#246;m" no="9DC9" symbol="&#197;">
 		A metric unit of length used to specify wavelengths of electromagnetic radiation
-		</unit>
+	</unit>
 	<unit factor="1.00208E-13" name="X unit" no="B03C">
 		A unit of measurement used to specify wavelength of X-ray
 	</unit>
-	<unit factor="1.0E-15" name="Femtometer" no="E34E" symbol="fm"/>
-	<unit factor="1.0E-15" name="Fermi" no="CCB6"/>
+	<unit factor="1.0E-15" name="Femtometer, Fermi" no="E34E" symbol="fm" ref="https://en.wikipedia.org/wiki/Femtometre">
+	 1/1 000 000 000 000 000 metres
+		<same equals="1" no="989B" value="1000000" name="Nanometer"/>
+		<same equals="10" no="9DC9" value="1000000" name="Angstrom"/>
+		<same equals="1" no="C35D"  value="1000000000000000" />
+	</unit>
+<!--
 	<unit factor="1.0E-15" name="Yukawa" no="A433"/>
-	
-	
-	
-	
+-->
 
-
-	
-	
 	<unit factor="4.217518E-03" name="Pica (printer's)" no="AE09"/>
 	<unit factor="0.0003527777777777777777777777777777777777777777777777777777777777778" name="Point (computer)" no="BC8C" eval="0.0254/72">
 		1/72 inch

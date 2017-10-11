@@ -1,7 +1,6 @@
 from sys import stdout
 import re
 units = []
-types_list = []
 usageMap = {}
 sukiMap = {}
 flagTag = {"priority":usageMap, "suki":sukiMap}
@@ -54,10 +53,6 @@ def doUnit(cur, type, order):
 	units.append((no, name, desc, type, f, y, symbol, 0, order))
 
 def toSQLq(x):
-	# x = repr(x)
-	# if x.startswith('u'):
-		# x = x[1:]
-	# return x
 	return '"' + x.replace('"', '""') + '"'
 
 
@@ -109,7 +104,6 @@ def doSub(cur):
 	elif desc:
 		e["desc"] = desc
 	e["batch"] += 1
-	types_list.append((no, name, desc, 0))
 
 def doGroup(root, parent=None):
 	id = root.getAttribute("id")
@@ -190,17 +184,22 @@ def on_xml_end(ctx):
 		writeln("CREATE TABLE %s (%s);" % (k, ", ".join(["%s %s" % (name, type) for (name, type) in tables[k]])))
 	c_units=0
 	c_types=0
-	for (no, name, desc, flag) in types_list:
+	for no in types_map:
+		e = types_map[no]
+		name = e["name"]
+		desc = e["desc"]
+		flag = 0
 		c_types += 1
-		used = usageMap.get(no, -(2**63))
-		liked = sukiMap.get(no, -(2**63))
-		_ = ", ".join(_ for _ in ("0x%X" % no, toSQLq(name), toSQLq(desc), str(flag), str(used), str(liked)))
+		used = usageMap.get(no, 0)
+		liked = sukiMap.get(no)
+		_ = ", ".join(_ for _ in ("0x%X" % no, toSQLq(name), toSQLq(desc), str(flag), str(used), liked and ("0x%X" % (liked|(1<<62))) or '0'))
 		writeln("INSERT INTO kind VALUES(%s);" % (_, ))
 
 	for (no, name, desc, type, f, y, symbol, flag, used) in units:
 		c_units += 1
-		liked = sukiMap.get(no, -(2**63))
-		_ = ", ".join(_ for _ in ("0x%X" % no, toSQLq(name), toSQLq(desc), str(flag), str(used), str(liked)
+		liked = sukiMap.get(no, 0)
+		_ = ", ".join(_ for _ in ("0x%X" % no, toSQLq(name), toSQLq(desc), str(flag), str(used)
+			, (liked and ("0x%X" % (liked|(1<<62))) or '0')
 			, str(type), toSQLq(f), toSQLq(y), toSQLq(symbol)))
 		writeln("INSERT INTO unit VALUES(%s);" % (_, ))
 	writeln("/*%d types; %d units;*/" % (c_types, c_units))

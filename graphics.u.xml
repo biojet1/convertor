@@ -1,6 +1,6 @@
 <sub id="graphics" name="Graphics Units" no="AE7A">
 	Pixel, Twip, Pica
-	<unit factor="1" name="Twip" no="8ED9">
+	<unit factor="1" name="Twip" no="8ED9" ref="https://en.m.wikipedia.org/wiki/Twip">
 		1/1440 inch
 		<same equals="1" no="C1FE" value="1440"/>
 	</unit>

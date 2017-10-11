@@ -3,33 +3,40 @@ from random import randint
 from sys import stdout, stderr
 
 def calcuator():
-	from ast import Call, Name, Load, copy_location, NodeTransformer, fix_missing_locations, Str, parse
+	from ast import Call, Name, Attribute, Load, copy_location, NodeTransformer, fix_missing_locations, Str, parse, Pow
 	from decimal import Decimal, getcontext
 	class Num2Decimal(NodeTransformer):
 		def visit_Num(self, node):
 			return Call(Name('Decimal', Load()), [Str(s=str(node.n))], [], None, None)
+	class PowChange(NodeTransformer):
+		def visit_BinOp(self, node):
+			if node.op is Pow:
+				return Call(Attribute(Call(Name('getcontext',Load()), [], [], None, None),'power',Load()),[node.left, node.right],	[],	None,	None)
+			return node
+	def pi():
+		getcontext().prec += 2  # extra digits for intermediate steps
+		three = Decimal(3)      # substitute "three=3.0" for regular floats
+		lasts, t, s, n, na, d, da = 0, three, 3, 1, 0, 0, 24
+		while s != lasts:
+			lasts = s
+			n, na = n+na, na+8
+			d, da = d+da, da+32
+			t = (t * n) / d
+			s += t
+		getcontext().prec -= 2
+		return +s               # unary plus applies the new precision
 	getcontext().prec = 64
+	global PI
+	PI=pi()
 	def fn(expr):
 		n1 = parse(expr, mode='eval')
-		n0 = Num2Decimal().visit(n1)
+		n0 = Num2Decimal().visit(PowChange().visit(n1))
 		fix_missing_locations(n0) 
 		return eval(compile(n0, 'q', 'eval'))
 	return fn
 
 dcalc=calcuator()
-def pi():
-	getcontext().prec += 2  # extra digits for intermediate steps
-	three = Decimal(3)      # substitute "three=3.0" for regular floats
-	lasts, t, s, n, na, d, da = 0, three, 3, 1, 0, 0, 24
-	while s != lasts:
-		lasts = s
-		n, na = n+na, na+8
-		d, da = d+da, da+32
-		t = (t * n) / d
-		s += t
-	getcontext().prec -= 2
-	return +s               # unary plus applies the new precision
-PI=pi()
+
 
 nos=set()
 
@@ -236,6 +243,7 @@ def on_xml_doc(doc, ctx):
 def on_xml_end(ctx):
 	i = 0
 	for (noA, noB, valueB, valueA) in same_list:
+		stderr.write("\rCHECKED %X/%X %r/%r" % (noA, noB, valueB, valueA))
 		a = conv_map[noA]
 		b = conv_map[noB]
 		valueA = ((valueA*a[0]) + a[1] - b[1])/b[0]
@@ -252,7 +260,7 @@ def on_xml_end(ctx):
 				raise RuntimeError("Factor [%r%X(%s)] != [%r%X(%s)]" % (a[2], noA, valueA, b[2], noB, valueB))
 		else:
 			i += 1
-			stdout.write("\rCHECKED %r/%r [%d]" % (a[2], b[2], i))
+			stderr.write("\rCHECKED %r/%r [%d]" % (a[2], b[2], i))
 	stderr.write("\nTypes %d; Units %d;" % (len(types_map), len(conv_map)))
 
 """

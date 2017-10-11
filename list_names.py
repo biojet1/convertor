@@ -8,12 +8,18 @@ def on_xml_etree(doc, ctx):
 		name = e.get("name")
 		no = e.get("no")
 		no = int(no, 16)
-		name_map[no] = name
+		if name:
+			if no in name_map:
+				assert name_map[no] == name
+			else:
+				name_map[no] = name
 	for e in root.findall(r".//unit[@no]"):
 		name = e.get("name")
 		no = e.get("no")
 		no = int(no, 16)
-		name_map[no] = name
+		assert no not in name_map
+		if name:
+			name_map[no] = name
 
 def on_xml_end(ctx):
 	import pprint
