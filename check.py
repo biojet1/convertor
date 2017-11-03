@@ -1,7 +1,7 @@
 from decimal import Decimal, getcontext
 from random import randint
 from sys import stdout, stderr
-
+PI=None
 def calcuator():
 	from ast import Call, Name, Attribute, Load, copy_location, NodeTransformer, fix_missing_locations, Str, parse, Pow
 	from decimal import Decimal, getcontext
@@ -90,24 +90,30 @@ def doCheckName(cur):
 def doCheckEval(cur):
 	x = cur.getAttribute("eval")
 	if not x:
+		assert cur.getAttribute("factor")
+		return
+	y = cur.getAttribute("factor")
+	if not y:
+		assert cur.getAttribute("eval")
 		return
 	e = dcalc(x)
-	y = cur.getAttribute("factor")
 	f = Decimal(y)
 	if f == e:
 		return
-	raise RuntimeError("Eval %r [%r == %r] != [%r == %r] " % (cur.getAttribute("name"), x,e,y,f))
+	raise RuntimeError("Eval %r [%r == %r] != [%r == %r] %r" % (cur.getAttribute("name"), x,e,y,f, e-f))
 
 
 def doUnit(cur):
 	id=None
 	y="0"
+	f=None
 	symbol=None
 	for (k, v) in attrs(cur):
 		if k == "id": id = v
 		elif k == "name": name = v
-		elif k == "eval": pass
-		elif k == "ref": pass
+		elif k == "eval": e=v
+		# elif k == "ref": pass
+		elif k == "href": pass
 		elif k == "factor": f = v
 		elif k == "y": y = v
 		elif k == "symbol": symbol = v
@@ -119,13 +125,17 @@ def doUnit(cur):
 	if no in conv_map:
 		 raise RuntimeError("no %X in conv_map" % no)
 	doCheckName(cur)
-	assert Decimal(f).is_finite()
-	assert (1/Decimal(f)).is_finite()
+	if f:
+		f=Decimal(f) 
+	else:
+		f=dcalc(e) 
+	assert f.is_finite()
+	assert (1/f).is_finite()
 	assert Decimal(y).is_finite()
 	assert no not in conv_map
 	assert no not in types_map
 	doCheckEval(cur)
-	conv_map[no] = (Decimal(f), Decimal(y), name)
+	conv_map[no] = (f, Decimal(y), name)
 	cur = cur.firstChild
 	while cur:
 		x = cur
@@ -134,7 +144,7 @@ def doUnit(cur):
 			t = x.tagName
 			if t == "same":
 				iB = doCheckNo(x, False)
-				vB = Decimal(x.getAttribute("equals"))
+				vB = dcalc(x.getAttribute("equals"))
 				vA = Decimal(x.getAttribute("value") or 1)
 				same_list.append((no, iB, vB, vA))
 			else:
@@ -249,14 +259,14 @@ def on_xml_end(ctx):
 		valueA = ((valueA*a[0]) + a[1] - b[1])/b[0]
 		if valueA != valueB:
 			ctx = getcontext().copy()
-			ctx.prec -= 1
+			ctx.prec -= 2
 			stderr.write("Factor error %r and %r\n" % (a[2], b[2]))
 			stderr.write("a = %r\n" % (a,))
 			stderr.write("b = %r\n" % (b,))
 			stderr.write("A = %r\n" % (valueA))
 			stderr.write("B = %r\n" % (valueB))
 			stderr.write("%r, %r \n" % (valueA.normalize(ctx),valueB.normalize(ctx)))
-			if valueA.normalize(ctx).compare(valueB.normalize(ctx))!=0:
+			if valueA.normalize(ctx).compare(valueB.normalize(ctx)) != 0:
 				raise RuntimeError("Factor [%r%X(%s)] != [%r%X(%s)]" % (a[2], noA, valueA, b[2], noB, valueB))
 		else:
 			i += 1
@@ -265,4 +275,5 @@ def on_xml_end(ctx):
 
 """
 mee --cd K:\wrx\android\convertor-db -- nmake check
+mee --cd K:\wrx\android\convertor-db -- nmake unitsdb
 """

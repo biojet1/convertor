@@ -1,11 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <sub id="length" name="Length" no="D302">
-	<unit factor="3.92727272727273E+03" name="Li [ri]" no="B438"/>
-	<unit factor="1.09090909090909E+02" name="Jie [cho]" no="CA0E"/>
+
+	<unit name="Li [ri] 里" no="B438" eval="129600/33">
+	129600/33 m 	
+		<same equals="12960" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="6000000/1397" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
+	<unit eval="3600/33" name="Jie [cho] 町" no="CA0E">
+	3600/33 m
+		<same equals="360" no="E3FB" value="1" name="Chi [shaku]"/> 
+		<same equals="500000/4191" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
 	<unit factor="1.09090909090909E+01" name="Duen [tan]" no="E3A8"/>
-	<unit factor="3.03030303030303E+00" name="Zhang [jo]" no="AC18"/>
-	<unit factor="1.81818181818181E+00" name="Jien [ken] = bu" no="8F55"/>
-	<unit factor="3.03030303030303E-01" name="Chi [shaku]" no="E3FB"/>
-	<unit factor="3.03030303030303E-02" name="Chun [sun]" no="D21A"/>
-	<unit factor="3.03030303030303E-03" name="Fun [bu]" no="8A97"/>
-	<unit factor="3.03030303030303E-04" name="Li [rin]" no="8020"/>
+	
+	<unit name="Zhang [jo]" no="AC18" eval="100/33">
+	100/33 m
+		<same equals="10" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="125000/37719" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
+	<unit name="Jien [ken] 間" no="8F55" eval="60/33">
+	60/33 m
+		<same equals="6" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="25000/12573" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
+	<unit name="Chi [shaku] 尺" no="E3FB" eval="10/33" href="https://en.wikipedia.org/wiki/Shaku_%28unit%29">
+	10/33 m
+		<same equals="12500/37719" no="91F4" value="1" name="Yard"/>
+		<same equals="10/33" no="C35D" value="1" name="Meter"/>
+	</unit>
+	
+	<unit name="Chun [sun] 寸" no="D21A" eval="1/33">
+	1/33 m
+		<same equals="1/10" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="1250/37719" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
+	<unit  name="Fun [bu] 分" no="8A97" eval="1/330">
+	1/330 m
+		<same equals="1/100" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="125/37719" no="91F4" value="1" name="Yard"/>
+	</unit>
+	
+	<unit  name="Li [rin] 厘" no="8020" eval="1/3300">
+	1/3300 m
+		<same equals="1/1000" no="E3FB" value="1" name="Chi [shaku]"/>
+		<same equals="25/75438" no="91F4" value="1" name="Yard"/>
+	</unit>
 </sub>

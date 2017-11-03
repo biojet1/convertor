@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='ASCII'?>
 <sub id="length" name="Length" no="D302">
 
 	<unit factor="1.852E+03" name="International Nautical Mile" no="E74F" symbol="n mile">
@@ -8,7 +9,7 @@
 	<unit factor="1.853184E+03" name="Nautical Mile (UK)" no="DABE" symbol="n mile (UK)" eval="0.3048*6080">
 		6080 ft
 		<!-- (6080ft/12in)*(1in/1.0E-02m) -->
-		<same equals="6080" no="F3D5"/>
+		<same equals="6080" no="F3D5" name="Foot"/>
 	</unit>
 
 	<unit factor="1.609344E+03" name="Mile" no="9EA2" symbol="mi" eval="0.3048*5280">
@@ -26,7 +27,7 @@
 		<same equals="3" no="DABE" name="Nautical Mile (UK)"/>
 	</unit>
 
-	<unit factor="4.828032E+03" name="League (US)" no="8FD3" eval="0.3048*5280*3" ref="https://en.wikipedia.org/wiki/League_(unit)#United_States">
+	<unit factor="4.828032E+03" name="League (US)" no="8FD3" eval="0.3048*5280*3" href="https://en.wikipedia.org/wiki/League_(unit)#United_States">
 		3 Miles
 		<same equals="15840" no="F3D5" name="Foot"/>
 		<same equals="3" no="9EA2" name="Mile"/>
@@ -48,7 +49,7 @@
 		<same equals="22" no="91F4" name="Yard"/>
 	</unit>
 
-	<unit factor="5.0292E+00" name="Rod" no="D08F" symbol="rd"  eval="0.3048*16.5">
+	<unit factor="5.0292E+00" name="Rod" no="D08F" symbol="rd" eval="0.3048*16.5">
 		16.5 ft = 5.5 yd
 		<same equals="16.5" no="F3D5" name="Foot"/>
 		<same equals="5.5" no="91F4" name="Yard"/>
@@ -56,22 +57,22 @@
 
 	<unit factor="1.8288E+00" name="Fathom" no="89DA" symbol="fath" eval="0.3048*6">
 		6 ft
-		<same equals="6" no="F3D5"/>
+		<same equals="6" no="F3D5" name="Foot"/>
 	</unit>
 
 	<unit factor="2.01168E-01" name="Link" no="903F" eval="0.3048*0.66">
 		0.66 ft = 1/100 ch
-		<same equals="0.66" no="F3D5"/>
-		<same equals="0.01" no="C521"/>
+		<same equals="0.66" no="F3D5" name="Foot"/>
+		<same equals="0.01" no="C521" name="Chain"/>
 	</unit>
 
 	<unit factor="1.016E-01" name="Hand" no="CD07" eval="0.0254*4">
 		4 inch
-		<same equals="4" no="E9C6"/>
+		<same equals="4" no="E9C6" name="Inch"/>
 	</unit>
 
 	<unit factor="6.35E-02" name="Nail" no="E2BF" eval="0.0254*2.5">
 		2.5 inch
-		<same equals="2.5" no="E9C6"/>
+		<same equals="2.5" no="E9C6" name="Inch"/>
 	</unit>
 </sub>

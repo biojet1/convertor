@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<?xml version='1.0' encoding='ASCII'?>
 <sub id="length" name="Length" no="D302">
 	Meter, Foot, Parsec
 	<unit factor="1" name="Meter" no="C35D" symbol="m">
@@ -9,41 +9,41 @@
 	</unit>
 	<unit factor="3.048E-01" name="Foot" no="F3D5" symbol="ft">
 		1/3 yd
-		<same equals="1" no="91F4" value="3"/>
+		<same equals="1" no="91F4" value="3" name="Yard"/>
 	</unit>
 	<unit factor="2.54E-02" name="Inch" no="E9C6" symbol="in">
 		1/12 ft
-		<same equals="1" no="F3D5" value="12"/>
+		<same equals="1" no="F3D5" value="12" name="Foot"/>
 	</unit>
 	<unit factor="0.9144" name="Yard" no="91F4" symbol="yd">
 		3 ft
-		<same equals="3" no="F3D5"/>
+		<same equals="3" no="F3D5" name="Foot"/>
 	</unit>
 
 	<unit factor="1.0E-02" name="Centimeter" no="D5A0" symbol="cm">
 		1/100 meter
-		<same equals="1" no="C35D" value="100"/>
+		<same equals="1" no="C35D" value="100" name="Meter"/>
 	</unit>
 	<unit factor="1.0E-03" name="Millimeter" no="95A4" symbol="mm">
 		1/1000 meter
-		<same equals="1" no="C35D" value="1000"/>
+		<same equals="1" no="C35D" value="1000" name="Meter"/>
 	</unit>
 	<unit factor="1.0E+03" name="Kilometer" no="92FE" symbol="km">
 		1000 meter
-		<same equals="1" no="C35D" value="0.001"/>
+		<same equals="1" no="C35D" value="0.001" name="Meter"/>
 	</unit>
 
 	<unit factor="149597870700" name="Astronomical unit" no="FA21" symbol="AU">
 		149597870700 meter. Mean distance between earth and sun 
 		<!-- meter -->
-		<same value="0.01" no="C35D" equals="1495978707"  />
+		<same value="0.01" no="C35D" equals="1495978707" name="Meter"/>
 		<!-- parse -->
-		<same no="EB29" equals="0.000004848136811095359935899141023579479759563533023727015155825531778"/>
+		<same no="EB29" equals="PI/648000" name="Parsec"/>
 <!-- former: 1.49597870691E+11 -->
 	</unit>
 
-	<unit factor="30856775814913672.78913937957796471610731921160409179801404019228" name="Parsec" no="EB29" symbol="pc" ref="https://en.m.wikipedia.org/wiki/Parsec" eval="149597870700*648000/PI">
-		648000AU/&#x03C0; (Formerly  1AU/tan(1&quot;))
+	<unit factor="30856775814913672.78913937957796471610731921160409179801404019228" name="Parsec" no="EB29" symbol="pc" href="https://en.m.wikipedia.org/wiki/Parsec" eval="149597870700*648000/PI">
+		648000AU/&#960; (Formerly  1AU/tan(1"))
 	<!-- -->
 	</unit>
 	<unit factor="9.46073047258080E+15" name="Light year" no="CEFD" symbol="l.y.">
@@ -52,7 +52,7 @@
 	Based on 1 day = 86 400 seconds, and 1 Julian century = 36 525 days.
 	Refer to The Astronomical Almanac for the Year 1995, U.S. Government Printing Office, Washington, DC, 1994
 	-->
-		<same value="1" no="C35D"  equals="9460730472580800" />
+		<same value="1" no="C35D" equals="9460730472580800" name="Meter"/>
 	</unit>
 	<unit factor="1.0E-06" name="Micrometer" no="90F7" symbol="&#181;m"/>
 	<unit factor="1.0E-06" name="Micron" no="AFAE" symbol="&#181;">
@@ -61,7 +61,7 @@
 		The micron was defined as one 1 000 000th of one meter in 1879.
 		Presently replaced with micro meter and excluded from the regal units
 		-->
-		<same equals="1" no="C35D" value="1000000"/>
+		<same equals="1" no="C35D" value="1000000" name="Meter"/>
 	</unit>
 	<unit factor="1.0E-09" name="Nanometer" no="989B" symbol="nm"/>
 	<unit factor="1.0E-10" name="&#197;ngstr&#246;m" no="9DC9" symbol="&#197;">
@@ -70,11 +70,11 @@
 	<unit factor="1.00208E-13" name="X unit" no="B03C">
 		A unit of measurement used to specify wavelength of X-ray
 	</unit>
-	<unit factor="1.0E-15" name="Femtometer, Fermi" no="E34E" symbol="fm" ref="https://en.wikipedia.org/wiki/Femtometre">
+	<unit factor="1.0E-15" name="Femtometer, Fermi" no="E34E" symbol="fm" href="https://en.wikipedia.org/wiki/Femtometre">
 	 1/1 000 000 000 000 000 metres
 		<same equals="1" no="989B" value="1000000" name="Nanometer"/>
-		<same equals="10" no="9DC9" value="1000000" name="Angstrom"/>
-		<same equals="1" no="C35D"  value="1000000000000000" />
+		<same equals="10" no="9DC9" value="1000000" name="&#197;ngstr&#246;m"/>
+		<same equals="1" no="C35D" value="1000000000000000" name="Meter"/>
 	</unit>
 <!--
 	<unit factor="1.0E-15" name="Yukawa" no="A433"/>
@@ -83,18 +83,18 @@
 	<unit factor="4.217518E-03" name="Pica (printer's)" no="AE09"/>
 	<unit factor="0.0003527777777777777777777777777777777777777777777777777777777777778" name="Point (computer)" no="BC8C" eval="0.0254/72">
 		1/72 inch
-		<same equals="1" no="E9C6" value="72"/>
+		<same equals="1" no="E9C6" value="72" name="Inch"/>
 	</unit>
 	<unit factor="3.514598E-04" name="Point (printer's)" no="CA9D"/>
 	<unit factor="0.004233333333333333333333333333333333333333333333333333333333333333" name="Pica (computer)" no="F975" eval="0.0254/6">
 		1/6 inch
-		<same equals="1" no="E9C6" value="6"/>
+		<same equals="1" no="E9C6" value="6" name="Inch"/>
 		<!-- 254/60000 meter -->
 	</unit>
 	
 	<unit factor="2.54E-05" name="Mil" no="D372" eval="0.0254/1000">
 		1/1000 inch
-		<same equals="1" no="E9C6" value="1000"/>
+		<same equals="1" no="E9C6" value="1000" name="Inch"/>
 	</unit>
 	
 	<unit factor="2.54E-08" name="Microinch" no="8E7B" eval="0.0254/1000000"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<?xml version='1.0' encoding='ASCII'?>
 <sub id="mass" name="Mass" no="B5DA">
 	Gram, Carat, Pound
 	<unit factor="1" name="Kilogram" no="EC09" symbol="kg">
@@ -11,18 +11,18 @@
 	<unit factor="1.0E+03" name="Ton (metric)" no="9D09" symbol="t">
 	1000kg
 		<!-- 1=1000kg -->
-		<same equals="1000" no="EC09"/>
+		<same equals="1000" no="EC09" name="Kilogram"/>
 	</unit>
 	<unit factor="9.80665E+00" name="Kilogram-force second squared per meter" no="E225" symbol="kgf&#183;s&#178;/m"/>
 	<unit factor="1.0E-03" name="Gram" no="A872" symbol="g">
 		<!-- 1=0.001kg -->
-		<same equals="0.001" no="EC09"/>
+		<same equals="0.001" no="EC09" name="Kilogram"/>
 	</unit>
 	<unit factor="2.0E-04" name="Carat (metric)" no="BD59" symbol="car, ct">
 	Used to weigh gems or noble metals.
 	Standardized as 0.2 gram in 1907
 		<!-- 1=0.2g -->
-		<same equals="0.2" no="A872"/>
+		<same equals="0.2" no="A872" name="Gram"/>
 	</unit>
 	<unit factor="1.0E-06" name="Milligram" no="A270" symbol="mg"/>
 	<unit factor="1.0E-12" name="Nanogram" no="CBAB" symbol="ng"/>

@@ -31,3 +31,7 @@ list_names: list_names.py  *.xml
 
 check_names: list_names.py *.xml
 	alterx -np ./list_names.py . | alterx -np ./check_names.py .
+	
+fix_names: list_names.py *.xml
+	alterx -np ./list_names.py . | alterx -mmp ./check_names.py .
+

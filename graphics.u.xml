@@ -1,32 +1,33 @@
+<?xml version='1.0' encoding='ASCII'?>
 <sub id="graphics" name="Graphics Units" no="AE7A">
 	Pixel, Twip, Pica
-	<unit factor="1" name="Twip" no="8ED9" ref="https://en.m.wikipedia.org/wiki/Twip">
+	<unit factor="1" name="Twip" no="8ED9" href="https://en.m.wikipedia.org/wiki/Twip">
 		1/1440 inch
-		<same equals="1" no="C1FE" value="1440"/>
+		<same equals="1" no="C1FE" value="1440" name="Inch"/>
 	</unit>
 	<unit factor="56692.91338582677165354330708661417322834645669291338582677165354" name="Meter" no="C6EF" symbol="m" eval="1440/0.0254">
-		<same equals="1" no="C1FE" value="0.0254"/>
+		<same equals="1" no="C1FE" value="0.0254" name="Inch"/>
 	</unit>
 	<unit factor="566.9291338582677165354330708661417322834645669291338582677165354" name="Centimeter" no="DE47" symbol="cm" eval="1440/2.54">
-		<same equals="1" no="C1FE" value="2.54"/>
+		<same equals="1" no="C1FE" value="2.54" name="Inch"/>
 	</unit>
 	<unit factor="2.4E+02" name="Character (Y)" no="EBAC"/>
 	<unit factor="1.2E+02" name="Character (X)" no="96E8"/>
 	<unit factor="56.69291338582677165354330708661417322834645669291338582677165354" name="Millimeter" no="B28A" symbol="mm" eval="1440/25.4">
-		<same equals="1" no="C1FE" value="25.4"/>
+		<same equals="1" no="C1FE" value="25.4" name="Inch"/>
 	</unit>
 	<unit factor="15" name="Pixel (X)" no="9EFD"/>
 	<unit factor="15" name="Pixel (Y)" no="FC82"/>
 	<unit factor="1440" name="Inch" no="C1FE" symbol="in"/>
 	<unit factor="2.4E+02" name="Pica (computer)" no="C89A">
 		1/6 inch
-		<same equals="1" no="C1FE" value="6"/>
+		<same equals="1" no="C1FE" value="6" name="Inch"/>
 	</unit>
 	<unit factor="2.3910336E+02" name="Pica (printer's)" no="FB11"/>
 	
 	<unit factor="2.0E+01" name="Point (computer)" no="B747">
 		1/72 inch
-		<same equals="1" no="C1FE" value="72"/>
+		<same equals="1" no="C1FE" value="72" name="Inch"/>
 	</unit>
 	<unit factor="1.992528E+01" name="Point (printer's)" no="CF9A"/>
 </sub>

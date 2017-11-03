@@ -1,93 +1,94 @@
+<?xml version='1.0' encoding='ASCII'?>
 <sub id="bytes" name="Bit, Byte" no="E882">
 	Gigabytes, Sector, Megabit
 	<unit factor="1" name="Byte" no="F5EA">
 		8 bits
-		<same equals="0.001953125" no="FD65"/>
-		<same equals="8" no="9E77"/>
+		<same equals="0.001953125" no="FD65" name="Harddisk sector"/>
+		<same equals="8" no="9E77" name="Bit"/>
 	</unit>
 	<unit factor="1152921504606846976" name="Exabyte" no="FD37" symbol="EB">
 		1024 Petabytes
-		<same equals="1024" no="9027"/>
+		<same equals="1024" no="9027" name="Petabyte"/>
 	</unit>
 	<unit factor="1125899906842624" name="Petabyte" no="9027" symbol="PB">
 		1024 Terabytes
-		<same equals="1024" no="FFEA"/>
+		<same equals="1024" no="FFEA" name="Terabyte"/>
 	</unit>
 	<unit factor="1099511627776" name="Terabyte" no="FFEA" symbol="TB">
 		1024 Gigabytes
-		<same equals="1024" no="B5FA"/>
+		<same equals="1024" no="B5FA" name="Gigabyte"/>
 	</unit>
 	<unit factor="1073741824" name="Gigabyte" no="B5FA" symbol="GB">
 		1024 Megabytes
-		<same equals="1024" no="EFD8"/>
+		<same equals="1024" no="EFD8" name="Megabyte"/>
 	</unit>
 	<unit factor="1048576" name="Megabyte" no="EFD8" symbol="MB">
 		1024 Kilobytes
-		<same equals="1024" no="F85D"/>
+		<same equals="1024" no="F85D" name="Kilobyte"/>
 	</unit>
 	<unit factor="1024" name="Kilobyte" no="F85D" symbol="kB">
 		1024 bytes
-		<same equals="1024" no="F5EA"/>
+		<same equals="1024" no="F5EA" name="Byte"/>
 	</unit>
 	<unit factor="125000000" name="Gigabit" no="CFD7">
 		1 billion bits
-		<same equals="1000" no="D7A7"/>
+		<same equals="1000" no="D7A7" name="Megabit"/>
 	</unit>
 	<unit factor="125000" name="Megabit" no="D7A7">
 		1 million bits
-		<same equals="1000" no="DD23"/>
+		<same equals="1000" no="DD23" name="Kilobit"/>
 	</unit>
 	<unit factor="125" name="Kilobit" no="DD23">
 		1000 bits
-		<same equals="1000" no="9E77"/>
+		<same equals="1000" no="9E77" name="Bit"/>
 	</unit>
 	<unit factor="0.125" name="Bit" no="9E77">
 		8 bit = 1 byte
-		<same equals="0.000244140625" no="FD65"/>
+		<same equals="0.000244140625" no="FD65" name="Harddisk sector"/>
 	</unit>
 	<unit factor="2048" name="CD/DVD sector" no="B6A6">
 		2048 bytes
-		<same equals="4" no="FD65"/>
-		<same equals="2" no="F85D"/>
+		<same equals="4" no="FD65" name="Harddisk sector"/>
+		<same equals="2" no="F85D" name="Kilobyte"/>
 	</unit>
 	<unit factor="512" name="Harddisk sector" no="FD65">
 		512 bytes
-		<same equals="0.5" no="F85D"/>
+		<same equals="0.5" no="F85D" name="Kilobyte"/>
 	</unit>
 	<unit factor="681574400" name="CD-R 74 min" no="E8A3"/>
 	<unit factor="736960512" name="CD-R 80 min" no="CAFF"/>
 	<unit factor="4700372992" name="DVD+R" no="A0F3">
 		DVD+R SL (4.378GiB)
-		<same equals="2295104" no="B6A6"/>
+		<same equals="2295104" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="4707319808" name="DVD-R" no="9581">
 		DVD-R SL (4.384GiB)
-		<same equals="2298496" no="B6A6"/>
+		<same equals="2298496" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="8547991552" name="DVD+R Dual layer" no="E1F8">
 		DVD+R DL (7.961GiB)
-		<same equals="4173824" no="B6A6"/>
+		<same equals="4173824" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="8543666176" name="DVD-R Dual layer" no="9BEF">
 		DVD-R DL (7.957GiB)
-		<same equals="4171712" no="B6A6"/>
+		<same equals="4171712" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="25025314816" name="Blueray" no="DC64">
 		BD SL (23.31GiB)
-		<same equals="12219392" no="B6A6"/>
+		<same equals="12219392" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="50050629632" name="Blueray Dual layer" no="DD8C">
 		BD DL (46.61GiB)
-		<same equals="24438784" no="B6A6"/>
+		<same equals="24438784" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="7791181824" name="Blueray Mini" no="F66E">
 		BD Mini SL (7.26GiB)
-		<same equals="3804288" no="B6A6"/>
+		<same equals="3804288" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	<unit factor="15582363648" name="Blueray Mini Dual layer" no="CB66">
 		BD Mini DL (14.51GiB)
-		<same equals="30434304" no="FD65"/>
-		<same equals="7608576" no="B6A6"/>
+		<same equals="30434304" no="FD65" name="Harddisk sector"/>
+		<same equals="7608576" no="B6A6" name="CD/DVD sector"/>
 	</unit>
 	
 	<!--

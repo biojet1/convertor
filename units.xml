@@ -108,10 +108,10 @@
 	</sub>
 	<sub id="angular-velocity" name="Angular Velocity" no="A9AF">
 		Revolution per Time
-		<unit factor="1" name="Radian per second" no="CF25" symbol="rad/s"/>
-		<unit factor="6.28318530717959E+00" name="Revolution per second" no="93D1" symbol="rps = r/s"/>
-		<unit factor="1.04719755119660E-01" name="Revolution per minute" no="A8D9" symbol="rpm = r/min"/>
 		<unit factor="1.74532925199433E-02" name="Degree per second" no="CC01" symbol="&#186;/s"/>
+		<unit factor="1" name="Radian per second" no="CF25" symbol="rad/s"/>
+		<unit factor="6.28318530717959E+00" name="Revolution per second" no="93D1" symbol="rps, r/s"/>
+		<unit factor="1.04719755119660E-01" name="Revolution per minute" no="A8D9" symbol="rpm, r/min"/>
 		<unit factor="1.74532925199433E-03" name="Revolution per hour" no="DB25" symbol="r/h"/>
 		<unit factor="7.27220521664304E-05" name="Revolution per day" no="CBBC" symbol="r/d"/>
 	</sub>
@@ -590,6 +590,40 @@
 
 		<sub id="metric-prefixes" name="Metric Prefixes" no="BB21">
 			<unit factor="1" name="1, one" no="9692"/>
+			
+			<unit factor="1.0E+24" name="Yotta" no="9BCC" symbol="Y"/>
+			<unit factor="1.0E+21" name="Zetta" no="D61A" symbol="Z"/>
+			<unit factor="1.0E+18" name="Exa" no="F4A8" symbol="E"/>
+			<unit factor="1.0E+15" name="Peta" no="D002" symbol="P"/>
+			<unit factor="1.0E+12" name="Tera" no="87BF" symbol="T"/>
+			<unit factor="1.0E+09" name="Giga" no="CD7D" symbol="G"/>
+			<unit factor="1.0E+06" name="Mega" no="D2C8" symbol="M"/>
+			<unit factor="1.0E+03" name="Kilo" no="AABA" symbol="k"/>
+			<unit factor="1.0E+02" name="Hecto" no="9099" symbol="h"/>
+			<unit factor="1.0E+01" name="Deca" no="A3D3" symbol="da"/>
+			
+			<unit factor="1.0E-01" name="Deci" no="8B8A" symbol="d"/>
+			<unit factor="1.0E-02" name="Centi" no="CF2E" symbol="c"/>
+			<unit factor="1.0E-03" name="Milli" no="9299" symbol="m"/>
+			<unit factor="1.0E-06" name="Micro " no="A3C8" symbol="&#181;"/>
+			<unit factor="1.0E-09" name="Nano" no="D053" symbol="n"/>
+			<unit factor="1.0E-12" name="Pico" no="9BC7" symbol="p"/>
+			<unit factor="1.0E-15" name="Femto" no="9AEA" symbol="f"/>
+			<unit factor="1.0E-18" name="Atto" no="B841" symbol="a"/>
+			<unit factor="1.0E-21" name="Zepto" no="EC78" symbol="z"/>
+			<unit factor="1.0E-24" name="Yocto" no="FA51" symbol="y"/>
+			
+			<unit factor="1.0E-10" name="Ai" no="8772">Means dust</unit>
+			<unit factor="1.0E-03" name="Mao [mo]" no="8218"/>
+			<unit factor="1.0E+08" name="I [oku]" no="E1EF"/>
+			<unit factor="1.0E-01" name="Fun [bu]" no="AA8B"/>
+			<unit factor="1.0E-02" name="Li [rin]" no="C4B9"/>
+			<unit factor="1.0E-04" name="Su [shi]" no="CF5F"/>
+			<unit factor="1.0E-05" name="Hu [kotsu]" no="E69D"/>
+			<unit factor="1.0E-06" name="Wei [bi]" no="B6EC"/>
+			<unit factor="1.0E-07" name="Sien [sen]" no="BFD8">Means delicate</unit>
+			<unit factor="1.0E-08" name="Sha" no="A705"/>
+			<unit factor="1.0E-09" name="Chun [jin]" no="CD43"/>
 			<unit factor="1.0E+88" name="Uliangdashu [muryotaisu]" no="C005">Means a uncountable big number</unit>
 			<unit factor="1.0E+80" name="Bukusi-i [fukashigi]" no="B377">Means an incomprehensible number</unit>
 			<unit factor="1.0E+72" name="Nayonta [nayuta]" no="CD09"/>
@@ -605,37 +639,6 @@
 			<unit factor="1.0E+20" name="Hai [gai]" no="E0D5"/>
 			<unit factor="1.0E+16" name="Jing [kei]" no="C658"/>
 			<unit factor="1.0E+12" name="Zhao [cho]" no="90CC"/>
-			<unit factor="1.0E+24" name="Yotta" no="9BCC" symbol="Y"/>
-			<unit factor="1.0E+21" name="Zetta" no="D61A" symbol="Z"/>
-			<unit factor="1.0E+18" name="Exa" no="F4A8" symbol="E"/>
-			<unit factor="1.0E+15" name="Peta" no="D002" symbol="P"/>
-			<unit factor="1.0E+12" name="Tera" no="87BF" symbol="T"/>
-			<unit factor="1.0E+09" name="Giga" no="CD7D" symbol="G"/>
-			<unit factor="1.0E+06" name="Mega" no="D2C8" symbol="M"/>
-			<unit factor="1.0E+03" name="Kilo" no="AABA" symbol="k"/>
-			<unit factor="1.0E+08" name="I [oku]" no="E1EF"/>
-			<unit factor="1.0E+02" name="Hecto" no="9099" symbol="h"/>
-			<unit factor="1.0E+01" name="Deca" no="A3D3" symbol="da"/>
-			<unit factor="1.0E-01" name="Fun [bu]" no="AA8B"/>
-			<unit factor="1.0E-01" name="Deci" no="8B8A" symbol="d"/>
-			<unit factor="1.0E-02" name="Li [rin]" no="C4B9"/>
-			<unit factor="1.0E-02" name="Centi" no="CF2E" symbol="c"/>
-			<unit factor="1.0E-03" name="Mao [mo]" no="8218"/>
-			<unit factor="1.0E-03" name="Milli" no="9299" symbol="m"/>
-			<unit factor="1.0E-04" name="Su [shi]" no="CF5F"/>
-			<unit factor="1.0E-05" name="Hu [kotsu]" no="E69D"/>
-			<unit factor="1.0E-06" name="Wei [bi]" no="B6EC"/>
-			<unit factor="1.0E-06" name="Micro " no="A3C8" symbol="&#181;"/>
-			<unit factor="1.0E-07" name="Sien [sen]" no="BFD8">Means delicate</unit>
-			<unit factor="1.0E-08" name="Sha" no="A705"/>
-			<unit factor="1.0E-09" name="Chun [jin]" no="CD43"/>
-			<unit factor="1.0E-09" name="Nano" no="D053" symbol="n"/>
-			<unit factor="1.0E-10" name="Ai" no="8772">Means dust</unit>
-			<unit factor="1.0E-12" name="Pico" no="9BC7" symbol="p"/>
-			<unit factor="1.0E-15" name="Femto" no="9AEA" symbol="f"/>
-			<unit factor="1.0E-18" name="Atto" no="B841" symbol="a"/>
-			<unit factor="1.0E-21" name="Zepto" no="EC78" symbol="z"/>
-			<unit factor="1.0E-24" name="Yocto" no="FA51" symbol="y"/>
 		</sub>
 
 </units>

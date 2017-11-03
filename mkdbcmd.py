@@ -1,5 +1,44 @@
+from decimal import Decimal, getcontext
 from sys import stdout
 import re
+
+PI=None
+def calcuator():
+	from ast import Call, Name, Attribute, Load, copy_location, NodeTransformer, fix_missing_locations, Str, parse, Pow
+	from decimal import Decimal, getcontext
+	class Num2Decimal(NodeTransformer):
+		def visit_Num(self, node):
+			return Call(Name('Decimal', Load()), [Str(s=str(node.n))], [], None, None)
+	class PowChange(NodeTransformer):
+		def visit_BinOp(self, node):
+			if node.op is Pow:
+				return Call(Attribute(Call(Name('getcontext',Load()), [], [], None, None),'power',Load()),[node.left, node.right],	[],	None,	None)
+			return node
+	def pi():
+		getcontext().prec += 2  # extra digits for intermediate steps
+		three = Decimal(3)      # substitute "three=3.0" for regular floats
+		lasts, t, s, n, na, d, da = 0, three, 3, 1, 0, 0, 24
+		while s != lasts:
+			lasts = s
+			n, na = n+na, na+8
+			d, da = d+da, da+32
+			t = (t * n) / d
+			s += t
+		getcontext().prec -= 2
+		return +s               # unary plus applies the new precision
+	getcontext().prec = 64
+	global PI
+	PI=pi()
+	def fn(expr):
+		n1 = parse(expr, mode='eval')
+		n0 = Num2Decimal().visit(PowChange().visit(n1))
+		fix_missing_locations(n0) 
+		return eval(compile(n0, 'q', 'eval'))
+	return fn
+
+dcalc=calcuator()
+
+
 units = []
 usageMap = {}
 sukiMap = {}
@@ -33,6 +72,9 @@ def doUnit(cur, type, order):
 	y = cur.getAttribute("y") or "0"
 	symbol = cur.getAttribute("symbol")
 	no = int(cur.getAttribute("no"), 16)
+	if not f:
+		f = dcalc(cur.getAttribute("eval"))
+		f = str(f)
 	for (x, t) in children(cur):
 		if t == x.ELEMENT_NODE:
 			if x.tagName in ('same',):
